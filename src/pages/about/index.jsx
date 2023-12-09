@@ -1,5 +1,6 @@
 import EducationCard from "@/components/Cards/EducationCard"
 import ExperienceCard from "@/components/Cards/ExperienceCard"
+import StackCard from "@/components/Cards/StackCard"
 import Image from "next/image"
 import Link from "next/link"
 import { MdShareLocation } from "react-icons/md"
@@ -95,6 +96,12 @@ function AboutPage() {
         </div>
       </div>
       {/* Tech Stack */}
+      <div className="w-full min-h-fit p-4 mt-2">
+        <h2 className="text-3xl font-bold text-black">Stack</h2>
+        <div className="w-full h-full mt-8 lg:px-6">
+          <StackCard />
+        </div>
+      </div>
     </section>
   )
 }
