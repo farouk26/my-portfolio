@@ -22,9 +22,9 @@ function ProjectCard({ title, websiteType, appType, imageUrl, projectUrl }) {
         <div className="badge badge-outline text-black badge-sm">{appType}</div>
       </div>
       <div className="flex items-center justify-between gap-2 px-4">
-        <h1 className="text-black font-bold text-lg">{title}</h1>
+        <h1 className="text-black font-bold text-lg w-1/2">{title}</h1>
         <Link
-          className="flex gap-1 items-center text-sm text-black lg:hover:"
+          className="flex gap-1 items-center text-sm  text-black"
           href={projectUrl}
         >
           View Project <IoIosArrowDropright className="text-lg" />

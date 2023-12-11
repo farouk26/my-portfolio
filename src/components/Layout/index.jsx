@@ -20,7 +20,7 @@ function Layout({ children }) {
       <div className="col-span-5 lg:hidden block sticky top-0">
         <Navbar />
       </div>
-      <div className="bg-red-200 col-span-1 lg:block border-r border-gray-300 hidden">
+      <div className="col-span-1 lg:block border-r border-gray-300 hidden">
         <SideBar />
       </div>
       <div className="lg:col-span-4 col-span-5 px-8 pt-6 w-full overflow-y-auto">
