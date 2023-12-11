@@ -15,8 +15,7 @@ Welcome to my portfolio, a showcase of my skills, projects, and experiences. Thi
 
 ### Projects Page
 - Showcase of my featured projects with project details and technologies used.
-- Filtering and sorting options for a better user experience.
-
+- 
 ### Contact Page
 - A dedicated page for users to get in touch with me.
 - Contact form for easy communication.
