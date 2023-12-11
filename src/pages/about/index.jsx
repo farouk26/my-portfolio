@@ -22,30 +22,30 @@ function AboutPage() {
               forefront of design trends
             </p>
             <Link
-              className="btn btn-sm mt-1 rounded-full lg:w-1/3 w-full text-white self-start bg-gray-900"
+              className="btn btn-sm btn-outline mt-1 rounded-full lg:w-1/3 w-full self-start text-gray-950 "
               href="/"
             >
               Download CV
             </Link>
           </div>
-          <figure className="lg:h-full h-72 md:h-96 w-full lg:w-[50%]">
+          <figure className="lg:h-[25rem] h-72 md:h-full w-full lg:w-[45%] self-center">
             <Image
-              src="https://images.unsplash.com/photo-1613064756072-52b429a1e06f?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src="/images/2.jpg"
               alt="portrait"
               height={500}
               width={500}
               priority
-              className="h-full w-full object-cover object-center rounded-xl"
+              className="h-full w-full object-cover object-center rounded-3xl"
             />
           </figure>
         </div>
       </div>
-      <div className="flex flex-row gap-2 items-center p-2 mt-4 w-full">
+      <div className="flex flex-row gap-4 items-center p-2 mt-12 w-full">
         <span className="flex gap-1 items-center text-sm text-black">
           <MdShareLocation className="text-lg text-green-400" />
           Medea, Algeria
         </span>
-        <div className="flex-1 h-[1.9px] bg-gray-300 mt-1"></div>
+        <div className="flex-1 h-[.9px] bg-gray-500 mt-1"></div>
       </div>
       {/* Experience */}
       <div className="w-full min-h-fit p-4 mt-2">

@@ -7,8 +7,8 @@ import Link from "next/link"
 
 function SideBar() {
   return (
-    <div className="fixed z-50 top-0 left-0 min-h-screen px-2 border-r border-gray-300 bg-white flex flex-col justify-between">
-      <div className="flex flex-col px-4 items-center">
+    <div className="sticky z-50 top-0 left-0 min-h-screen px-2 bg-white flex flex-col justify-between">
+      <div className="flex flex-col px-4 lg:px-1 items-center">
         {/* Info Section */}
         <div className="flex flex-row gap-2 py-8 border-b border-gray-300">
           <figure className="h-16 w-16">
