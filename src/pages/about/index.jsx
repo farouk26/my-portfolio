@@ -10,7 +10,7 @@ function AboutPage() {
     <section className="min-h-screen w-full mt-12">
       {/* About Me Section */}
       <div className="lg:h-80 min-h-fit">
-        <div className="flex lg:flex-row justify-start flex-col-reverse gap-2 lg:gap-4 text-black w-full lg:h-72 h-full">
+        <div className="flex lg:flex-row justify-start flex-col-reverse gap-2 lg:gap-4 text-gray-300 w-full lg:h-72 h-full">
           <div className="lg:w-[50%] flex flex-col justify-start items-center lg:justify-center p-2 lg:p-4 gap-4 lg:h-full h-[35%]">
             <h1 className="lg:text-5xl text-4xl font-bold w-full">
               About Me: Crafting Digital Excellence
@@ -22,7 +22,7 @@ function AboutPage() {
               forefront of design trends
             </p>
             <Link
-              className="btn btn-sm btn-outline mt-1 rounded-full lg:w-1/3 w-full self-start text-gray-950 "
+              className="btn btn-sm btn-outline mt-1 rounded-full lg:w-1/3 w-full self-start bg-yellow-200 bg-opacity-[85%] hover:bg-gray-100 hover:text-black text-black"
               href="/"
             >
               Download CV
@@ -41,15 +41,15 @@ function AboutPage() {
         </div>
       </div>
       <div className="flex flex-row gap-4 items-center p-2 mt-12 w-full">
-        <span className="flex gap-1 items-center text-sm text-black">
+        <span className="flex gap-1 items-center text-sm text-gray-300">
           <MdShareLocation className="text-lg text-green-400" />
           Medea, Algeria
         </span>
-        <div className="flex-1 h-[.9px] bg-gray-500 mt-1"></div>
+        <div className="flex-1 h-[.9px] bg-gray-300 mt-1"></div>
       </div>
       {/* Experience */}
       <div className="w-full min-h-fit p-4 mt-2">
-        <h2 className="text-3xl font-bold text-black">Experience</h2>
+        <h2 className="text-3xl font-bold text-gray-300">Experience</h2>
         <div className="flex flex-col gap-4 mt-8 lg:px-6">
           <ExperienceCard
             title={`Pastry Shop Manager`}
@@ -73,8 +73,8 @@ function AboutPage() {
       </div>
       {/* Education */}
       <div className="w-full min-h-fit p-4 mt-2">
-        <h2 className="text-3xl font-bold text-black">Education</h2>
-        <div className="flex lg:flex-row flex-col gap-4 mt-8 lg:px-6">
+        <h2 className="text-3xl font-bold text-gray-300">Education</h2>
+        <div className="flex lg:flex-row md:justify-center flex-col gap-4 mt-8 lg:px-6">
           <EducationCard
             title={`Front-End Web Development Bootcamp`}
             subtitle={`Re:Coded`}
@@ -97,8 +97,8 @@ function AboutPage() {
       </div>
       {/* Tech Stack */}
       <div className="w-full min-h-fit p-4 mt-2">
-        <h2 className="text-3xl font-bold text-black">Stack</h2>
-        <div className="w-full h-full mt-8 lg:px-6">
+        <h2 className="text-3xl font-bold text-gray-300">Stack</h2>
+        <div className="w-full h-full mt-8 mb-4 lg:px-6">
           <StackCard />
         </div>
       </div>

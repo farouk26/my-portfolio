@@ -13,7 +13,7 @@ import { SiCanva } from "react-icons/si"
 
 function StackCard() {
   return (
-    <div className="grid grid-cols-4 lg:grid-cols-12 p-2 gap-2 place-items-center px-4 rounded-3xl bg-gray-50 h-full lg:h-24 text-black text-xl lg:text-4xl lg:justify-center lg:items-center">
+    <div className="grid grid-cols-4 lg:grid-cols-12 p-2 gap-2 place-items-center px-4 rounded-3xl bg-gray-200 h-full lg:h-24 text-black text-xl lg:text-4xl lg:justify-center lg:items-center">
       <FaHtml5 className="text-orange-600" />
       <FaCss3Alt className="text-blue-700" />
       <RiJavascriptFill className="text-yellow-400" />

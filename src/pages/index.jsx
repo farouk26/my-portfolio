@@ -10,7 +10,7 @@ function Home() {
     <div className="min-h-screen">
       {/* Header */}
       <div className="lg:h-72 min-h-fit lg:pb-0 pb-10 border-b border-gray-300">
-        <div className=" flex flex-col p-2 lg:p-4 gap-4 lg:h-full h-[35%] lg:w-[50%] mr-auto w-full text-black">
+        <div className=" flex flex-col p-2 lg:p-4 gap-4 lg:h-full h-[35%] lg:w-[50%] mr-auto w-full text-gray-300">
           <h1 className="lg:text-5xl text-4xl font-bold w-full">
             Hey there! I&apos;m Farouk...
           </h1>
@@ -19,7 +19,7 @@ function Home() {
             into visually, stunning, user-friendly websites.
           </p>
           <Link
-            className="btn btn-ghost btn-outline border-gray-900 btn-sm mt-1 rounded-full lg:w-2/5 w-full text-black self-start"
+            className="btn btn-ghost btn-outline border-gray-900 btn-sm mt-1 rounded-full lg:w-2/5 w-full text-slate-900 font-semibold hover:bg-gray-100 hover:text-black bg-yellow-200 bg-opacity-[85%] self-start"
             href="/about"
           >
             More about Me
@@ -28,14 +28,14 @@ function Home() {
       </div>
       {/* Recent Projects Bento */}
       <div className="w-full min-h-fit lg:py-6 px-4 mt-6 lg:mt-2">
-        <h2 className="md:text-3xl text-2xl font-bold text-black">
+        <h2 className="md:text-3xl text-2xl font-bold text-gray-300">
           Recent Projects
         </h2>
         {/* Projects */}
-        <div className="flex lg:flex-row flex-col gap-6 lg:gap-2 justify-center w-full h-full mt-8">
+        <div className="flex lg:flex-row flex-col gap-6 lg:gap-2 justify-center w-full min-h-fit mt-8">
           <ProjectCard
             title={"Neon City"}
-            websiteType={"Community Sharing"}
+            websiteType={"Mini-Game"}
             appType={"Web App"}
             imageUrl={"/images/madlibs.png"}
             projectUrl={"https://madlibs-404-brain-not-found.vercel.app/"}
@@ -52,13 +52,13 @@ function Home() {
           <div className="flex-1 h-[0.9px] bg-gray-300 mt-4"></div>
           <Link
             href="/projects"
-            className="btn btn-outline btn-sm text-sm mt-4 text-black rounded-3xl"
+            className="btn btn-outline btn-sm text-sm mt-4 text-black bg-yellow-200 bg-opacity-[85%] rounded-3xl"
           >
             View All Projects
           </Link>
         </div>
       </div>
-      <h2 className="md:text-3xl text-2xl font-bold lg:mt-0 mt-8 text-black px-4 w-full">
+      <h2 className="md:text-3xl text-2xl font-bold lg:mt-0 mt-8 text-gray-300 px-4 w-full">
         Why Choose Me
       </h2>
 

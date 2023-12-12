@@ -2,7 +2,7 @@ import { TbBadge } from "react-icons/tb"
 
 function ExperienceCard({ title, subtitle, year, description }) {
   return (
-    <div className="flex lg:flex-row flex-col gap-4 items-center justify-between lg:gap-12 bg-gray-50 p-4 rounded-3xl">
+    <div className="flex lg:flex-row flex-col gap-4 items-center justify-between lg:gap-12 bg-gray-200 p-4 rounded-3xl">
       {/* Job Section */}
       <div className="flex gap-2 w-full">
         <TbBadge className="mt-[0.45rem] text-black" />

@@ -7,7 +7,7 @@ import Link from "next/link"
 
 function SideBar() {
   return (
-    <div className="sticky z-50 top-0 left-0 min-h-screen px-2 bg-white flex flex-col justify-between">
+    <div className="sticky z-50 top-0 left-0 min-h-screen px-2 bg-gray-100 flex flex-col justify-between">
       <div className="flex flex-col px-4 lg:px-1 items-center">
         {/* Info Section */}
         <div className="flex flex-row gap-2 py-8 border-b border-gray-300">
