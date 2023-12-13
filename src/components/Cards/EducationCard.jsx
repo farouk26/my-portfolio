@@ -3,7 +3,7 @@ import { PiStudentLight } from "react-icons/pi"
 
 function EducationCard({ title, subtitle, year, location }) {
   return (
-    <div className="flex lg:flex-row flex-col gap-4 items-center w-full bg-gray-200 p-4 rounded-3xl">
+    <div className="flex lg:flex-row flex-col gap-4 items-center w-full bg-gray-200 p-4 rounded-3xl transition lg:hover:scale-105 duration-400 lg:cursor-pointer">
       {/* Job Section */}
       <div className="flex gap-2 w-full">
         <PiStudentLight className=" text-black text-3xl" />

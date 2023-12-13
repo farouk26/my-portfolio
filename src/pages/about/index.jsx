@@ -7,7 +7,7 @@ import { MdShareLocation } from "react-icons/md"
 
 function AboutPage() {
   return (
-    <section className="min-h-screen w-full mt-2">
+    <section className="min-h-screen w-full mt-2 px-2 lg:px-20">
       <div className="lg:h-72 min-h-fit">
         <div className="flex lg:flex-row justify-between items-center flex-col-reverse gap-2 lg:gap-4 text-gray-300 w-full lg:h-72 h-full">
           <div className="lg:w-[60%] mr-auto flex flex-col justify-start items-center lg:justify-center p-2 lg:p-4 gap-4 lg:h-full h-[35%]">
@@ -41,10 +41,10 @@ function AboutPage() {
         <div className="w-full min-h-fit bg-gray-200 rounded-3xl">
           <SummaryCard />
         </div>
-        <div className="grid grid-cols-5 h-full w-full gap-4 mt-5">
-          <div className="lg:col-span-3 col-span-5 min-h-fit w-full flex flex-col gap-4">
-            <div className="grid grid-cols-4 gap-4 w-full min-h-fit rounded-3xl bg-slate-800 px-4 pb-4">
-              <h2 className="lg:text-3xl text-gray-300 text-lg font-bold mt-3">
+        <div className="h-full w-full mt-2">
+          <div className="min-h-fit w-full flex flex-col gap-4">
+            <div className="grid grid-cols-4 gap-4 w-full min-h-fit rounded-3xl">
+              <h2 className="lg:text-3xl text-gray-300 text-lg font-bold my-3">
                 Education
               </h2>
               <div className="col-span-4">
@@ -72,11 +72,11 @@ function AboutPage() {
                 />
               </div>
             </div>
-            <div className="min-h-fit rounded-3xl bg-slate-800 p-4 flex flex-col gap-4">
-              <h1 className="lg:text-3xl text-lg text-gray-300 font-bold">
-                Languages
-              </h1>
-              <p className="p-3 text-black bg-gray-200 rounded-3xl">
+            <h1 className="lg:text-3xl text-lg text-gray-300 font-bold my-2">
+              Languages
+            </h1>
+            <div className="min-h-fit rounded-3xl flex flex-col gap-4 transition lg:hover:scale-105 duration-400 lg:cursor-pointer">
+              <p className="p-4 text-black bg-gray-200 rounded-3xl">
                 I am a native Arabic speaker, with advanced proficiency in both
                 English and French. These linguistic skills not only enrich my
                 communication abilities but also enhance my versatility as a web
@@ -85,45 +85,15 @@ function AboutPage() {
                 diverse language preferences.
               </p>
             </div>
-            <div className="bg-slate-800 rounded-3xl px-4 pb-4">
-              <h2 className="text-3xl font-bold text-gray-300 py-4">Stack</h2>
+            <div className="rounded-3xl px-4 pb-4">
+              <h2 className="lg:text-3xl text-lg font-bold text-gray-300 py-4">
+                Stack
+              </h2>
 
-              <div className="bg-gray-200 h-20 rounded-3xl">
+              <div className="bg-gray-200 h-20 rounded-3xl transition lg:hover:scale-105 duration-400 lg:cursor-pointer">
                 <StackCard />
               </div>
             </div>
-          </div>
-          <div className="lg:col-span-2 col-span-5 bg-gray-200 w-full text-black h-full flex gap-2 flex-col rounded-3xl p-4">
-            <h2 className="lg:text-2xl text-lg mb-2 font-bold pl-2">
-              Experience
-            </h2>
-            <ExperienceCard
-              title={"Pastry Shop Manager"}
-              year={"2018-2022"}
-              subtitle={"Iline's Pastry Shop"}
-              description={
-                "Managed and led interdisciplinary teams, fostering collaboration between pastry chefs, customer service representatives, and delivery staff."
-              }
-              location={"On-Site"}
-            />
-            <ExperienceCard
-              title={"Cashier"}
-              year={"2016-2017"}
-              subtitle={"Family Shop"}
-              description={
-                "Processed customer transactions efficiently by handling cash, credit cards, and digital payment methods and demonstrated excellent customer skills."
-              }
-              location={"On-Site"}
-            />
-            <ExperienceCard
-              title={"Gaming Clan Recruiter"}
-              year={"2013-2014"}
-              subtitle={"The Chaos Vanguard"}
-              description={
-                "Recruited and onboarded new members, contributing to the clan's growth & success, implemented a new recruitment strategy resulting in an increase in quality recruits."
-              }
-              location={"Remote"}
-            />
           </div>
         </div>
       </div>

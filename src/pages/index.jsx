@@ -7,11 +7,11 @@ import { LuUsers2 } from "react-icons/lu"
 
 function Home() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen lg:px-20 px-4">
       {/* Header */}
       <div className="lg:h-72 min-h-fit lg:pb-0 pb-10 border-b border-gray-300">
-        <div className=" flex flex-col p-2 lg:p-4 gap-4 lg:h-full h-[35%] lg:w-[50%] mr-auto w-full text-gray-300">
-          <h1 className="lg:text-5xl text-4xl font-bold w-full">
+        <div className=" flex flex-col p-2 lg:p-2 gap-4 lg:h-full h-[35%] lg:w-[40%] justify-center mr-auto w-full text-gray-300">
+          <h1 className="lg:text-5xl text-4xl font-bold">
             Hey there! I&apos;m Farouk...
           </h1>
           <p className="lg:text-md w-full">
@@ -19,7 +19,7 @@ function Home() {
             into visually, stunning, user-friendly websites.
           </p>
           <Link
-            className="btn btn-ghost btn-outline border-gray-900 btn-sm mt-1 rounded-full lg:w-2/5 w-full text-slate-900 font-semibold hover:bg-gray-100 hover:text-black bg-yellow-200 bg-opacity-[85%] self-start"
+            className="btn btn-ghost btn-outline border-gray-900 btn-sm mt-1 rounded-full lg:w-2/4 w-full text-slate-900 font-semibold hover:bg-gray-100 hover:text-black bg-yellow-200 bg-opacity-[85%] self-start"
             href="/about"
           >
             More about Me
@@ -27,7 +27,7 @@ function Home() {
         </div>
       </div>
       {/* Recent Projects Bento */}
-      <div className="w-full min-h-fit lg:py-6 px-4 mt-6 lg:mt-2">
+      <div className="w-full min-h-fit lg:py-6 mt-6 lg:mt-2">
         <h2 className="md:text-3xl text-2xl font-bold text-gray-300">
           Recent Projects
         </h2>
@@ -58,13 +58,12 @@ function Home() {
           </Link>
         </div>
       </div>
-      <h2 className="md:text-3xl text-2xl font-bold lg:mt-0 mt-8 text-gray-300 px-4 w-full">
-        Why Choose Me
-      </h2>
-
-      <div className="w-full h-full px-4 py-4">
+      <div className="w-full h-full mb-8">
+        <h2 className="md:text-3xl text-2xl font-bold text-gray-300 w-full mb-8">
+          Why Choose Me
+        </h2>
         {/* Bento Grid */}
-        <div className="grid grid-cols-4 w-full h-full gap-4 lg:px-20 mt-8">
+        <div className="grid grid-cols-4 w-full h-full gap-4">
           <div className="col-span-4 h-full lg:h-52 rounded-3xl">
             <InfoCard
               title={"Problem Solver"}
