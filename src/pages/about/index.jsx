@@ -85,14 +85,11 @@ function AboutPage() {
                 diverse language preferences.
               </p>
             </div>
-            <div className="rounded-3xl px-4 pb-4">
-              <h2 className="lg:text-3xl text-lg font-bold text-gray-300 py-4">
-                Stack
-              </h2>
-
-              <div className="bg-gray-200 h-20 rounded-3xl transition lg:hover:scale-105 duration-400 lg:cursor-pointer">
-                <StackCard />
-              </div>
+            <h2 className="lg:text-3xl text-lg font-bold text-gray-300 py-1">
+              Stack
+            </h2>
+            <div className="bg-gray-200 h-20 rounded-3xl transition lg:hover:scale-105 duration-400 lg:cursor-pointer">
+              <StackCard />
             </div>
           </div>
         </div>
