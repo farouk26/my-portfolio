@@ -9,13 +9,13 @@ function StackCard() {
   const autoplaySettings = {
     dots: false,
     infinite: true,
-    slidesToShow: 4,
+    slidesToShow: 7,
     slidesToScroll: 1,
     arrows: false,
     autoplay: true,
     pauseOnFocus: false,
     pauseOnHover: false,
-    speed: 3000,
+    speed: 6000,
     autoplaySpeed: 3000,
     cssEase: "linear",
 

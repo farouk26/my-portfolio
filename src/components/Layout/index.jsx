@@ -24,7 +24,7 @@ function Layout({ children }) {
         <SideBar />
       </div>
       <div className="lg:col-span-4 col-span-5 px-2 lg:px-8 pt-6 w-full overflow-y-auto">
-        <span className="badge rounded-xl bg-gray-100 text-green-600 font-semibold text-sm border-opacity-5 ml-1 md:ml-4 p-3 my-5 flex items-center gap-1">
+        <span className="badge rounded-xl bg-gray-100 text-green-600 font-semibold text-sm border-opacity-5 ml-5 lg:ml-20 p-3 my-5 flex items-center gap-1">
           <GoDotFill />
           Available for Work
         </span>
