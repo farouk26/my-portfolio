@@ -3,4 +3,12 @@ const nextConfig = {
   reactStrictMode: true,
 }
 
-module.exports = nextConfig
+module.exports = {
+  eslint: {
+    dirs: ["src"],
+  },
+  reactStrictMode: true,
+  images: {
+    domains: ["images.unsplash.com", "plus.unsplash.com", "img.freepik.com"],
+  },
+}
