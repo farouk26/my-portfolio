@@ -7,10 +7,10 @@ import Link from "next/link"
 
 function SideBar() {
   return (
-    <div className="fixed z-50 top-0 left-0 min-h-screen px-2 border-r border-gray-300 bg-white flex flex-col justify-between">
-      <div className="flex flex-col px-4 items-center">
+    <div className="sticky z-50 top-0 left-0 min-h-screen px-2 w-full bg-gray-100">
+      <div className="min-h-screen flex flex-col justify-between">
         {/* Info Section */}
-        <div className="flex flex-row gap-2 py-8 border-b border-gray-300">
+        <div className="flex flex-row gap-2 py-8 border-b border-gray-300 justify-center w-full">
           <figure className="h-16 w-16">
             <Image
               src="/images/avatar.jpg"
@@ -28,17 +28,15 @@ function SideBar() {
             </p>
           </div>
         </div>
-        {/* Navigation Links Section & Socials */}
         <NavigationMenu />
-      </div>
-      {/* Socials */}
-      <div className="flex items-center h-16 justify-center text-black border-t border-gray-300">
-        <Link className="btn btn-circle btn-ghost" href="/">
-          <FaGithub className="text-xl" />
-        </Link>
-        <Link className="btn btn-circle btn-ghost" href="/">
-          <CiLinkedin className="text-2xl" />
-        </Link>
+        <div className="flex items-center h-16 justify-center text-black border-t border-gray-300">
+          <Link className="btn btn-circle btn-ghost" href="/">
+            <FaGithub className="text-xl" />
+          </Link>
+          <Link className="btn btn-circle btn-ghost" href="/">
+            <CiLinkedin className="text-2xl" />
+          </Link>
+        </div>
       </div>
     </div>
   )

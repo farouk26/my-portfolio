@@ -1,31 +1,74 @@
-import { SiBootstrap } from "react-icons/si"
-import { FaGithub } from "react-icons/fa6"
-import { FaGitAlt } from "react-icons/fa"
-import { IoLogoFirebase } from "react-icons/io5"
-import { FaHtml5 } from "react-icons/fa"
-import { FaCss3Alt } from "react-icons/fa"
-import { RiJavascriptFill } from "react-icons/ri"
-import { BiLogoTailwindCss } from "react-icons/bi"
-import { SiMui } from "react-icons/si"
-import { FaReact } from "react-icons/fa"
-import { TbBrandNextjs } from "react-icons/tb"
-import { SiCanva } from "react-icons/si"
+import Image from "next/image"
+
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
+import skills from "@/libs/skills"
+import Slider from "react-slick"
 
 function StackCard() {
+  const autoplaySettings = {
+    dots: false,
+    infinite: true,
+    slidesToShow: 7,
+    slidesToScroll: 1,
+    arrows: false,
+    autoplay: true,
+    pauseOnFocus: false,
+    pauseOnHover: false,
+    speed: 6000,
+    autoplaySpeed: 3000,
+    cssEase: "linear",
+
+    responsive: [
+      {
+        breakpoint: 980, // from 820 px wide and down
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 860,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 720,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 550,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          initialSlide: 2,
+        },
+      },
+    ],
+  }
   return (
-    <div className="grid grid-cols-4 lg:grid-cols-12 p-2 gap-2 place-items-center px-4 rounded-3xl bg-gray-50 h-full lg:h-24 text-black text-xl lg:text-4xl lg:justify-center lg:items-center">
-      <FaHtml5 className="text-orange-600" />
-      <FaCss3Alt className="text-blue-700" />
-      <RiJavascriptFill className="text-yellow-400" />
-      <BiLogoTailwindCss className="text-cyan-500" />
-      <SiMui className="text-sky-500" />
-      <SiBootstrap className="text-violet-600" />
-      <FaReact className="text-cyan-400" />
-      <TbBrandNextjs className="text-zinc-900" />
-      <IoLogoFirebase className="text-amber-400" />
-      <FaGitAlt className="text-red-500" />
-      <FaGithub className="text-zinc-800" />
-      <SiCanva className="text-indigo-600" />
+    <div className="w-full h-full flex justfy-center items-center">
+      <Slider {...autoplaySettings} className="w-full min-h-fit">
+        {skills[0].map((part) => (
+          <div key={part.name}>
+            <Image
+              src={part.image}
+              alt={part.name}
+              width={120}
+              height={120}
+              className="object-cover w-20 px-1 rounded-full h-20"
+            />
+          </div>
+        ))}
+      </Slider>
     </div>
   )
 }
