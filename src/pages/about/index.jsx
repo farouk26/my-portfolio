@@ -21,7 +21,11 @@ function AboutPage() {
               forefront of design trends.
             </p>
             <Link
-              href={"/"}
+              href={
+                "https://drive.google.com/file/d/1JL269lIdCZKRhPJOm3tmQsu3f1SND2iv/view?usp=sharing"
+              }
+              rel="noreferrer noopener"
+              target="_blank"
               className="lg:w-1/3 w-full btn btn-sm bg-yellow-200 text-black self-start my-2 rounded-3xl hover:bg-gray-300 hover:text-black"
             >
               Download CV

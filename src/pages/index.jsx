@@ -4,6 +4,7 @@ import Link from "next/link"
 import { LiaBrainSolid } from "react-icons/lia"
 import { TbListDetails } from "react-icons/tb"
 import { LuUsers2 } from "react-icons/lu"
+import Slider from "@/components/Swiper"
 
 function Home() {
   return (
@@ -19,7 +20,7 @@ function Home() {
             into visually, stunning, user-friendly websites.
           </p>
           <Link
-            className="btn btn-ghost btn-outline border-gray-900 btn-sm mt-1 rounded-full lg:w-2/4 w-full text-slate-900 font-semibold hover:bg-gray-100 hover:text-black bg-yellow-200 bg-opacity-[85%] self-start"
+            className="btn btn-ghost btn-outline border-gray-900 btn-sm mt-1 rounded-full lg:w-2/4 w-full text-slate-900 font-semibold hover:bg-gray-100 hover:text-black bg-yellow-200 self-start"
             href="/about"
           >
             More about Me
@@ -52,7 +53,7 @@ function Home() {
           <div className="flex-1 h-[0.9px] bg-gray-300 mt-4"></div>
           <Link
             href="/projects"
-            className="btn btn-outline btn-sm text-sm mt-4 text-black bg-yellow-200 bg-opacity-[85%] rounded-3xl"
+            className="btn btn-outline btn-sm text-sm mt-4 text-black bg-yellow-200 rounded-3xl"
           >
             View All Projects
           </Link>
@@ -92,6 +93,12 @@ function Home() {
             />
           </div>
         </div>
+      </div>
+      <div className="w-full min-h-fit">
+        <h2 className="lg:text-3xl text-lg w-full text-gray-300 font-bold mb-6">
+          Testimonials
+        </h2>
+        <Slider />
       </div>
     </div>
   )
