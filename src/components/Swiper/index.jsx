@@ -78,16 +78,6 @@ export default function Slider() {
             }
           />
         </SwiperSlide>
-        <SwiperSlide>
-          <TestimonialCard
-            title={"Manel Hasna Haddoud"}
-            subtitle={"Front-End Developer"}
-            imageUrl={"/images/2.jpg"}
-            description={
-              "I had the pleasure of working with Faruk on our movie project. His exceptional leadership skills were evident as he guided and motivated the team. Faruk was always keen to learn and his enthusiasm inspired us all to improve. What impressed me the most was Farouk's willingness to help others. He was always available to answer questions and provide support, making him a true team player. Our collaboration flowed effortlessly because of his efforts. I strongly recommend Farouk for any project."
-            }
-          />
-        </SwiperSlide>
       </Swiper>
     </section>
   )
