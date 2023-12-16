@@ -5,7 +5,7 @@ import { AiOutlineUser } from "react-icons/ai"
 
 function NavigationMenu() {
   return (
-    <div className="flex flex-col gap-4 w-full h-96 justify-between py-10 items-center text-black">
+    <div className="flex flex-col gap-4 w-full h-96 py-10 items-center text-black">
       <Link
         className="btn flex items-center gap-1 justify-center btn-ghost rounded-2xl text-sm w-full"
         href="/"

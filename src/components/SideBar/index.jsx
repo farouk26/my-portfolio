@@ -7,10 +7,10 @@ import Link from "next/link"
 
 function SideBar() {
   return (
-    <div className="sticky z-50 top-0 left-0 min-h-screen px-2 w-full bg-gray-100">
-      <div className="min-h-screen flex flex-col justify-between">
+    <div className="sticky z-50 top-0 left-0 min-h-screen px-2 w-full bg-white">
+      <div className="min-h-screen flex flex-col">
         {/* Info Section */}
-        <div className="flex flex-row gap-2 py-8 border-b border-gray-300 justify-center w-full">
+        <div className="flex flex-col gap-3 py-8 border-b border-gray-300 items-center w-full">
           <figure className="h-16 w-16">
             <Image
               src="/images/avatar.jpg"
@@ -21,15 +21,14 @@ function SideBar() {
               className="w-full h-full object-cover rounded-lg"
             />
           </figure>
-          <div className="flex flex-col text-start justify-center">
+          <div className="flex flex-col text-center justify-center">
             <p className="font-bold text-black">Farouk Zemmouri</p>
             <p className="font-light text-gray-500 text-xs">
               Front-End Developer
             </p>
           </div>
         </div>
-        <NavigationMenu />
-        <div className="flex items-center h-16 justify-center text-black border-t border-gray-300">
+        <div className="flex items-center h-16 justify-center text-black">
           <Link className="btn btn-circle btn-ghost" href="/">
             <FaGithub className="text-xl" />
           </Link>
@@ -37,6 +36,7 @@ function SideBar() {
             <CiLinkedin className="text-2xl" />
           </Link>
         </div>
+        <NavigationMenu />
       </div>
     </div>
   )

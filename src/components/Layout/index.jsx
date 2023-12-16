@@ -15,7 +15,7 @@ const poppins = Poppins({
 function Layout({ children }) {
   return (
     <main
-      className={`${poppins.variable} font-poppins grid grid-cols-5 min-h-fit bg-slate-900`}
+      className={`${poppins.variable} font-poppins grid grid-cols-5 min-h-fit bg-white`}
     >
       <div className="col-span-5 lg:hidden block sticky top-0 z-50">
         <Navbar />
@@ -24,7 +24,7 @@ function Layout({ children }) {
         <SideBar />
       </div>
       <div className="lg:col-span-4 col-span-5 px-2 lg:px-8 pt-6 w-full overflow-y-auto">
-        <span className="badge rounded-xl bg-gray-100 text-green-600 font-semibold text-sm border-opacity-5 ml-5 lg:ml-20 p-3 my-5 flex items-center gap-1">
+        <span className="badge rounded-xl bg-white text-green-600 font-semibold text-sm border-opacity-5 mb-8 ml-5 lg:ml-20 p-3 my-5 flex items-center gap-1">
           <GoDotFill />
           Available for Work
         </span>

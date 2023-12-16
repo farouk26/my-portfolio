@@ -1,43 +1,78 @@
-import Carousel from "@/components/Swiper/Carousel"
-import Image from "next/image"
-import React from "react"
+import ProjectCard from "@/components/Cards/ProjectCard"
 
 function ProjectsPage() {
   return (
-    <div className="min-h-full w-full mt-2 ">
+    <div className="min-h-screen w-full mt-2 px-4 lg:px-20 ">
       {/* Header */}
-      <div className="lg:h-72 min-h-fit lg:pb-0 pb-10 border-b border-gray-300">
-        <div className="w-1/2">
-          <p className="lg:text-4xl mb-2 text-gray-200">4 DISTINCT PROJECTS </p>
-          <h1 className="lg:text-7xl text-4xl font-bold text-gray-200">
-            Designed, <span className="text-yellow-200">Developped</span> &
+      <div className="lg:h-80 border-b border-gray-300 min-h-fit w-full">
+        <div className="w-full md:w-2/3 lg:w-1/2 flex flex-col gap-4 h-full font-bold">
+          <p className="lg:text-5xl text-4xl text-black font-light">
+            <span className="text-cyan-500 lg:text-6xl text-5xl">4 </span>
+            Distinct Projects
+          </p>
+          <h1 className="lg:text-6xl text-5xl text-black">
+            Designed, <span className="text-green-300">Developped</span>,
             Delivered
           </h1>
         </div>
       </div>
-      {/* Projects */}
-      <div className="w-full min-h-fit mt-12">
-        <div className="bg-green-950 min-h-fit min-w-fit rounded-3xl grid grid-cols-6 content-center">
-          <div className="lg:col-span-4 col-span-6 lg:py-16 py-8 px-8">
-            <Carousel />
-          </div>
-          <div className="lg:col-span-2 col-span-6 min-h-fit flex justify-center flex-col">
-            <h1 className="text-3xl font-bold lg:pt-6 text-gray-200">
-              Reelio Movie Project
-            </h1>
-            <div className="flex flex-row gap-4 items-center p-2 mt-4 w-2/3">
-              <div className="flex-1 h-[0.9px] bg-gray-200 mt-1"></div>
-              <p className="text-gray-200">Web Application</p>
-            </div>
-            <p className="text-gray-200">
-              {" "}
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
-              maiores assumenda quisquam voluptas omnis enim sit, beatae
-              dignissimos odio! Expedita voluptate eum corrupti veniam
-              voluptates, rerum vitae atque repudiandae at.
-            </p>
-          </div>
-        </div>
+      <div className="flex flex-wrap justify-center gap-4 my-10 min-h-fit">
+        <ProjectCard
+          title={"Unify"}
+          websiteType={"Community Sharing Platform"}
+          description={
+            "A dynamic platform for movie enthusiasts, offering a user-friendly interface and modern technologies for discovering, exploring, and watching favorite movies and series."
+          }
+          appType={"Web App"}
+          tech_1={"Next.js"}
+          tech_2={"TailwindCSS"}
+          tech_3={"IMdb API"}
+          imageUrl={"/images/reelio-1.png"}
+          demoUrl={"https://movie-project-devsquad.vercel.app/"}
+          codeUrl={""}
+        />
+        <ProjectCard
+          title={"Reelio"}
+          websiteType={"Movie Platform"}
+          description={
+            "A dynamic platform for movie enthusiasts, offering a user-friendly interface and modern technologies for discovering, exploring, and watching favorite movies and series."
+          }
+          appType={"Web App"}
+          tech_1={"Next.js"}
+          tech_2={"TailwindCSS"}
+          tech_3={"IMdb API"}
+          imageUrl={"/images/reelio-1.png"}
+          demoUrl={"https://movie-project-devsquad.vercel.app/"}
+          codeUrl={""}
+        />
+        <ProjectCard
+          title={"Reelio"}
+          websiteType={"Movie Platform"}
+          description={
+            "A dynamic platform for movie enthusiasts, offering a user-friendly interface and modern technologies for discovering, exploring, and watching favorite movies and series."
+          }
+          appType={"Web App"}
+          tech_1={"Next.js"}
+          tech_2={"TailwindCSS"}
+          tech_3={"IMdb API"}
+          imageUrl={"/images/reelio-1.png"}
+          demoUrl={"https://movie-project-devsquad.vercel.app/"}
+          codeUrl={""}
+        />
+        <ProjectCard
+          title={"Reelio"}
+          websiteType={"Movie Platform"}
+          description={
+            "A dynamic platform for movie enthusiasts, offering a user-friendly interface and modern technologies for discovering, exploring, and watching favorite movies and series."
+          }
+          appType={"Web App"}
+          tech_1={"Next.js"}
+          tech_2={"TailwindCSS"}
+          tech_3={"IMdb API"}
+          imageUrl={"/images/reelio-1.png"}
+          demoUrl={"https://movie-project-devsquad.vercel.app/"}
+          codeUrl={""}
+        />
       </div>
     </div>
   )
