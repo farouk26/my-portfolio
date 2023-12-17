@@ -15,7 +15,7 @@ function ProjectCard({
 }) {
   return (
     <div className="card rounded-3xl group shadow-sm">
-      <figure className="relative lg:h-96 w-full lg:max-w-fit rounded-3xl">
+      <figure className="relative h-full w-full rounded-3xl">
         <Image
           src={imageUrl}
           alt={title}

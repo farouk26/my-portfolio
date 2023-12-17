@@ -2,79 +2,70 @@ import ProjectCard from "@/components/Cards/ProjectCard"
 
 function ProjectsPage() {
   return (
-    <div className="min-h-screen w-full mt-2 px-4 lg:px-20 ">
-      {/* Header */}
-      <div className="lg:h-80 border-b border-gray-300 min-h-fit w-full">
-        <div className="w-full md:w-2/3 lg:w-1/2 flex flex-col gap-4 h-full font-bold">
-          <p className="lg:text-5xl text-4xl text-black font-light">
-            <span className="text-cyan-500 lg:text-6xl text-5xl">4 </span>
-            Distinct Projects
-          </p>
-          <h1 className="lg:text-6xl text-5xl text-black">
-            Designed, <span className="text-green-300">Developped</span>,
-            Delivered
-          </h1>
+    <section className="min-h-screen w-full">
+      <div className="flex flex-col w-full min-h-fit gap-2">
+        {/* Header */}
+        <div className="bg-zinc-800 h-80 w-full rounded-3xl p-8 shadow-sm">
+          <div className="flex flex-col h-full gap-3 w-1/2 justify-end">
+            <h1 className="text-4xl uppercase font-bold text-white">
+              Projects
+            </h1>
+            <p className="text-md text-white font-light">
+              This section serves as a portfolio showcase, featuring a
+              compilation of my latest work.
+            </p>
+          </div>
+        </div>
+        <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 h-full w-full mb-8 mt-6">
+          <ProjectCard
+            title={"Unify"}
+            imageUrl={"/images/unify.png"}
+            websiteType={"Community Sharing"}
+            tech_1={"Next.js"}
+            tech_2={"TailwindCSS"}
+            tech_3={"Firebase"}
+            githubUrl={"https://github.com/202306-NEA-DZ-FEW/team-a"}
+            demoUrl={"https://unify-team-a.vercel.app/"}
+          />
+          <ProjectCard
+            title={"Reelio"}
+            imageUrl={"/images/reelio-1.png"}
+            websiteType={"Movie Platform"}
+            tech_1={"Next.js"}
+            tech_2={"TailwindCSS"}
+            tech_3={"IMdb.API"}
+            githubUrl={
+              "https://github.com/202306-NEA-DZ-FEW/movie-project-devsquad"
+            }
+            demoUrl={"https://movie-project-devsquad.vercel.app/"}
+          />
+          <ProjectCard
+            title={"Neon City"}
+            imageUrl={"/images/neoncity.png"}
+            websiteType={"Mini Game"}
+            tech_1={"HTML"}
+            tech_2={"CSS"}
+            tech_3={"Vanilla JS"}
+            demoUrl={"https://madlibs-404-brain-not-found.vercel.app/"}
+            githubUrl={
+              "https://github.com/202306-NEA-DZ-FEW/madlibs-404-brain-not-found"
+            }
+          />
+          <ProjectCard
+            title={"Alibaba Lite"}
+            imageUrl={"/images/alibabalite.png"}
+            websiteType={"E-Commerce Website"}
+            tech_1={"Next.js"}
+            tech_2={"TailwindCSS"}
+            tech_3={"Firebase"}
+            demoUrl={"https://alibabalite-two.vercel.app/"}
+            githubUrl={
+              "https://github.com/farouk26/AlibabaLite-E-Commerce-Website"
+            }
+          />
         </div>
       </div>
-      <div className="flex flex-wrap justify-center gap-4 my-10 min-h-fit">
-        <ProjectCard
-          title={"Unify"}
-          websiteType={"Community Sharing Platform"}
-          description={
-            "A dynamic platform for movie enthusiasts, offering a user-friendly interface and modern technologies for discovering, exploring, and watching favorite movies and series."
-          }
-          appType={"Web App"}
-          tech_1={"Next.js"}
-          tech_2={"TailwindCSS"}
-          tech_3={"IMdb API"}
-          imageUrl={"/images/reelio-1.png"}
-          demoUrl={"https://movie-project-devsquad.vercel.app/"}
-          codeUrl={""}
-        />
-        <ProjectCard
-          title={"Reelio"}
-          websiteType={"Movie Platform"}
-          description={
-            "A dynamic platform for movie enthusiasts, offering a user-friendly interface and modern technologies for discovering, exploring, and watching favorite movies and series."
-          }
-          appType={"Web App"}
-          tech_1={"Next.js"}
-          tech_2={"TailwindCSS"}
-          tech_3={"IMdb API"}
-          imageUrl={"/images/reelio-1.png"}
-          demoUrl={"https://movie-project-devsquad.vercel.app/"}
-          codeUrl={""}
-        />
-        <ProjectCard
-          title={"Reelio"}
-          websiteType={"Movie Platform"}
-          description={
-            "A dynamic platform for movie enthusiasts, offering a user-friendly interface and modern technologies for discovering, exploring, and watching favorite movies and series."
-          }
-          appType={"Web App"}
-          tech_1={"Next.js"}
-          tech_2={"TailwindCSS"}
-          tech_3={"IMdb API"}
-          imageUrl={"/images/reelio-1.png"}
-          demoUrl={"https://movie-project-devsquad.vercel.app/"}
-          codeUrl={""}
-        />
-        <ProjectCard
-          title={"Reelio"}
-          websiteType={"Movie Platform"}
-          description={
-            "A dynamic platform for movie enthusiasts, offering a user-friendly interface and modern technologies for discovering, exploring, and watching favorite movies and series."
-          }
-          appType={"Web App"}
-          tech_1={"Next.js"}
-          tech_2={"TailwindCSS"}
-          tech_3={"IMdb API"}
-          imageUrl={"/images/reelio-1.png"}
-          demoUrl={"https://movie-project-devsquad.vercel.app/"}
-          codeUrl={""}
-        />
-      </div>
-    </div>
+    </section>
   )
 }
 
