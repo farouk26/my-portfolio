@@ -6,12 +6,15 @@ import Stacks from "@/components/Cards/Stacks"
 import Link from "next/link"
 import ProjectCard from "@/components/Cards/ProjectCard"
 import Image from "next/image"
+import Swiper from "swiper"
+import Carousel from "@/components/Swiper/Carousel"
+import Slider from "@/components/Swiper"
 
 function Home() {
   return (
     <section className="min-h-screen">
       <div className="flex flex-col min-h-fit w-full gap-4">
-        <div className="h-80 bg-zinc-800 shadow-sm rounded-3xl flex items-start justify-center lg:justify-start lg:items-center lg:flex-row flex-col gap-8 p-8">
+        <div className="min-h-fit bg-zinc-800 shadow-sm rounded-3xl flex items-start justify-center lg:justify-start lg:items-center lg:flex-row flex-col gap-8 p-8">
           {/* Header */}
           <div className="lg:w-2/3 flex flex-col gap-4 w-full">
             <h1 className="text-5xl uppercase font-bold text-white">
@@ -79,7 +82,7 @@ function Home() {
             <div className="pl-2 py-3 flex justify-between">
               <h1 className="text-2xl uppercase font-bold text-white">Stack</h1>
               <Link
-                className="btn btn-sm rounded-2xl bg-green-400 text-white w-1/4 lg:w-1/5"
+                className="btn btn-sm rounded-2xl bg-green-500 text-black w-1/4 lg:w-1/5"
                 href={"/projects"}
               >
                 View All
@@ -127,6 +130,10 @@ function Home() {
               tech_3={"Vanilla JS"}
             />
           </div>
+        </div>
+        {/* Testimonials */}
+        <div className="min-h-fit w-full">
+          <Slider />
         </div>
       </div>
     </section>

@@ -55,7 +55,7 @@ function SideBar() {
             Contact
           </Link>
         </div>
-        <div className="flex flex-row gap-2 items-center py-10">
+        <div className="flex lg:flex-row gap-2 items-center py-10">
           <figure className="w-16 h-16">
             <Image
               src="/images/avatar.jpg"
