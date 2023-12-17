@@ -5,14 +5,14 @@ import { GoDotFill } from "react-icons/go"
 
 function SideBar() {
   return (
-    <div className="sticky top-2 bg-zinc-800 rounded-3xl h-[100vh] px-3 py-8">
+    <div className="rounded-3xl px-3 h-[100%] bg-zinc-800 py-8">
       <div className="flex flex-col justify-between min-h-full items-center">
         <div className="w-full">
           <span className="w-full badge font-light rounded-xl bg-gray-300 text-green-700 text-sm border-opacity-5 mb-8 p-3 flex items-center gap-1">
             <GoDotFill />
             Available for Work
           </span>
-          <figure className="mb-8">
+          <figure>
             <Image
               src="/images/logo-1.svg"
               alt=""
