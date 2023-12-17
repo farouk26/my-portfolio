@@ -5,8 +5,8 @@ import { GoDotFill } from "react-icons/go"
 
 function SideBar() {
   return (
-    <div className="sticky top-2 bg-zinc-800 rounded-3xl h-screen px-6 py-10">
-      <div className="flex flex-col justify-between h-full">
+    <div className="sticky top-2 bg-zinc-800 rounded-3xl min-h-screen px-6 py-10">
+      <div className="flex flex-col justify-between min-h-screen">
         <div className="w-full">
           <span className="w-full badge font-light rounded-xl bg-gray-300 text-green-700 text-sm border-opacity-5 mb-5 p-3 flex items-center gap-1">
             <GoDotFill />
@@ -55,7 +55,7 @@ function SideBar() {
             Contact
           </Link>
         </div>
-        <div className="flex lg:flex-row gap-2 items-center py-10">
+        <div className="flex lg:flex-col gap-2 items-center py-10">
           <figure className="w-16 h-16">
             <Image
               src="/images/avatar.jpg"

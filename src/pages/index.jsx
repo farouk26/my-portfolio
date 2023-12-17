@@ -6,8 +6,6 @@ import Stacks from "@/components/Cards/Stacks"
 import Link from "next/link"
 import ProjectCard from "@/components/Cards/ProjectCard"
 import Image from "next/image"
-import Swiper from "swiper"
-import Carousel from "@/components/Swiper/Carousel"
 import Slider from "@/components/Swiper"
 
 function Home() {
@@ -17,10 +15,10 @@ function Home() {
         <div className="min-h-fit bg-zinc-800 shadow-sm rounded-3xl flex items-start justify-center lg:justify-start lg:items-center lg:flex-row flex-col gap-8 p-8">
           {/* Header */}
           <div className="lg:w-2/3 flex flex-col gap-4 w-full">
-            <h1 className="text-5xl uppercase font-bold text-white mb-2">
+            <h1 className="text-4xl uppercase font-bold text-white mb-2">
               Hello! i&apos;m farouk.
             </h1>
-            <p className="text-lg text-white font-light">
+            <p className="text-md text-white font-light">
               Born & Raised in the culturally rich city of Medea, Algeria, I am
               a 26-year-old professional deeply engaged in the realm of web
               development. My initial background lies in pythopathology, from
@@ -29,9 +27,9 @@ function Home() {
               experiences, I bring forth a combination of aesthetic finesse and
               flawless functionality. I believe in teamwork and constant
               learning. Outside of work, I&apos;m a big fan of video games,
-              enjoy hanging out with friends, hitting the gym, going on hikes,
-              and occasionally camping under the stars. I also like keeping up
-              with new technologies, always eager to learn and stay updated.
+              enjoy hanging out with friends $ hitting the gym, I also like
+              keeping up with new technologies, always eager to learn and stay
+              updated.
             </p>
           </div>
           <figure className="h-48 w-48 lg:block hidden">
@@ -48,7 +46,7 @@ function Home() {
         {/* Second Section */}
         <div className="flex lg:flex-row flex-col w-full min-h-fit gap-8">
           {/* About */}
-          <div className="flex flex-col lg:w-[50%] w-full">
+          <div className="flex flex-col lg:w-[50%] w-full min-h-fit">
             <h1 className="pl-2 py-3 text-2xl uppercase font-bold text-white">
               About
             </h1>
@@ -111,20 +109,26 @@ function Home() {
           </h1>
           <div className="flex flex-col lg:flex-row w-full min-h-fit gap-6">
             <ProjectCard
-              title={"Reelio"}
+              title={"Unify"}
               imageUrl={"/images/unify.png"}
               websiteType={"Community Sharing"}
               tech_1={"Next.js"}
               tech_2={"TailwindCSS"}
-              tech_3={"IMdb.API"}
+              tech_3={"Firebase"}
+              githubUrl={"https://github.com/202306-NEA-DZ-FEW/team-a"}
+              demoUrl={"https://unify-team-a.vercel.app/"}
             />
             <ProjectCard
-              title={"Unify"}
+              title={"Reelio"}
               imageUrl={"/images/reelio-1.png"}
-              websiteType={"Community Sharing"}
+              websiteType={"Movie Platform"}
               tech_1={"Next.js"}
               tech_2={"TailwindCSS"}
-              tech_3={"Firebase"}
+              tech_3={"IMdb.API"}
+              githubUrl={
+                "https://github.com/202306-NEA-DZ-FEW/movie-project-devsquad"
+              }
+              demoUrl={"https://movie-project-devsquad.vercel.app/"}
             />
             <ProjectCard
               title={"Neon City"}
@@ -133,6 +137,10 @@ function Home() {
               tech_1={"HTML"}
               tech_2={"CSS"}
               tech_3={"Vanilla JS"}
+              demoUrl={"https://madlibs-404-brain-not-found.vercel.app/"}
+              githubUrl={
+                "https://github.com/202306-NEA-DZ-FEW/madlibs-404-brain-not-found"
+              }
             />
           </div>
         </div>
