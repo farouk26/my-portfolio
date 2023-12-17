@@ -7,11 +7,13 @@ function SideBar() {
   return (
     <div className="rounded-3xl px-3 h-[100%] bg-zinc-800 py-8">
       <div className="flex flex-col justify-between min-h-full items-center">
-        <div className="w-full">
-          <span className="w-full badge font-light rounded-xl bg-gray-300 text-green-700 text-sm border-opacity-5 mb-8 p-3 flex items-center gap-1">
-            <GoDotFill />
-            Available for Work
-          </span>
+        <div className="w-full min-h-fit mb-8">
+          <div className="flex w-full bg-white h-0 justify-center mb-16">
+            <span className="w-48 py-3 badge font-light rounded-xl bg-gray-300 text-green-700 text-sm border-opacity-5 mb-8 flex items-center gap-1">
+              <GoDotFill />
+              Available for Work
+            </span>
+          </div>
           <figure>
             <Image
               src="/images/logo-1.svg"

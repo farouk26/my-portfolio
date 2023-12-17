@@ -25,7 +25,7 @@ function Layout({ children }) {
         <div className="lg:hidden block sticky top-0 z-50">
           <Navbar />
         </div>
-        <div className="w-1/5 relative">
+        <div className="w-1/5 relative lg:block hidden">
           <div className="fixed w-1/5 h-full py-6 top-0 rounded-3xl">
             <SideBar />
           </div>
