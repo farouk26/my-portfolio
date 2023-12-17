@@ -11,6 +11,7 @@ function TestimonialCard({ imageUrl, title, subtitle, description }) {
               src={imageUrl}
               height={400}
               width={400}
+              priority
               className="object-cover h-full w-full rounded-full"
             />
           </figure>

@@ -26,7 +26,7 @@ export default function Slider() {
         }}
         navigation={false}
         modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper"
+        className="mySwiper min-h-fit"
       >
         <SwiperSlide>
           <TestimonialCard

@@ -85,7 +85,7 @@ function Home() {
             <div className="pl-2 py-3 flex justify-between">
               <h1 className="text-2xl uppercase font-bold text-white">Stack</h1>
               <Link
-                className="btn btn-sm rounded-2xl bg-green-500 text-black w-1/4 lg:w-1/5"
+                className="btn btn-sm rounded-2xl bg-green-600 text-gray-200 hover:bg-blue-600 w-1/4 lg:w-24"
                 href={"/projects"}
               >
                 View All
