@@ -17,16 +17,21 @@ function Home() {
         <div className="min-h-fit bg-zinc-800 shadow-sm rounded-3xl flex items-start justify-center lg:justify-start lg:items-center lg:flex-row flex-col gap-8 p-8">
           {/* Header */}
           <div className="lg:w-2/3 flex flex-col gap-4 w-full">
-            <h1 className="text-5xl uppercase font-bold text-white">
+            <h1 className="text-5xl uppercase font-bold text-white mb-2">
               Hello! i&apos;m farouk.
             </h1>
-            <p className="text-xl text-white">
-              I am a native Arabic speaker, with advanced proficiency in both
-              English and French. These linguistic skills not only enrich my
-              communication abilities but also enhance my versatility as a web
-              developer. They enable me to create user-friendly interfaces and
-              seamless online experiences that cater to a global audience with
-              diverse language preferences.
+            <p className="text-lg text-white">
+              Born & Raised in the culturally rich city of Medea, Algeria, I am
+              a 26-year-old professional deeply engaged in the realm of web
+              development. My initial background lies in pythopathology, from
+              which I seamlessly transitioned into the world of front-end
+              development. Specializing in the creation of user-centric web
+              experiences, I bring forth a combination of aesthetic finesse and
+              flawless functionality. I believe in teamwork and constant
+              learning. Outside of work, I&apos;m a big fan of video games,
+              enjoy hanging out with friends, hitting the gym, going on hikes,
+              and occasionally camping under the stars. I also like keeping up
+              with new technologies, always eager to learn and stay updated.
             </p>
           </div>
           <figure className="h-48 w-48 lg:block hidden">
