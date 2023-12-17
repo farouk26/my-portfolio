@@ -12,7 +12,7 @@ function MobileMenu() {
   return (
     <Menu as="div" className="text-left block lg:hidden">
       <div>
-        <Menu.Button className="w-full justify-center bg-white px-3 py-2 text-sm font-semibold text-gray-900 hover:bg-gray-50 btn-circle btn-ghost">
+        <Menu.Button className="w-full justify-center bg-zing-800 px-3 py-2 text-sm font-semibold text-white btn-circle btn-ghost">
           {({ open }) =>
             //I used the Built-In state from Headless UI to harmonize between the two icons down below
             open ? (
@@ -33,47 +33,55 @@ function MobileMenu() {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items className="absolute px-8 right-0 z-10 lg:mr-4 w-screen md:w-screen divide-y divide-gray-400 origin-top-right rounded-md bg-white text-black focus:outline-none py-2">
+        <Menu.Items className="absolute px-8 right-0 z-10 lg:mr-4 max-w-full md:w-screen divide-y divide-white mt-3 origin-top-0 rounded-lg bg-zinc-800 text-white focus:outline-none py-2">
           <div className="py-6 mb-2 flex flex-col gap-6">
             <Menu.Item>
               <Link
                 href="/"
-                className="block px-4 py-2 mb-2 text-center text-lg"
+                className="block px-4 py-2 mb-2 text-center text-2xl uppercase font-bold"
               >
                 Home
               </Link>
             </Menu.Item>
             <Menu.Item>
               <Link
-                href="/about"
-                className="block px-4 py-2 mb-2 text-center text-lg"
-              >
-                About
-              </Link>
-            </Menu.Item>
-            <Menu.Item>
-              <Link
-                href="/about"
-                className="block px-4 py-2 mb-2 text-center text-lg"
+                href="/projects"
+                className="block px-4 py-2 mb-2 text-center text-2xl uppercase font-bold"
               >
                 Projects
               </Link>
             </Menu.Item>
             <Menu.Item>
               <Link
+                href="/education"
+                className="block px-4 py-2 mb-2 text-center text-2xl uppercase font-bold"
+              >
+                Education
+              </Link>
+            </Menu.Item>
+            <Menu.Item>
+              <Link
+                href="/stack"
+                className="block px-4 py-2 mb-2 text-center text-2xl uppercase font-bold"
+              >
+                Stack
+              </Link>
+            </Menu.Item>
+            <Menu.Item>
+              <Link
                 href="/contact"
-                className="block px-4 py-2 mb-2 text-center text-lg"
+                className="block px-4 py-2 mb-2 text-center text-2xl uppercase font-bold"
               >
                 Contact
               </Link>
             </Menu.Item>
           </div>
-          <div className="flex gap-6 items-center justify-center py-2 text-black">
+          <div className="flex gap-6 items-center justify-center py-2 text-white">
             <Link className="btn btn-circle btn-ghost" href="/">
-              <FaGithub className="text-xl" />
+              <FaGithub className="text-2xl" />
             </Link>
             <Link className="btn btn-circle btn-ghost" href="/">
-              <CiLinkedin className="text-2xl" />
+              <CiLinkedin className="text-3xl" />
             </Link>
           </div>
         </Menu.Items>

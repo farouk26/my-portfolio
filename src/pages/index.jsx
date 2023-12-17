@@ -1,122 +1,135 @@
 import InfoCard from "@/components/Cards/InfoCard"
-import ProjectCard from "@/components/Cards/ProjectCard"
-import Link from "next/link"
 import { LiaBrainSolid } from "react-icons/lia"
 import { TbListDetails } from "react-icons/tb"
 import { LuUsers2 } from "react-icons/lu"
-import Slider from "@/components/Swiper"
-import { FaGithub } from "react-icons/fa"
-import { TiLink } from "react-icons/ti"
+import Stacks from "@/components/Cards/Stacks"
+import Link from "next/link"
+import ProjectCard from "@/components/Cards/ProjectCard"
+import Image from "next/image"
+
 function Home() {
   return (
-    <div className="min-h-screen lg:px-20 px-4">
-      {/* Header */}
-      <div className="lg:h-80 min-h-fit lg:pb-0 pb-10 border-b border-gray-300">
-        <div className=" flex flex-col p-2 lg:p-2 gap-4 lg:h-full h-[35%] lg:w-[40%] justify-center mr-auto w-full text-black">
-          <h1 className="lg:text-5xl text-4xl font-bold">
-            Hey there! I&apos;m <span className="text-green-300">Farouk</span>
-            ...
+    <section className="min-h-screen">
+      <div className="flex flex-col min-h-fit w-full gap-4">
+        <div className="h-80 bg-zinc-800 shadow-sm rounded-3xl flex items-start justify-center lg:justify-start lg:items-center lg:flex-row flex-col gap-8 p-8">
+          {/* Header */}
+          <div className="lg:w-2/3 flex flex-col gap-4 w-full">
+            <h1 className="text-5xl uppercase font-bold text-white">
+              Hello! i&apos;m farouk.
+            </h1>
+            <p className="text-xl text-white">
+              I am a native Arabic speaker, with advanced proficiency in both
+              English and French. These linguistic skills not only enrich my
+              communication abilities but also enhance my versatility as a web
+              developer. They enable me to create user-friendly interfaces and
+              seamless online experiences that cater to a global audience with
+              diverse language preferences.
+            </p>
+          </div>
+          <figure className="h-48 w-48 lg:block hidden">
+            <Image
+              src="/images/2.jpg"
+              alt=""
+              height={500}
+              width={500}
+              priority
+              className="w-full h-full object-cover rounded-2xl"
+            />
+          </figure>
+        </div>
+        {/* Second Section */}
+        <div className="flex lg:flex-row flex-col w-full min-h-fit gap-8">
+          {/* About */}
+          <div className="flex flex-col lg:w-[50%] w-full">
+            <h1 className="pl-2 py-3 text-2xl uppercase font-bold text-white">
+              About
+            </h1>
+            <div className="grid grid-cols-4 gap-4">
+              <div className="lg:col-span-2 col-span-4">
+                <InfoCard
+                  title={"Problem Solver"}
+                  description={
+                    "I bring a fresh perspective and a passion for innovative solutions to the table.  My proficiency in JavaScript, React.js, Next.js, and Firebase enables me to craft dynamic and cutting-edge web applications."
+                  }
+                  icon={<LiaBrainSolid />}
+                />
+              </div>
+              <div className="lg:col-span-2 col-span-4">
+                <InfoCard
+                  title={"Detail Oriented"}
+                  description={
+                    "I pride myself on my meticulous attention to detail, ensuring that every pixel aligns seamlessly with the overall design. I am committed to delivering not just functional but aesthetically pleasing websites."
+                  }
+                  icon={<TbListDetails />}
+                />
+              </div>
+              <div className="col-span-4">
+                <InfoCard
+                  title={"Team Player & Fast Learner"}
+                  icon={<LuUsers2 />}
+                  description={
+                    "In the dynamic world of web development, collaboration is key. I thrive in team environments, fostering open communication and working seamlessly with designers and fellow developers."
+                  }
+                />
+              </div>
+            </div>
+          </div>
+          {/* Stack */}
+          <div className="flex flex-col lg:w-1/2 w-full">
+            <div className="pl-2 py-3 flex justify-between">
+              <h1 className="text-2xl uppercase font-bold text-white">Stack</h1>
+              <Link
+                className="btn btn-sm rounded-2xl bg-green-400 text-white w-1/4 lg:w-1/5"
+                href={"/projects"}
+              >
+                View All
+              </Link>
+            </div>
+            <div className="flex flex-col gap-5 w-full">
+              <Stacks technology={"HTML"} image={"/images/html.png"} />
+              <Stacks technology={"CSS"} image={"/images/css.png"} />
+              <Stacks
+                technology={"JAVASCRIPT"}
+                image={"/images/javascript.png"}
+              />
+              <Stacks technology={"REACT.JS"} image={"/images/react.png"} />
+            </div>
+          </div>
+        </div>
+        {/* Projects Section */}
+        <div className="w-full min-h-fit mb-8">
+          <h1 className="pl-2 py-3 text-2xl uppercase text-white font-bold mb-2">
+            Selected Projects
           </h1>
-          <p className="lg:text-md w-full">
-            A passionate front-end web developer with a knack for turning ideas
-            into visually, stunning, user-friendly websites.
-          </p>
-          <Link
-            className="btn btn-ghost text-black border border-opacity-10 btn-sm mt-1 rounded-full lg:w-2/4 w-full font-semibold hover:bg-green-300 hover:text-black bg-green-100 self-start"
-            href="/about"
-          >
-            More about Me
-          </Link>
-        </div>
-      </div>
-      {/* Recent Projects Bento */}
-      <div className="w-full min-h-fit lg:py-6 mt-6 lg:mt-2">
-        <h2 className="md:text-3xl text-2xl font-bold text-black">
-          Selected Projects
-        </h2>
-        {/* Projects */}
-        <div className="flex lg:flex-row flex-col gap-6 lg:gap-4 justify-center w-full min-h-fit mt-8">
-          <ProjectCard
-            title={"Neon City"}
-            websiteType={"Mini-Game"}
-            appType={"Web App"}
-            imageUrl={"/images/madlibs.png"}
-            description={
-              "Neon City is an interactive mini-game, allowing users to personalize pre-generated stories by filling in the blanks creating dynamic original stories."
-            }
-            tech_1={"HTML"}
-            tech_2={"CSS"}
-            tech_3={"Javascript"}
-            demoUrl={""}
-            codeUrl={""}
-          />
-          <ProjectCard
-            title={"Reelio"}
-            websiteType={"Movie Platform"}
-            description={
-              "A dynamic platform for movie enthusiasts, offering a user-friendly interface and modern technologies for discovering, exploring, and watching favorite movies and series."
-            }
-            appType={"Web App"}
-            tech_1={"Next.js"}
-            tech_2={"TailwindCSS"}
-            tech_3={"IMdb API"}
-            imageUrl={"/images/reelio-1.png"}
-            demoUrl={"https://movie-project-devsquad.vercel.app/"}
-            codeUrl={""}
-          />
-        </div>
-        <div className="flex flex-row gap-4 items-center p-2 mt-4 w-full">
-          <div className="flex-1 h-[0.9px] bg-gray-300 mt-4"></div>
-          <Link
-            href="/projects"
-            className="btn btn-outline btn-sm text-sm mt-4 text-black bg-yellow-200 rounded-3xl"
-          >
-            View All Projects
-          </Link>
-        </div>
-      </div>
-      <div className="w-full h-full mb-8">
-        <h2 className="md:text-3xl text-2xl font-bold text-black w-full mb-8">
-          Why Choose Me
-        </h2>
-        {/* Bento Grid */}
-        <div className="grid grid-cols-4 w-full h-full gap-4">
-          <div className="col-span-4 h-full lg:h-52 rounded-3xl">
-            <InfoCard
-              title={"Problem Solver"}
-              description={
-                "I bring a fresh perspective and a passion for innovative solutions to the table. My proficiency in JavaScript, React.js, Next.js, and Firebase enables me to craft dynamic and cutting-edge web applications. I thrive on dissecting challenges, finding elegant solutions, and transforming abstract concepts into tangible, user-centric experiences. When you choose me, you're choosing a developer with a knack for turning complex problems into user-friendly solutions."
-              }
-              icon={<LiaBrainSolid />}
+          <div className="flex flex-col lg:flex-row w-full min-h-fit gap-6">
+            <ProjectCard
+              title={"Reelio"}
+              imageUrl={"/images/unify.png"}
+              websiteType={"Community Sharing"}
+              tech_1={"Next.js"}
+              tech_2={"TailwindCSS"}
+              tech_3={"IMdb.API"}
             />
-          </div>
-          <div className="lg:col-span-2 col-span-4 h-full lg:h-64 rounded-3xl">
-            <InfoCard
-              title={"Detail-Oriented"}
-              description={
-                "When it comes to creating visually appealing websites, precision matters. I pride myself on my meticulous attention to detail, ensuring that every pixel aligns seamlessly with the overall design.  I am committed to delivering not just functional but aesthetically pleasing websites."
-              }
-              icon={<TbListDetails />}
+            <ProjectCard
+              title={"Unify"}
+              imageUrl={"/images/reelio-1.png"}
+              websiteType={"Community Sharing"}
+              tech_1={"Next.js"}
+              tech_2={"TailwindCSS"}
+              tech_3={"Firebase"}
             />
-          </div>
-          <div className="lg:col-span-2 col-span-4 h-full lg:h-64 rounded-3xl">
-            <InfoCard
-              title={" Team Player & Fast Learner"}
-              description={
-                "In the dynamic world of web development, collaboration is key. I thrive in team environments, fostering open communication and working seamlessly with designers and fellow developers. I am not just an individual contributor; I'm a team player who adapts swiftly to new technologies."
-              }
-              icon={<LuUsers2 />}
+            <ProjectCard
+              title={"Neon City"}
+              imageUrl={"/images/neoncity.png"}
+              websiteType={"Mini Game"}
+              tech_1={"HTML"}
+              tech_2={"CSS"}
+              tech_3={"Vanilla JS"}
             />
           </div>
         </div>
       </div>
-      <div className="w-full min-h-fit">
-        <h2 className="lg:text-3xl text-lg w-full text-black font-bold mb-6">
-          Testimonials
-        </h2>
-        <Slider />
-      </div>
-    </div>
+    </section>
   )
 }
 

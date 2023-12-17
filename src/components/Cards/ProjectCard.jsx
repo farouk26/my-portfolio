@@ -1,66 +1,54 @@
 import Image from "next/image"
 import Link from "next/link"
 import { FaGithub } from "react-icons/fa"
+import { RiLinkUnlink } from "react-icons/ri"
 
-function ProjectCard({
-  title,
-  websiteType,
-  appType,
-  imageUrl,
-  description,
-  tech_1,
-  tech_2,
-  tech_3,
-  tech_4,
-  demoUrl,
-  codeUrl,
-}) {
+function ProjectCard({ title, websiteType, imageUrl, tech_1, tech_2, tech_3 }) {
   return (
-    <div class="relative flex flex-col mt-6 text-gray-700 bg-gray-50 shadow-md bg-clip-border rounded-xl w-full lg:w-96">
-      <div class="relative group h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
+    <div className="card rounded-3xl group shadow-sm">
+      <figure className="relative lg:h-96 w-full lg:max-w-fit rounded-3xl">
         <Image
           src={imageUrl}
-          alt="card-image"
-          height={500}
-          width={500}
-          className="h-full w-full object-cover group-hover:scale-110 transition duration-500"
+          alt={title}
+          width={200}
+          height={200}
+          placeholder="blur"
+          blurDataURL="public/images/blur.jpg"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          className="group-hover:scale-110 saturate-100 group-hover:blur-[2px] hover:saturate-50 brightness-[0.73] object-cover object-center w-full h-full duration-500"
         />
-      </div>
-      <div class="py-4 px-6">
-        <p class="mb-2 text-2xl font-semibold ">{title}</p>
-        <div className="flex items-center gap-2 mb-2">
-          <span className="text-green-400 font-bold text-sm">
-            {websiteType}
-          </span>
-          <span className="text-green-400 font-bold text-sm">{appType}</span>
-        </div>
-        <p class="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
-          {description}
-        </p>
-      </div>
-      <div class="flex lg:justify-between flex-col gap-4 px-6 py-4">
-        <div className="flex items-center text-sm gap-2">
-          <span className="font-semibold text-black">{tech_1}</span>
-          <span className="font-semibold text-cyan-700">{tech_2}</span>
-          <span className="font-semibold text-blue-800">{tech_3}</span>
-        </div>
-        <div className="flex lg:flex-row flex-col items-center gap-2">
-          <Link
-            href={demoUrl}
-            target="_blank"
-            rel="noreferer"
-            className="btn btn-sm bg-green-100 text-black border border-opacity-10 hover:bg-green-400 hover:text-black hover:border-opacity-10 lg:w-1/2 w-full"
-          >
-            Demo
-          </Link>
-          <Link
-            href={codeUrl}
-            target="_blank"
-            rel="noreferer"
-            className="btn bg-green-100 text-black border border-opacity-10 btn-sm hover:bg-green-400 hover:text-black hover:border-opacity-10 lg:w-1/2 w-full"
-          >
-            Code
-          </Link>
+      </figure>
+      <div className="absolute bottom-[5%] flex flex-col px-3 w-full">
+        <h3 className="text-white text-lg font-bold capitalize">{title}</h3>
+        <span className="text-sm text-white pl-1 font-semibold mb-1 w-full">
+          {websiteType}
+        </span>
+        <div className="flex justify-between items-center w-full">
+          <div className="flex items-center gap-1 p-0 w-full">
+            <span className="badge badge-md font-light flex gap-1 text-white border-opacity-30 bg-black bg-opacity-25">
+              {tech_1}
+            </span>
+            <span className="badge badge-md font-light text-white border-white border-opacity-30 bg-black bg-opacity-25">
+              {tech_2}
+            </span>
+            <span className="badge badge-md font-light text-white border-white border-opacity-30 bg-black bg-opacity-25">
+              {tech_3}
+            </span>
+          </div>
+          <div className="flex gap-2 items-center">
+            <Link
+              className="btn btn-circle btn-sm bg-gray-300 border border-opacity-0 text-black hover:bg-yellow-100 hover:text-black"
+              href={""}
+            >
+              <FaGithub />
+            </Link>
+            <Link
+              className="btn btn-circle btn-sm bg-gray-300 border-opacity-0 text-black hover:bg-yellow-100 hover:text-black"
+              href={""}
+            >
+              <RiLinkUnlink />
+            </Link>
+          </div>
         </div>
       </div>
     </div>

@@ -15,21 +15,19 @@ const poppins = Poppins({
 function Layout({ children }) {
   return (
     <main
-      className={`${poppins.variable} font-poppins grid grid-cols-5 min-h-fit bg-white`}
+      className={`${poppins.variable} font-poppins min-h-screen w-full bg-neutral-900 p-6`}
     >
-      <div className="col-span-5 lg:hidden block sticky top-0 z-50">
-        <Navbar />
-      </div>
-      <div className="col-span-1 lg:block border-r border-gray-300 hidden">
-        <SideBar />
-      </div>
-      <div className="lg:col-span-4 col-span-5 px-2 lg:px-8 pt-6 w-full overflow-y-auto">
-        <span className="badge rounded-xl bg-white text-green-600 font-semibold text-sm border-opacity-5 mb-8 ml-5 lg:ml-20 p-3 my-5 flex items-center gap-1">
-          <GoDotFill />
-          Available for Work
-        </span>
-        {children}
-        <Footer />
+      <div className="relative flex lg:flex-row flex-col gap-6">
+        <div className="lg:hidden block sticky top-0 z-50">
+          <Navbar />
+        </div>
+        <div className="lg:block w-1/5 hidden rounded-3xl">
+          <SideBar />
+        </div>
+        <div className="lg:flex-1 w-full overflow-y-auto bg-neutral-900 rounded-3xl">
+          {children}
+          <Footer />
+        </div>
       </div>
     </main>
   )

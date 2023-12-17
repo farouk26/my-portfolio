@@ -5,7 +5,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { MdShareLocation } from "react-icons/md"
 
-function AboutPage() {
+function EducationPage() {
   return (
     <section className="min-h-screen w-full mt-2 px-2 lg:px-20">
       <div className="lg:h-80 min-h-fit">
@@ -104,4 +104,4 @@ function AboutPage() {
   )
 }
 
-export default AboutPage
+export default EducationPage
