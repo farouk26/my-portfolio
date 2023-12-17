@@ -8,7 +8,7 @@ function SideBar() {
     <div className="sticky top-2 bg-zinc-800 rounded-3xl h-screen px-6 py-10">
       <div className="flex flex-col justify-between h-full">
         <div className="w-full">
-          <span className="w-full badge rounded-xl bg-gray-300 text-green-600 font-semibold text-sm border-opacity-5 mb-5 p-3 flex items-center gap-1">
+          <span className="w-full badge font-light rounded-xl bg-gray-300 text-green-700 text-sm border-opacity-5 mb-5 p-3 flex items-center gap-1">
             <GoDotFill />
             Available for Work
           </span>

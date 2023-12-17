@@ -20,7 +20,7 @@ function Home() {
             <h1 className="text-5xl uppercase font-bold text-white mb-2">
               Hello! i&apos;m farouk.
             </h1>
-            <p className="text-lg text-white">
+            <p className="text-lg text-white font-light">
               Born & Raised in the culturally rich city of Medea, Algeria, I am
               a 26-year-old professional deeply engaged in the realm of web
               development. My initial background lies in pythopathology, from

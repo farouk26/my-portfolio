@@ -1,8 +1,7 @@
 import React from "react"
-import { Poppins } from "next/font/google"
+import { Bebas_Neue, Poppins } from "next/font/google"
 import SideBar from "../SideBar"
 import Navbar from "../Navbar"
-import { GoDotFill } from "react-icons/go"
 import Footer from "../Footer"
 
 const poppins = Poppins({
@@ -12,10 +11,15 @@ const poppins = Poppins({
   fallback: ["Poppins", "sans-serif"],
   preload: true,
 })
+const bebasneue = Bebas_Neue({
+  subsets: ["latin"],
+  variable: "--font-bebasneue",
+  weight: "400",
+})
 function Layout({ children }) {
   return (
     <main
-      className={`${poppins.variable} font-poppins min-h-screen w-full bg-neutral-900 p-6`}
+      className={`${poppins.className} font-poppins min-h-screen w-full bg-neutral-900 p-6`}
     >
       <div className="relative flex lg:flex-row flex-col gap-6">
         <div className="lg:hidden block sticky top-0 z-50">

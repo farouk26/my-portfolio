@@ -16,11 +16,11 @@ function TestimonialCard({ imageUrl, title, subtitle, description }) {
           </figure>
           <div>
             <h2 className="text-xl font-bold text-white">{title}</h2>
-            <p className="text-sm text-gray-300">{subtitle}</p>
+            <p className="text-sm text-gray-300 font-light">{subtitle}</p>
           </div>
         </div>
         <div className="h-full w-full p-3">
-          <p className="text-white text-sm">{description}</p>
+          <p className="text-white text-md font-light">{description}</p>
         </div>
       </div>
     </div>
