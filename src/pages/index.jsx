@@ -83,10 +83,12 @@ function Home() {
           {/* Stack */}
           <div className="flex flex-col lg:w-1/2 w-full">
             <div className="pl-2 py-3 flex justify-between">
-              <h1 className="text-2xl uppercase font-bold text-white">Stack</h1>
+              <h1 className="text-2xl uppercase font-bold text-white">
+                Skills
+              </h1>
               <Link
                 className="btn btn-sm rounded-2xl bg-green-600 text-gray-200 hover:bg-blue-600 w-1/4 lg:w-24"
-                href={"/projects"}
+                href={"/stack"}
               >
                 View All
               </Link>
@@ -104,9 +106,17 @@ function Home() {
         </div>
         {/* Projects Section */}
         <div className="w-full min-h-fit mb-8">
-          <h1 className="pl-2 py-3 text-2xl uppercase text-white font-bold mb-2">
-            Selected Projects
-          </h1>
+          <div className="flex items-center justify-between w-full min-h-fit">
+            <h1 className="pl-2 py-3 text-2xl uppercase text-white font-bold mb-2 lg:mt-0 mt-2">
+              Recent Projects
+            </h1>
+            <Link
+              className="btn btn-sm rounded-2xl bg-green-600 text-gray-200 hover:bg-blue-600 w-1/4 lg:w-24"
+              href={"/projects"}
+            >
+              View All
+            </Link>
+          </div>
           <div className="flex flex-col lg:flex-row w-full min-h-fit gap-6">
             <ProjectCard
               title={"Unify"}

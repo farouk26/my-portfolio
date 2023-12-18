@@ -48,7 +48,7 @@ function SideBar() {
             className="text-3xl uppercase text-white font-bold hover:scale-110 transition duration-500"
             href={"/stack"}
           >
-            Stack
+            Skills
           </Link>
           <Link
             className="text-3xl uppercase text-white font-bold hover:scale-110 transition duration-500"
