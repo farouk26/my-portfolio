@@ -10,15 +10,9 @@ Welcome to my portfolio, a showcase of my skills, projects, and experiences. Thi
 - Animated elements to enhance user experience.
 - Custom logo for brand identity.
 
-### About Me
-
-- Detailed information about myself, including skills, background, education and experience.
-- Interactive design to make the content more engaging and simple.
-
 ### Projects Page
 
 - Showcase of my featured projects with project details and technologies used.
--
 
 ### Contact Page
 
