@@ -38,13 +38,13 @@ function ContactPage() {
             />
             <SocialsCard
               Icon={<CiLinkedin />}
-              Url={"https://github.com/farouk26"}
-              socialName={"GitHub"}
+              Url={"https://www.linkedin.com/in/faroukisme/"}
+              socialName={"Linkedin"}
             />
             <SocialsCard
               Icon={<FaDiscord />}
-              Url={"https://github.com/farouk26"}
-              socialName={"GitHub"}
+              Url={"/contact"}
+              socialName={"Discord"}
             />
           </div>
         </div>

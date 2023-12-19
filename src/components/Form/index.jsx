@@ -19,7 +19,7 @@ function ContactForm() {
         className="textarea rounded-2xl h-40 text-md bg-zinc-800"
         placeholder="Message"
       ></textarea>
-      <button className="btn bg-gray-200 text-black rounded-2xl">
+      <button className="btn bg-gray-200 text-black hover:bg-blue-500 hover:text-white rounded-2xl">
         Send Message
       </button>
     </div>

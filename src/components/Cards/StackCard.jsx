@@ -4,7 +4,7 @@ function StackCard({ title, description, imageUrl }) {
   return (
     <div className="h-72 w-full p-6 bg-zinc-800 rounded-3xl hover:bg-zinc-700 transition duration-500 cursor-pointer">
       <div className="h-full w-full flex flex-col justify-between">
-        <figure className="w-16 h-24">
+        <figure className="w-16 h-16">
           <Image
             src={imageUrl}
             alt=""
