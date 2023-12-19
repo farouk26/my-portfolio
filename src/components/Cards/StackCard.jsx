@@ -1,74 +1,23 @@
 import Image from "next/image"
 
-import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
-import skills from "@/libs/skills"
-import Slider from "react-slick"
-
-function StackCard() {
-  const autoplaySettings = {
-    dots: false,
-    infinite: true,
-    slidesToShow: 7,
-    slidesToScroll: 1,
-    arrows: false,
-    autoplay: true,
-    pauseOnFocus: false,
-    pauseOnHover: false,
-    speed: 6000,
-    autoplaySpeed: 3000,
-    cssEase: "linear",
-
-    responsive: [
-      {
-        breakpoint: 980, // from 820 px wide and down
-        settings: {
-          slidesToShow: 5,
-          slidesToScroll: 1,
-          initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 860,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 1,
-          initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 720,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 550,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          initialSlide: 2,
-        },
-      },
-    ],
-  }
+function StackCard({ title, description, imageUrl }) {
   return (
-    <div className="w-full h-full flex justfy-center items-center">
-      <Slider {...autoplaySettings} className="w-full min-h-fit">
-        {skills[0].map((part) => (
-          <div key={part.name}>
-            <Image
-              src={part.image}
-              alt={part.name}
-              width={120}
-              height={120}
-              className="object-cover w-20 px-1 rounded-full h-20"
-            />
-          </div>
-        ))}
-      </Slider>
+    <div className="h-72 w-full p-6 bg-zinc-800 rounded-3xl">
+      <div className="h-full w-full flex flex-col justify-between">
+        <figure className="w-16 h-24">
+          <Image
+            src={imageUrl}
+            alt=""
+            height={500}
+            width={500}
+            className="w-full h-full object-cover"
+          />
+        </figure>
+        <div className="flex flex-col gap-3 w-full px-4">
+          <h1 className="text-2xl text-white font-bold">{title}</h1>
+          <p className="text-md">{description}</p>
+        </div>
+      </div>
     </div>
   )
 }
