@@ -6,7 +6,7 @@ function ProjectsPage() {
       <div className="flex flex-col w-full min-h-fit gap-2">
         {/* Header */}
         <div className="bg-zinc-800 h-80 w-full rounded-3xl p-8 shadow-sm">
-          <div className="flex flex-col h-full gap-3 w-1/2 justify-end">
+          <div className="flex flex-col h-full gap-3 lg:w-1/2 w-full justify-end">
             <h1 className="text-4xl uppercase font-bold text-white">
               Projects
             </h1>

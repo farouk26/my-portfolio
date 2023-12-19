@@ -64,7 +64,7 @@ function MobileMenu() {
                 href="/stack"
                 className="block px-4 py-2 mb-2 text-center text-2xl uppercase font-bold"
               >
-                Stack
+                Skills
               </Link>
             </Menu.Item>
             <Menu.Item>

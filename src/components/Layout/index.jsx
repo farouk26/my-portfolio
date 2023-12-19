@@ -19,7 +19,7 @@ const bebasneue = Bebas_Neue({
 function Layout({ children }) {
   return (
     <main
-      className={`${poppins.className} font-poppins w-full bg-neutral-900 p-6`}
+      className={`${poppins.className} font-poppins w-full bg-neutral-900 p-4 lg:p-6`}
     >
       <div className="relative flex lg:flex-row flex-col gap-8">
         <div className="lg:hidden block sticky top-0 z-50">

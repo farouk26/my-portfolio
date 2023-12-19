@@ -12,13 +12,13 @@ function Home() {
   return (
     <section className="min-h-screen">
       <div className="flex flex-col min-h-fit w-full gap-4">
-        <div className="min-h-fit bg-zinc-800 shadow-sm rounded-3xl flex items-start justify-center lg:justify-start lg:items-center lg:flex-row flex-col gap-8 p-8">
+        <div className="lg:h-80 min-h-fit bg-zinc-800 shadow-sm rounded-3xl flex items-start justify-center lg:justify-start lg:items-center lg:flex-row flex-col gap-8 p-8">
           {/* Header */}
           <div className="lg:w-2/3 flex flex-col gap-4 w-full">
-            <h1 className="text-4xl uppercase font-bold text-white mb-2">
+            <h1 className="text-3xl uppercase font-bold text-white mb-2">
               Hello! i&apos;m farouk.
             </h1>
-            <p className="text-md text-white font-light">
+            <p className="text-md font-light text-gray-300">
               Born & Raised in the culturally rich city of Medea, Algeria, I am
               a 26-year-old professional deeply engaged in the realm of web
               development. My initial background lies in pythopathology, from
@@ -27,7 +27,7 @@ function Home() {
               experiences, I bring forth a combination of aesthetic finesse and
               flawless functionality. I believe in teamwork and constant
               learning. Outside of work, I&apos;m a big fan of video games,
-              enjoy hanging out with friends $ hitting the gym, I also like
+              enjoy hanging out with friends, hitting the gym, I also like
               keeping up with new technologies, always eager to learn and stay
               updated.
             </p>
@@ -83,10 +83,12 @@ function Home() {
           {/* Stack */}
           <div className="flex flex-col lg:w-1/2 w-full">
             <div className="pl-2 py-3 flex justify-between">
-              <h1 className="text-2xl uppercase font-bold text-white">Stack</h1>
+              <h1 className="text-2xl uppercase font-bold text-white">
+                Skills
+              </h1>
               <Link
                 className="btn btn-sm rounded-2xl bg-green-600 text-gray-200 hover:bg-blue-600 w-1/4 lg:w-24"
-                href={"/projects"}
+                href={"/stack"}
               >
                 View All
               </Link>
@@ -104,9 +106,17 @@ function Home() {
         </div>
         {/* Projects Section */}
         <div className="w-full min-h-fit mb-8">
-          <h1 className="pl-2 py-3 text-2xl uppercase text-white font-bold mb-2">
-            Selected Projects
-          </h1>
+          <div className="flex items-center justify-between w-full min-h-fit">
+            <h1 className="pl-2 py-3 text-2xl uppercase text-white font-bold mb-2 lg:mt-0 mt-2">
+              Recent Projects
+            </h1>
+            <Link
+              className="btn btn-sm rounded-2xl bg-green-600 text-gray-200 hover:bg-blue-600 w-1/4 lg:w-24"
+              href={"/projects"}
+            >
+              View All
+            </Link>
+          </div>
           <div className="flex flex-col lg:flex-row w-full min-h-fit gap-6">
             <ProjectCard
               title={"Unify"}
