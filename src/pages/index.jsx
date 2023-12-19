@@ -12,7 +12,7 @@ function Home() {
   return (
     <section className="min-h-screen">
       <div className="flex flex-col min-h-fit w-full gap-4">
-        <div className="lg:h-80 min-h-fit bg-zinc-800 shadow-sm rounded-3xl flex items-start justify-center lg:justify-start lg:items-center lg:flex-row flex-col gap-8 p-8">
+        <div className="min-h-fit bg-zinc-800 shadow-sm rounded-3xl flex items-start justify-center lg:justify-start lg:items-center lg:flex-row flex-col gap-8 p-8">
           {/* Header */}
           <div className="lg:w-2/3 flex flex-col gap-4 w-full">
             <h1 className="text-3xl uppercase font-bold text-white mb-2">
@@ -31,6 +31,16 @@ function Home() {
               keeping up with new technologies, always eager to learn and stay
               updated.
             </p>
+            <Link
+              className="btn btn-sm lg:w-36 w-full my-2 border border-opacity-0 rounded-3xl self-start bg-green-600 text-gray-200 hover:bg-blue-600"
+              href={
+                "https://drive.google.com/file/d/1JL269lIdCZKRhPJOm3tmQsu3f1SND2iv/view?usp=sharing"
+              }
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Download CV
+            </Link>
           </div>
           <figure className="h-48 w-48 lg:block hidden">
             <Image
@@ -87,7 +97,7 @@ function Home() {
                 Skills
               </h1>
               <Link
-                className="btn btn-sm rounded-2xl bg-green-600 text-gray-200 hover:bg-blue-600 w-1/4 lg:w-24"
+                className="btn btn-sm rounded-2xl bg-green-600 border border-opacity-0 text-gray-200 hover:bg-blue-600 w-1/4 lg:w-24"
                 href={"/stack"}
               >
                 View All
@@ -111,7 +121,7 @@ function Home() {
               Recent Projects
             </h1>
             <Link
-              className="btn btn-sm rounded-2xl bg-green-600 text-gray-200 hover:bg-blue-600 w-1/4 lg:w-24"
+              className="btn btn-sm rounded-2xl bg-green-600 border border-opacity-0 text-gray-200 hover:bg-blue-600 w-1/4 lg:w-24"
               href={"/projects"}
             >
               View All
