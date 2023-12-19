@@ -166,6 +166,9 @@ function Home() {
         </div>
         {/* Testimonials */}
         <div className="min-h-fit w-full">
+          <h1 className="text-2xl text-white font-bold uppercase pl-2 py-3 mb-2">
+            Testimonials
+          </h1>
           <Slider />
         </div>
       </div>
