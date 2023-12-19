@@ -12,13 +12,13 @@ function Home() {
   return (
     <section className="min-h-screen">
       <div className="flex flex-col min-h-fit w-full gap-4">
-        <div className="min-h-fit bg-zinc-800 shadow-sm rounded-3xl flex items-start justify-center lg:justify-start lg:items-center lg:flex-row flex-col gap-8 p-8">
+        <div className="lg:h-80 min-h-fit bg-zinc-800 shadow-sm rounded-3xl flex items-start justify-center lg:justify-start lg:items-center lg:flex-row flex-col gap-8 p-8">
           {/* Header */}
           <div className="lg:w-2/3 flex flex-col gap-4 w-full">
-            <h1 className="text-4xl uppercase font-bold text-white mb-2">
+            <h1 className="text-3xl uppercase font-bold text-white mb-2">
               Hello! i&apos;m farouk.
             </h1>
-            <p className="text-md text-white font-light">
+            <p className="text-md font-light text-gray-300">
               Born & Raised in the culturally rich city of Medea, Algeria, I am
               a 26-year-old professional deeply engaged in the realm of web
               development. My initial background lies in pythopathology, from
@@ -27,7 +27,7 @@ function Home() {
               experiences, I bring forth a combination of aesthetic finesse and
               flawless functionality. I believe in teamwork and constant
               learning. Outside of work, I&apos;m a big fan of video games,
-              enjoy hanging out with friends $ hitting the gym, I also like
+              enjoy hanging out with friends, hitting the gym, I also like
               keeping up with new technologies, always eager to learn and stay
               updated.
             </p>

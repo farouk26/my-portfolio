@@ -22,7 +22,6 @@ function EducationPage() {
           <div className="flex flex-col gap-6 lg:w-[60%] w-full">
             <EducationCard
               title={"Front-End Web Development Bootcamp"}
-              occupation={""}
               organization={"Re:Coded"}
               description_1={
                 "Completed over 500 hours of intensive, project-based learning, showcasing proficiency in front-end development and best practices in collaborative coding."
