@@ -2,7 +2,8 @@ import SocialsCard from "@/components/Cards/SocialsCard"
 import ContactForm from "@/components/Form"
 import React from "react"
 import { CiLinkedin } from "react-icons/ci"
-import { FaDiscord, FaGithub } from "react-icons/fa"
+import { FaGithub } from "react-icons/fa"
+import { IoCallOutline } from "react-icons/io5"
 
 function ContactPage() {
   return (
@@ -14,8 +15,8 @@ function ContactPage() {
             <h1 className="text-3xl text-white uppercase font-bold">Contact</h1>
             <p className="text-md">
               Looking for a
-              <span className="text-white font-bold"> Collaboration ?</span>{" "}
-              Want to <span className="font-bold text-white">Hire Me ?</span>{" "}
+              <span className="text-white font-bold"> Collaboration ?</span>
+              Want to <span className="font-bold text-white">Hire Me ?</span>
               Send me a message!
             </p>
           </div>
@@ -42,9 +43,8 @@ function ContactPage() {
               socialName={"Linkedin"}
             />
             <SocialsCard
-              Icon={<FaDiscord />}
-              Url={"/contact"}
-              socialName={"Discord"}
+              Icon={<IoCallOutline />}
+              socialName={"+213782062515"}
             />
           </div>
         </div>

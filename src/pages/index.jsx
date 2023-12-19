@@ -56,7 +56,7 @@ function Home() {
         {/* Second Section */}
         <div className="flex lg:flex-row flex-col w-full min-h-fit gap-8">
           {/* About */}
-          <div className="flex flex-col lg:w-[50%] w-full min-h-fit">
+          <div className="flex flex-col lg:w-[60%] w-full min-h-fit">
             <h1 className="pl-2 py-3 text-2xl uppercase font-bold text-white">
               About
             </h1>
@@ -91,7 +91,7 @@ function Home() {
             </div>
           </div>
           {/* Stack */}
-          <div className="flex flex-col lg:w-1/2 w-full">
+          <div className="flex flex-col lg:w-[40%] w-full">
             <div className="pl-2 py-3 flex justify-between">
               <h1 className="text-2xl uppercase font-bold text-white">
                 Skills

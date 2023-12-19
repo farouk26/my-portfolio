@@ -4,7 +4,7 @@ import React from "react"
 function Stacks({ technology, image }) {
   return (
     <div className="w-full min-h-fit">
-      <div className="flex gap-4 items-center w-full shadow-sm bg-zinc-800 rounded-2xl p-5">
+      <div className="flex gap-4 items-center w-full shadow-sm bg-zinc-800 rounded-2xl p-3">
         <figure className="w-12 h-12">
           <Image
             src={image}

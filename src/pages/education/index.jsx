@@ -68,7 +68,6 @@ function EducationPage() {
                   <li>Project Management</li>
                   <li>Time Management</li>
                   <li>Front-End Development</li>
-                  <li>Collaboration</li>
                   <li>Code Review</li>
                   <li>Attention to Detail</li>
                   <li>Collaboration</li>
