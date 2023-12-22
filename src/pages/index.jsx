@@ -128,40 +128,48 @@ function Home() {
             </Link>
           </div>
           <div className="flex flex-col lg:flex-row w-full min-h-fit gap-6">
-            <ProjectCard
-              title={"Unify"}
-              imageUrl={"/images/unify.png"}
-              websiteType={"Community Sharing"}
-              tech_1={"Next.js"}
-              tech_2={"TailwindCSS"}
-              tech_3={"Firebase"}
-              githubUrl={"https://github.com/202306-NEA-DZ-FEW/team-a"}
-              demoUrl={"https://unify-team-a.vercel.app/"}
-            />
-            <ProjectCard
-              title={"Reelio"}
-              imageUrl={"/images/reelio-1.png"}
-              websiteType={"Movie Platform"}
-              tech_1={"Next.js"}
-              tech_2={"TailwindCSS"}
-              tech_3={"IMdb.API"}
-              githubUrl={
-                "https://github.com/202306-NEA-DZ-FEW/movie-project-devsquad"
-              }
-              demoUrl={"https://movie-project-devsquad.vercel.app/"}
-            />
-            <ProjectCard
-              title={"Neon City"}
-              imageUrl={"/images/neoncity.png"}
-              websiteType={"Mini Game"}
-              tech_1={"HTML"}
-              tech_2={"CSS"}
-              tech_3={"Vanilla JS"}
-              demoUrl={"https://madlibs-404-brain-not-found.vercel.app/"}
-              githubUrl={
-                "https://github.com/202306-NEA-DZ-FEW/madlibs-404-brain-not-found"
-              }
-            />
+            <Link
+              href={"/projects/unify"}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <ProjectCard
+                title={"Unify"}
+                imageUrl={"/images/unify.png"}
+                websiteType={"Community Sharing"}
+                tech_1={"Next.js"}
+                tech_2={"TailwindCSS"}
+                tech_3={"Firebase"}
+              />
+            </Link>
+            <Link
+              href={"/projects/reelio"}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <ProjectCard
+                title={"Reelio"}
+                imageUrl={"/images/reelio-1.png"}
+                websiteType={"Movie Platform"}
+                tech_1={"Next.js"}
+                tech_2={"TailwindCSS"}
+                tech_3={"IMdb.API"}
+              />
+            </Link>
+            <Link
+              href={"/projects/neon"}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <ProjectCard
+                title={"Neon City"}
+                imageUrl={"/images/neoncity.png"}
+                websiteType={"Mini Game"}
+                tech_1={"HTML"}
+                tech_2={"CSS"}
+                tech_3={"Vanilla JS"}
+              />
+            </Link>
           </div>
         </div>
         {/* Testimonials */}

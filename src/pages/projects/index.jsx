@@ -1,5 +1,4 @@
 import ProjectCard from "@/components/Cards/ProjectCard"
-import { projects } from "@/libs/projectsList"
 import Link from "next/link"
 
 function ProjectsPage() {
@@ -19,7 +18,11 @@ function ProjectsPage() {
           </div>
         </div>
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 h-full w-full mb-8 mt-6">
-          <Link href={"/projects/unify"}>
+          <Link
+            href={"/projects/unify"}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             <ProjectCard
               title={"Unify"}
               imageUrl={"/images/unify.png"}
@@ -27,11 +30,13 @@ function ProjectsPage() {
               tech_1={"Next.js"}
               tech_2={"TailwindCSS"}
               tech_3={"Firebase"}
-              githubUrl={"https://github.com/202306-NEA-DZ-FEW/team-a"}
-              demoUrl={"https://unify-team-a.vercel.app/"}
             />
           </Link>
-          <Link href={"/projects/reelio"}>
+          <Link
+            href={"/projects/reelio"}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             <ProjectCard
               title={"Reelio"}
               imageUrl={"/images/reelio-1.png"}
@@ -39,13 +44,13 @@ function ProjectsPage() {
               tech_1={"Next.js"}
               tech_2={"TailwindCSS"}
               tech_3={"IMdb.API"}
-              githubUrl={
-                "https://github.com/202306-NEA-DZ-FEW/movie-project-devsquad"
-              }
-              demoUrl={"https://movie-project-devsquad.vercel.app/"}
             />
           </Link>
-          <Link href={"/projects/neon"}>
+          <Link
+            href={"/projects/neon"}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             <ProjectCard
               title={"Neon City"}
               imageUrl={"/images/neoncity.png"}
@@ -53,13 +58,13 @@ function ProjectsPage() {
               tech_1={"HTML"}
               tech_2={"CSS"}
               tech_3={"Vanilla JS"}
-              demoUrl={"https://madlibs-404-brain-not-found.vercel.app/"}
-              githubUrl={
-                "https://github.com/202306-NEA-DZ-FEW/madlibs-404-brain-not-found"
-              }
             />
           </Link>
-          <Link href={"/projects/alibabalite"}>
+          <Link
+            href={"/projects/alibabalite"}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             <ProjectCard
               title={"Alibaba Lite"}
               imageUrl={"/images/alibabalite.png"}
@@ -67,10 +72,6 @@ function ProjectsPage() {
               tech_1={"Next.js"}
               tech_2={"TailwindCSS"}
               tech_3={"Firebase"}
-              demoUrl={"https://alibabalite-two.vercel.app/"}
-              githubUrl={
-                "https://github.com/farouk26/AlibabaLite-E-Commerce-Website"
-              }
             />
           </Link>
         </div>
