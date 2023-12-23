@@ -7,12 +7,18 @@ import Link from "next/link"
 import ProjectCard from "@/components/Cards/ProjectCard"
 import Image from "next/image"
 import Slider from "@/components/Swiper"
+import { easeOut, motion, spring } from "framer-motion"
 
 function Home() {
   return (
     <section className="min-h-screen">
       <div className="flex flex-col min-h-fit w-full gap-4">
-        <div className="min-h-fit bg-zinc-800 shadow-sm rounded-3xl flex items-start justify-center lg:justify-start lg:items-center lg:flex-row flex-col gap-8 p-8">
+        <motion.div
+          className="min-h-fit bg-zinc-800 shadow-sm rounded-3xl flex items-start justify-center lg:justify-start lg:items-center lg:flex-row flex-col gap-8 p-8"
+          initial={{ x: 90 }}
+          animate={{ x: 0 }}
+          transition={{ type: "spring", stiffness: 120, damping: 20 }}
+        >
           {/* Header */}
           <div className="lg:w-2/3 flex flex-col gap-4 w-full">
             <h1 className="text-3xl uppercase font-bold text-white mb-2">
@@ -52,7 +58,7 @@ function Home() {
               className="w-full h-full object-cover rounded-2xl"
             />
           </figure>
-        </div>
+        </motion.div>
         {/* Second Section */}
         <div className="flex lg:flex-row flex-col w-full min-h-fit gap-8">
           {/* About */}
