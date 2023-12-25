@@ -42,7 +42,7 @@ function ProjectDetailsCard({
                 href={githubUrl}
                 rel="noopener noreferrer"
                 target="_blank"
-                className="btn btn-sm w-1/2 lg:w-24 bg-green-700 text-gray-300 hover:bg-blue-600 hover:text-gray-300 self-end rounded-3xl"
+                className="btn btn-sm w-1/2 lg:w-24 bg-green-700 text-gray-100 hover:bg-blue-600 hover:text-gray-100 self-end rounded-3xl"
               >
                 Code <FaGithub className="text-md" />
               </a>
@@ -50,7 +50,7 @@ function ProjectDetailsCard({
                 href={demoUrl}
                 rel="noopener noreferrer"
                 target="_blank"
-                className="btn btn-sm w-1/2 lg:w-28 bg-green-700  text-gray-300 hover:bg-blue-600 hover:text-gray-300 self-end rounded-3xl"
+                className="btn btn-sm w-1/2 lg:w-28 bg-green-700  text-gray-100 hover:bg-blue-600 hover:text-gray-100 self-end rounded-3xl"
               >
                 Demo <RiLinkUnlink className="text-md" />
               </a>
@@ -62,7 +62,7 @@ function ProjectDetailsCard({
       <div className="min-h-fit lg:h-64 bg-zinc-800 rounded-3xl p-4 lg:p-6">
         <div className="flex flex-col gap-3 p-4 justify-center h-full w-full">
           <h1 className="text-2xl text-white font-bold">Project Summary</h1>
-          <p className="text-md font-light">{projectSummary}</p>
+          <p className="text-md font-light text-gray-300">{projectSummary}</p>
         </div>
       </div>
       <div className="min-h-fit w-full flex lg:flex-row flex-col gap-6">
@@ -70,7 +70,7 @@ function ProjectDetailsCard({
           <div className="lg:h-80 min-h-fit bg-zinc-800 rounded-3xl p-4 lg:p-6">
             <div className="flex flex-col gap-6  justify-center w-full h-full p-4">
               <h1 className="text-2xl font-bold text-white">Objective</h1>
-              <p className="text-md font-light">{objective}</p>
+              <p className="text-md font-light text-gray-300">{objective}</p>
             </div>
           </div>
           <div className="w-full min-h-fit p-4 lg:p-6 bg-zinc-800 rounded-3xl">
@@ -78,25 +78,33 @@ function ProjectDetailsCard({
               <h1 className="text-2xl text-white font-bold">Features</h1>
               <div className="flex flex-col gap-2 p-2">
                 <h1 className="text-lg text-white font-bold">{featureTitle}</h1>
-                <li className="font-light list-disc">{featureDescription}</li>
+                <li className="font-light list-disc text-gray-300">
+                  {featureDescription}
+                </li>
               </div>
               <div className="flex flex-col gap-2 p-2">
                 <h1 className="text-lg text-white font-bold">
                   {featureTitle_1}
                 </h1>
-                <li className="font-light list-disc">{featureDescription_1}</li>
+                <li className="font-light list-disc text-gray-300">
+                  {featureDescription_1}
+                </li>
               </div>
               <div className="flex flex-col gap-2 p-2">
                 <h1 className="text-lg text-white font-bold">
                   {featureTitle_2}
                 </h1>
-                <li className="font-light list-disc">{featureDescription_2}</li>
+                <li className="font-light list-disc text-gray-300">
+                  {featureDescription_2}
+                </li>
               </div>
               <div className="flex flex-col gap-2 p-2">
                 <h1 className="text-lg text-white font-bold">
                   {featureTitle_3}
                 </h1>
-                <li className="font-light list-disc">{featureDescription_3}</li>
+                <li className="font-light list-disc text-gray-300">
+                  {featureDescription_3}
+                </li>
               </div>
             </div>
           </div>
@@ -134,7 +142,7 @@ function ProjectDetailsCard({
       <div className="w-full min-h-fit p-4 lg:p-6 bg-zinc-800 rounded-3xl shadow-sm">
         <div className="w-full h-full  flex flex-col gap-2 p-4 ">
           <h1 className="text-2xl text-white font-bold">Results</h1>
-          <p className="font-light">{resultDescription}</p>
+          <p className="font-light text-gray-300">{resultDescription}</p>
         </div>
       </div>
     </div>

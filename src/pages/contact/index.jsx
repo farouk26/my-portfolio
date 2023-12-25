@@ -11,12 +11,16 @@ function ContactPage() {
       <div className="flex flex-col gap-6 min-h-fit w-full">
         {/* Header */}
         <div className="h-80 bg-zinc-800 rounded-3xl w-full p-6">
-          <div className="flex flex-col gap-3 justify-end p-4 h-full">
+          <div className="flex flex-col gap-3 justify-end p-4 h-full text-gray-300">
             <h1 className="text-3xl text-white uppercase font-bold">Contact</h1>
             <p className="text-md">
               Looking for a
-              <span className="text-white font-bold"> Collaboration ?</span>
-              Want to <span className="font-bold text-white">Hire Me ?</span>
+              <span className="text-green-400 font-bold">
+                {" "}
+                Collaboration ?{" "}
+              </span>
+              Want to{" "}
+              <span className="font-bold text-green-400">Hire Me ? </span>
               Send me a message!
             </p>
           </div>

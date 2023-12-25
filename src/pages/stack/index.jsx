@@ -11,7 +11,9 @@ function StackPage() {
             <h1 className="md:text-3xl text-2xl uppercase text-white font-bold">
               Tech Skills
             </h1>
-            <p className="text-md">My top tools, languages and resources</p>
+            <p className="text-md text-gray-200">
+              My top tools, languages and resources
+            </p>
           </div>
         </div>
         <div className="w-full min-h-fit grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">

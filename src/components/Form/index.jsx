@@ -49,19 +49,19 @@ function ContactForm() {
               type="text"
               name="user_name"
               placeholder="Full Name"
-              className="bg-zinc-800 rounded-xl text-sm p-4 h-14 w-full lg:w-1/2"
+              className="bg-zinc-800 rounded-xl text-sm text-white p-4 h-14 w-full lg:w-1/2"
               required
             />
             <input
               type="email"
               name="user_email"
               placeholder="Email"
-              className="bg-zinc-800 rounded-xl text-sm p-4 h-14 w-full lg:w-1/2"
+              className="bg-zinc-800 rounded-xl text-sm text-white p-4 h-14 w-full lg:w-1/2"
               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
             />
           </div>
           <textarea
-            className="textarea rounded-2xl h-40 text-md bg-zinc-800"
+            className="textarea rounded-2xl text-white h-40 text-md bg-zinc-800"
             name="message"
             placeholder="Message"
             required
@@ -69,7 +69,7 @@ function ContactForm() {
           <button
             type="submit"
             value="Send"
-            className="btn bg-gray-200 text-black hover:bg-blue-500 hover:text-white rounded-2xl"
+            className="btn bg-green-700 text-white hover:bg-blue-600 hover:text-white rounded-2xl"
             disabled={isSending}
           >
             {isSending && (

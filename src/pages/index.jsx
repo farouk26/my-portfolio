@@ -33,7 +33,7 @@ function Home() {
               updated.
             </p>
             <Link
-              className="btn btn-sm lg:w-36 w-full my-2 border border-opacity-0 rounded-3xl self-start bg-green-600 text-gray-200 hover:bg-blue-600"
+              className="btn btn-sm lg:w-36 w-full my-2 border border-opacity-0 rounded-3xl self-start hover:border-opacity-0 bg-green-700 text-gray-100 hover:bg-blue-600"
               href={
                 "https://drive.google.com/file/d/1JL269lIdCZKRhPJOm3tmQsu3f1SND2iv/view?usp=sharing"
               }
@@ -98,20 +98,20 @@ function Home() {
                 Skills
               </h1>
               <Link
-                className="btn btn-sm rounded-2xl bg-green-600 border border-opacity-0 text-gray-200 hover:bg-blue-600 w-1/4 lg:w-24"
+                className="btn btn-sm rounded-2xl bg-green-700 border border-opacity-0 hover:border-opacity-0 text-gray-100 hover:bg-blue-600 w-28 lg:w-24"
                 href={"/stack"}
               >
                 View All
               </Link>
             </div>
             <div className="flex flex-col gap-5 w-full">
-              <Stacks technology={"HTML"} image={"/images/html.png"} />
-              <Stacks technology={"CSS"} image={"/images/css.png"} />
+              <Stacks technology={"REACT.JS"} image={"/images/react.png"} />
+              <Stacks technology={"NEXT.JS"} image={"/images/nextjs.png"} />
               <Stacks
                 technology={"JAVASCRIPT"}
                 image={"/images/javascript.png"}
               />
-              <Stacks technology={"REACT.JS"} image={"/images/react.png"} />
+              <Stacks technology={"TAILWIND"} image={"/images/tailwind.png"} />
             </div>
           </div>
         </div>
@@ -122,7 +122,7 @@ function Home() {
               Recent Projects
             </h1>
             <Link
-              className="btn btn-sm rounded-2xl bg-green-600 border border-opacity-0 text-gray-200 hover:bg-blue-600 w-1/4 lg:w-24"
+              className="btn btn-sm rounded-2xl bg-green-700 border border-opacity-0 hover:border-opacity-0 text-gray-100 hover:bg-blue-600 w-28 lg:w-24"
               href={"/projects"}
             >
               View All
