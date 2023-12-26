@@ -1,5 +1,4 @@
 import ProjectDetailsCard from "@/components/Cards/ProjectDetailsCard"
-import React from "react"
 
 function unifyPage() {
   return (

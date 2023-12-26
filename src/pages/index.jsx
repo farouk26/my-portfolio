@@ -7,12 +7,23 @@ import Link from "next/link"
 import ProjectCard from "@/components/Cards/ProjectCard"
 import Image from "next/image"
 import Slider from "@/components/Swiper"
+import { motion } from "framer-motion"
 
 function Home() {
   return (
     <section className="min-h-screen">
       <div className="flex flex-col min-h-fit w-full gap-4">
-        <div className="min-h-fit bg-zinc-800 shadow-sm rounded-3xl flex items-start justify-center lg:justify-start lg:items-center lg:flex-row flex-col gap-8 p-8">
+        <motion.div
+          className="min-h-fit bg-zinc-800 shadow-sm rounded-3xl flex items-start justify-center lg:justify-start lg:items-center lg:flex-row flex-col gap-8 p-8"
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: [0, 0.8, 1], x: 0 }}
+          transition={{
+            duration: 0.5,
+            ease: "easeInOut",
+            delay: 0.22,
+            type: "spring",
+          }}
+        >
           {/* Header */}
           <div className="lg:w-2/3 flex flex-col gap-4 w-full">
             <h1 className="text-3xl uppercase font-bold text-white mb-2">
@@ -32,7 +43,7 @@ function Home() {
               updated.
             </p>
             <Link
-              className="btn btn-sm lg:w-36 w-full my-2 border border-opacity-0 rounded-3xl self-start bg-green-600 text-gray-200 hover:bg-blue-600"
+              className="btn btn-sm lg:w-36 w-full my-2 border border-opacity-0 rounded-3xl self-start hover:border-opacity-0 bg-green-700 text-gray-100 hover:bg-blue-600"
               href={
                 "https://drive.google.com/file/d/1JL269lIdCZKRhPJOm3tmQsu3f1SND2iv/view?usp=sharing"
               }
@@ -52,16 +63,36 @@ function Home() {
               className="w-full h-full object-cover rounded-2xl"
             />
           </figure>
-        </div>
+        </motion.div>
         {/* Second Section */}
         <div className="flex lg:flex-row flex-col w-full min-h-fit gap-8">
           {/* About */}
-          <div className="flex flex-col lg:w-[60%] w-full min-h-fit">
+          <motion.div
+            className="flex flex-col lg:w-[60%] w-full min-h-fit"
+            initial={{ opacity: 0, x: 30 }}
+            animate={{ opacity: [0, 0.7, 1], x: 0 }}
+            transition={{
+              duration: 0.6,
+              ease: "easeInOut",
+              delay: 0.2,
+              type: "spring",
+            }}
+          >
             <h1 className="pl-2 py-3 text-2xl uppercase font-bold text-white">
               About
             </h1>
             <div className="grid grid-cols-4 gap-4">
-              <div className="lg:col-span-2 col-span-4">
+              <motion.div
+                className="lg:col-span-2 col-span-4"
+                initial={{ opacity: 0, x: 50 }}
+                animate={{ opacity: [0, 0.7, 1], x: 0 }}
+                transition={{
+                  duration: 0.6,
+                  ease: "easeInOut",
+                  delay: 0.2,
+                  type: "spring",
+                }}
+              >
                 <InfoCard
                   title={"Problem Solver"}
                   description={
@@ -69,8 +100,18 @@ function Home() {
                   }
                   icon={<LiaBrainSolid />}
                 />
-              </div>
-              <div className="lg:col-span-2 col-span-4">
+              </motion.div>
+              <motion.div
+                className="lg:col-span-2 col-span-4"
+                initial={{ opacity: 0, x: 50 }}
+                animate={{ opacity: [0, 0.7, 1], x: 0 }}
+                transition={{
+                  duration: 0.6,
+                  ease: "easeInOut",
+                  delay: 0.3,
+                  type: "spring",
+                }}
+              >
                 <InfoCard
                   title={"Detail Oriented"}
                   description={
@@ -78,8 +119,18 @@ function Home() {
                   }
                   icon={<TbListDetails />}
                 />
-              </div>
-              <div className="col-span-4">
+              </motion.div>
+              <motion.div
+                className="col-span-4"
+                initial={{ opacity: 0, x: 50 }}
+                animate={{ opacity: [0, 0.7, 1], x: 0 }}
+                transition={{
+                  duration: 0.6,
+                  ease: "easeInOut",
+                  delay: 0.4,
+                  type: "spring",
+                }}
+              >
                 <InfoCard
                   title={"Team Player & Fast Learner"}
                   icon={<LuUsers2 />}
@@ -87,41 +138,108 @@ function Home() {
                     "In the dynamic world of web development, collaboration is key. I thrive in team environments, fostering open communication and working seamlessly with designers and fellow developers."
                   }
                 />
-              </div>
+              </motion.div>
             </div>
-          </div>
+          </motion.div>
           {/* Stack */}
-          <div className="flex flex-col lg:w-[40%] w-full">
+          <motion.div
+            className="flex flex-col lg:w-[40%] w-full"
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: [0, 0.7, 1], x: 0 }}
+            transition={{
+              duration: 0.15,
+              ease: "easeInOut",
+              delay: 0.2,
+              type: "spring",
+            }}
+          >
             <div className="pl-2 py-3 flex justify-between">
               <h1 className="text-2xl uppercase font-bold text-white">
                 Skills
               </h1>
               <Link
-                className="btn btn-sm rounded-2xl bg-green-600 border border-opacity-0 text-gray-200 hover:bg-blue-600 w-1/4 lg:w-24"
+                className="btn btn-sm rounded-2xl bg-green-700 border border-opacity-0 hover:border-opacity-0 text-gray-100 hover:bg-blue-600 w-28 lg:w-24"
                 href={"/stack"}
               >
                 View All
               </Link>
             </div>
             <div className="flex flex-col gap-5 w-full">
-              <Stacks technology={"HTML"} image={"/images/html.png"} />
-              <Stacks technology={"CSS"} image={"/images/css.png"} />
-              <Stacks
-                technology={"JAVASCRIPT"}
-                image={"/images/javascript.png"}
-              />
-              <Stacks technology={"REACT.JS"} image={"/images/react.png"} />
+              <motion.div
+                initial={{ opacity: 0, x: 70 }}
+                animate={{ opacity: [0, 0.7, 1], x: 0 }}
+                transition={{
+                  duration: 0.3,
+                  ease: "easeInOut",
+                  delay: 0.3,
+                  type: "spring",
+                }}
+              >
+                <Stacks technology={"REACT.JS"} image={"/images/react.png"} />
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, x: 70 }}
+                animate={{ opacity: [0, 0.7, 1], x: 0 }}
+                transition={{
+                  duration: 0.3,
+                  ease: "easeInOut",
+                  delay: 0.4,
+                  type: "spring",
+                }}
+              >
+                <Stacks technology={"NEXT.JS"} image={"/images/nextjs.png"} />
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, x: 70 }}
+                animate={{ opacity: [0, 0.7, 1], x: 0 }}
+                transition={{
+                  duration: 0.3,
+                  ease: "easeInOut",
+                  delay: 0.5,
+                  type: "spring",
+                }}
+              >
+                <Stacks
+                  technology={"JAVASCRIPT"}
+                  image={"/images/javascript.png"}
+                />
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, x: 70 }}
+                animate={{ opacity: [0, 0.7, 1], x: 0 }}
+                transition={{
+                  duration: 0.3,
+                  ease: "easeInOut",
+                  delay: 0.6,
+                  type: "spring",
+                }}
+              >
+                <Stacks
+                  technology={"TAILWIND"}
+                  image={"/images/tailwind.png"}
+                />
+              </motion.div>
             </div>
-          </div>
+          </motion.div>
         </div>
         {/* Projects Section */}
-        <div className="w-full min-h-fit mb-8">
+        <motion.div
+          className="w-full min-h-fit mb-8"
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: [0, 0.7, 1], x: 0 }}
+          transition={{
+            duration: 0.6,
+            ease: "easeInOut",
+            delay: 0.25,
+            type: "spring",
+          }}
+        >
           <div className="flex items-center justify-between w-full min-h-fit">
             <h1 className="pl-2 py-3 text-2xl uppercase text-white font-bold mb-2 lg:mt-0 mt-2">
               Recent Projects
             </h1>
             <Link
-              className="btn btn-sm rounded-2xl bg-green-600 border border-opacity-0 text-gray-200 hover:bg-blue-600 w-1/4 lg:w-24"
+              className="btn btn-sm rounded-2xl bg-green-700 border border-opacity-0 hover:border-opacity-0 text-gray-100 hover:bg-blue-600 w-28 lg:w-24"
               href={"/projects"}
             >
               View All
@@ -171,14 +289,24 @@ function Home() {
               />
             </Link>
           </div>
-        </div>
+        </motion.div>
         {/* Testimonials */}
-        <div className="min-h-fit w-full">
+        <motion.div
+          className="min-h-fit w-full"
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: [0, 0.7, 1], x: 0 }}
+          transition={{
+            duration: 0.6,
+            ease: "easeInOut",
+            delay: 0.25,
+            type: "spring",
+          }}
+        >
           <h1 className="text-2xl text-white font-bold uppercase pl-2 py-3 mb-2">
             Testimonials
           </h1>
           <Slider />
-        </div>
+        </motion.div>
       </div>
     </section>
   )

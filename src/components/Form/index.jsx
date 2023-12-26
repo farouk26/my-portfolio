@@ -1,6 +1,7 @@
 import { useRef, useState } from "react"
 import { CiCircleCheck } from "react-icons/ci"
 import emailjs from "@emailjs/browser"
+import { motion } from "framer-motion"
 
 function ContactForm() {
   const form = useRef()
@@ -45,31 +46,63 @@ function ContactForm() {
           className="min-h-fit w-full flex flex-col gap-4"
         >
           <div className="w-full min-h-fit flex flex-col gap-4 md:flex-row md:gap-2">
-            <input
+            <motion.input
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: [0, 0.8, 1], x: 0 }}
+              transition={{
+                duration: 0.6,
+                ease: "easeInOut",
+                delay: 0.4,
+                type: "spring",
+              }}
               type="text"
               name="user_name"
               placeholder="Full Name"
-              className="bg-zinc-800 rounded-xl text-sm p-4 h-14 w-full lg:w-1/2"
+              className="bg-zinc-800 rounded-xl text-sm text-white p-4 h-14 w-full lg:w-1/2"
               required
             />
-            <input
+            <motion.input
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: [0, 0.8, 1], x: 0 }}
+              transition={{
+                duration: 0.6,
+                ease: "easeInOut",
+                delay: 0.5,
+                type: "spring",
+              }}
               type="email"
               name="user_email"
               placeholder="Email"
-              className="bg-zinc-800 rounded-xl text-sm p-4 h-14 w-full lg:w-1/2"
+              className="bg-zinc-800 rounded-xl text-sm text-white p-4 h-14 w-full lg:w-1/2"
               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
             />
           </div>
-          <textarea
-            className="textarea rounded-2xl h-40 text-md bg-zinc-800"
+          <motion.textarea
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: [0, 0.8, 1], x: 0 }}
+            transition={{
+              duration: 0.6,
+              ease: "easeInOut",
+              delay: 0.6,
+              type: "spring",
+            }}
+            className="textarea rounded-2xl text-white h-40 text-md bg-zinc-800"
             name="message"
             placeholder="Message"
             required
           />
-          <button
+          <motion.button
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: [0, 0.8, 1], x: 0 }}
+            transition={{
+              duration: 0.6,
+              ease: "easeInOut",
+              delay: 0.7,
+              type: "spring",
+            }}
             type="submit"
             value="Send"
-            className="btn bg-gray-200 text-black hover:bg-blue-500 hover:text-white rounded-2xl"
+            className="btn bg-green-700 text-white hover:bg-blue-600 hover:text-white rounded-2xl"
             disabled={isSending}
           >
             {isSending && (
@@ -78,7 +111,7 @@ function ContactForm() {
               </div>
             )}
             Send Message
-          </button>
+          </motion.button>
         </form>
       ) : (
         <div className="w-full min-h-fit flex flex-col gap-4 p-4 bg-zinc-800 rounded-3xl items-center">

@@ -3,6 +3,7 @@ import { Bebas_Neue, Poppins } from "next/font/google"
 import SideBar from "../SideBar"
 import Navbar from "../Navbar"
 import Footer from "../Footer"
+import { motion } from "framer-motion"
 
 const poppins = Poppins({
   subsets: ["latin"],

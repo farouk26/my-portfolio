@@ -7,7 +7,7 @@ function StackCard({ title, description, imageUrl }) {
         <figure className="w-16 h-16">
           <Image
             src={imageUrl}
-            alt=""
+            alt="skill img"
             height={500}
             width={500}
             className="w-full h-full object-cover"
@@ -15,7 +15,7 @@ function StackCard({ title, description, imageUrl }) {
         </figure>
         <div className="flex flex-col gap-3 w-full px-4">
           <h1 className="text-2xl text-white font-bold">{title}</h1>
-          <p className="text-md">{description}</p>
+          <p className="text-md text-gray-200">{description}</p>
         </div>
       </div>
     </div>
