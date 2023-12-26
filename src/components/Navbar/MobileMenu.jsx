@@ -77,10 +77,20 @@ function MobileMenu() {
             </Menu.Item>
           </div>
           <div className="flex gap-6 items-center justify-center py-2 text-white">
-            <Link className="btn btn-circle btn-ghost" href="/">
+            <Link
+              className="btn btn-circle btn-ghost"
+              href="https://github.com/farouk26"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               <FaGithub className="text-2xl" />
             </Link>
-            <Link className="btn btn-circle btn-ghost" href="/">
+            <Link
+              className="btn btn-circle btn-ghost"
+              href="https://www.linkedin.com/in/faroukisme/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               <CiLinkedin className="text-3xl" />
             </Link>
           </div>

@@ -1,5 +1,3 @@
-import React from "react"
-
 function SocialsCard({ Icon, socialName, Url }) {
   return (
     <div className="w-full min-h-fit">
