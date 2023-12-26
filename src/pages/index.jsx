@@ -1,106 +1,314 @@
 import InfoCard from "@/components/Cards/InfoCard"
-import ProjectCard from "@/components/Cards/ProjectCard"
-import Link from "next/link"
 import { LiaBrainSolid } from "react-icons/lia"
 import { TbListDetails } from "react-icons/tb"
 import { LuUsers2 } from "react-icons/lu"
+import Stacks from "@/components/Cards/Stacks"
+import Link from "next/link"
+import ProjectCard from "@/components/Cards/ProjectCard"
+import Image from "next/image"
 import Slider from "@/components/Swiper"
+import { motion } from "framer-motion"
 
 function Home() {
   return (
-    <div className="min-h-screen lg:px-20 px-4">
-      {/* Header */}
-      <div className="lg:h-72 min-h-fit lg:pb-0 pb-10 border-b border-gray-300">
-        <div className=" flex flex-col p-2 lg:p-2 gap-4 lg:h-full h-[35%] lg:w-[40%] justify-center mr-auto w-full text-gray-300">
-          <h1 className="lg:text-5xl text-4xl font-bold">
-            Hey there! I&apos;m Farouk...
+    <section className="min-h-screen">
+      <div className="flex flex-col min-h-fit w-full gap-4">
+        <motion.div
+          className="min-h-fit bg-zinc-800 shadow-sm rounded-3xl flex items-start justify-center lg:justify-start lg:items-center lg:flex-row flex-col gap-8 p-8"
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: [0, 0.8, 1], x: 0 }}
+          transition={{
+            duration: 0.5,
+            ease: "easeInOut",
+            delay: 0.22,
+            type: "spring",
+          }}
+        >
+          {/* Header */}
+          <div className="lg:w-2/3 flex flex-col gap-4 w-full">
+            <h1 className="text-3xl uppercase font-bold text-white mb-2">
+              Hello! i&apos;m farouk.
+            </h1>
+            <p className="text-md font-light text-gray-300">
+              Born & Raised in the culturally rich city of Medea, Algeria, I am
+              a 26-year-old professional deeply engaged in the realm of web
+              development. My initial background lies in pythopathology, from
+              which I seamlessly transitioned into the world of front-end
+              development. Specializing in the creation of user-centric web
+              experiences, I bring forth a combination of aesthetic finesse and
+              flawless functionality. I believe in teamwork and constant
+              learning. Outside of work, I&apos;m a big fan of video games,
+              enjoy hanging out with friends, hitting the gym, I also like
+              keeping up with new technologies, always eager to learn and stay
+              updated.
+            </p>
+            <Link
+              className="btn btn-sm lg:w-36 w-full my-2 border border-opacity-0 rounded-3xl self-start hover:border-opacity-0 bg-green-700 text-gray-100 hover:bg-blue-600"
+              href={
+                "https://drive.google.com/file/d/1JL269lIdCZKRhPJOm3tmQsu3f1SND2iv/view?usp=sharing"
+              }
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Download CV
+            </Link>
+          </div>
+          <figure className="h-48 w-48 lg:block hidden">
+            <Image
+              src="/images/2.jpg"
+              alt=""
+              height={500}
+              width={500}
+              priority
+              className="w-full h-full object-cover rounded-2xl"
+            />
+          </figure>
+        </motion.div>
+        {/* Second Section */}
+        <div className="flex lg:flex-row flex-col w-full min-h-fit gap-8">
+          {/* About */}
+          <motion.div
+            className="flex flex-col lg:w-[60%] w-full min-h-fit"
+            initial={{ opacity: 0, x: 30 }}
+            animate={{ opacity: [0, 0.7, 1], x: 0 }}
+            transition={{
+              duration: 0.6,
+              ease: "easeInOut",
+              delay: 0.2,
+              type: "spring",
+            }}
+          >
+            <h1 className="pl-2 py-3 text-2xl uppercase font-bold text-white">
+              About
+            </h1>
+            <div className="grid grid-cols-4 gap-4">
+              <motion.div
+                className="lg:col-span-2 col-span-4"
+                initial={{ opacity: 0, x: 50 }}
+                animate={{ opacity: [0, 0.7, 1], x: 0 }}
+                transition={{
+                  duration: 0.6,
+                  ease: "easeInOut",
+                  delay: 0.2,
+                  type: "spring",
+                }}
+              >
+                <InfoCard
+                  title={"Problem Solver"}
+                  description={
+                    "I bring a fresh perspective and a passion for innovative solutions to the table.  My proficiency in JavaScript, React.js, Next.js, and Firebase enables me to craft dynamic and cutting-edge web applications."
+                  }
+                  icon={<LiaBrainSolid />}
+                />
+              </motion.div>
+              <motion.div
+                className="lg:col-span-2 col-span-4"
+                initial={{ opacity: 0, x: 50 }}
+                animate={{ opacity: [0, 0.7, 1], x: 0 }}
+                transition={{
+                  duration: 0.6,
+                  ease: "easeInOut",
+                  delay: 0.3,
+                  type: "spring",
+                }}
+              >
+                <InfoCard
+                  title={"Detail Oriented"}
+                  description={
+                    "I pride myself on my meticulous attention to detail, ensuring that every pixel aligns seamlessly with the overall design. I am committed to delivering not just functional but aesthetically pleasing websites."
+                  }
+                  icon={<TbListDetails />}
+                />
+              </motion.div>
+              <motion.div
+                className="col-span-4"
+                initial={{ opacity: 0, x: 50 }}
+                animate={{ opacity: [0, 0.7, 1], x: 0 }}
+                transition={{
+                  duration: 0.6,
+                  ease: "easeInOut",
+                  delay: 0.4,
+                  type: "spring",
+                }}
+              >
+                <InfoCard
+                  title={"Team Player & Fast Learner"}
+                  icon={<LuUsers2 />}
+                  description={
+                    "In the dynamic world of web development, collaboration is key. I thrive in team environments, fostering open communication and working seamlessly with designers and fellow developers."
+                  }
+                />
+              </motion.div>
+            </div>
+          </motion.div>
+          {/* Stack */}
+          <motion.div
+            className="flex flex-col lg:w-[40%] w-full"
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: [0, 0.7, 1], x: 0 }}
+            transition={{
+              duration: 0.15,
+              ease: "easeInOut",
+              delay: 0.2,
+              type: "spring",
+            }}
+          >
+            <div className="pl-2 py-3 flex justify-between">
+              <h1 className="text-2xl uppercase font-bold text-white">
+                Skills
+              </h1>
+              <Link
+                className="btn btn-sm rounded-2xl bg-green-700 border border-opacity-0 hover:border-opacity-0 text-gray-100 hover:bg-blue-600 w-28 lg:w-24"
+                href={"/stack"}
+              >
+                View All
+              </Link>
+            </div>
+            <div className="flex flex-col gap-5 w-full">
+              <motion.div
+                initial={{ opacity: 0, x: 70 }}
+                animate={{ opacity: [0, 0.7, 1], x: 0 }}
+                transition={{
+                  duration: 0.3,
+                  ease: "easeInOut",
+                  delay: 0.3,
+                  type: "spring",
+                }}
+              >
+                <Stacks technology={"REACT.JS"} image={"/images/react.png"} />
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, x: 70 }}
+                animate={{ opacity: [0, 0.7, 1], x: 0 }}
+                transition={{
+                  duration: 0.3,
+                  ease: "easeInOut",
+                  delay: 0.4,
+                  type: "spring",
+                }}
+              >
+                <Stacks technology={"NEXT.JS"} image={"/images/nextjs.png"} />
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, x: 70 }}
+                animate={{ opacity: [0, 0.7, 1], x: 0 }}
+                transition={{
+                  duration: 0.3,
+                  ease: "easeInOut",
+                  delay: 0.5,
+                  type: "spring",
+                }}
+              >
+                <Stacks
+                  technology={"JAVASCRIPT"}
+                  image={"/images/javascript.png"}
+                />
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, x: 70 }}
+                animate={{ opacity: [0, 0.7, 1], x: 0 }}
+                transition={{
+                  duration: 0.3,
+                  ease: "easeInOut",
+                  delay: 0.6,
+                  type: "spring",
+                }}
+              >
+                <Stacks
+                  technology={"TAILWIND"}
+                  image={"/images/tailwind.png"}
+                />
+              </motion.div>
+            </div>
+          </motion.div>
+        </div>
+        {/* Projects Section */}
+        <motion.div
+          className="w-full min-h-fit mb-8"
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: [0, 0.7, 1], x: 0 }}
+          transition={{
+            duration: 0.6,
+            ease: "easeInOut",
+            delay: 0.25,
+            type: "spring",
+          }}
+        >
+          <div className="flex items-center justify-between w-full min-h-fit">
+            <h1 className="pl-2 py-3 text-2xl uppercase text-white font-bold mb-2 lg:mt-0 mt-2">
+              Recent Projects
+            </h1>
+            <Link
+              className="btn btn-sm rounded-2xl bg-green-700 border border-opacity-0 hover:border-opacity-0 text-gray-100 hover:bg-blue-600 w-28 lg:w-24"
+              href={"/projects"}
+            >
+              View All
+            </Link>
+          </div>
+          <div className="flex flex-col lg:flex-row w-full min-h-fit gap-6">
+            <Link
+              href={"/projects/unify"}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <ProjectCard
+                title={"Unify"}
+                imageUrl={"/images/unify.png"}
+                websiteType={"Community Sharing"}
+                tech_1={"Next.js"}
+                tech_2={"TailwindCSS"}
+                tech_3={"Firebase"}
+              />
+            </Link>
+            <Link
+              href={"/projects/reelio"}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <ProjectCard
+                title={"Reelio"}
+                imageUrl={"/images/reelio-1.png"}
+                websiteType={"Movie Platform"}
+                tech_1={"Next.js"}
+                tech_2={"TailwindCSS"}
+                tech_3={"IMdb.API"}
+              />
+            </Link>
+            <Link
+              href={"/projects/neon"}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <ProjectCard
+                title={"Neon City"}
+                imageUrl={"/images/neoncity.png"}
+                websiteType={"Mini Game"}
+                tech_1={"HTML"}
+                tech_2={"CSS"}
+                tech_3={"Vanilla JS"}
+              />
+            </Link>
+          </div>
+        </motion.div>
+        {/* Testimonials */}
+        <motion.div
+          className="min-h-fit w-full"
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: [0, 0.7, 1], x: 0 }}
+          transition={{
+            duration: 0.6,
+            ease: "easeInOut",
+            delay: 0.25,
+            type: "spring",
+          }}
+        >
+          <h1 className="text-2xl text-white font-bold uppercase pl-2 py-3 mb-2">
+            Testimonials
           </h1>
-          <p className="lg:text-md w-full">
-            A passionate front-end web developer with a knack for turning ideas
-            into visually, stunning, user-friendly websites.
-          </p>
-          <Link
-            className="btn btn-ghost btn-outline border-gray-900 btn-sm mt-1 rounded-full lg:w-2/4 w-full text-slate-900 font-semibold hover:bg-gray-100 hover:text-black bg-yellow-200 self-start"
-            href="/about"
-          >
-            More about Me
-          </Link>
-        </div>
+          <Slider />
+        </motion.div>
       </div>
-      {/* Recent Projects Bento */}
-      <div className="w-full min-h-fit lg:py-6 mt-6 lg:mt-2">
-        <h2 className="md:text-3xl text-2xl font-bold text-gray-300">
-          Recent Projects
-        </h2>
-        {/* Projects */}
-        <div className="flex lg:flex-row flex-col gap-6 lg:gap-2 justify-center w-full min-h-fit mt-8">
-          <ProjectCard
-            title={"Neon City"}
-            websiteType={"Mini-Game"}
-            appType={"Web App"}
-            imageUrl={"/images/madlibs.png"}
-            projectUrl={"https://madlibs-404-brain-not-found.vercel.app/"}
-          />
-          <ProjectCard
-            title={"Reelio"}
-            websiteType={"Movie Platform"}
-            appType={"Web App"}
-            imageUrl={"/images/reelio.png"}
-            projectUrl={"https://movie-project-devsquad.vercel.app/"}
-          />
-        </div>
-        <div className="flex flex-row gap-4 items-center p-2 mt-4 w-full">
-          <div className="flex-1 h-[0.9px] bg-gray-300 mt-4"></div>
-          <Link
-            href="/projects"
-            className="btn btn-outline btn-sm text-sm mt-4 text-black bg-yellow-200 rounded-3xl"
-          >
-            View All Projects
-          </Link>
-        </div>
-      </div>
-      <div className="w-full h-full mb-8">
-        <h2 className="md:text-3xl text-2xl font-bold text-gray-300 w-full mb-8">
-          Why Choose Me
-        </h2>
-        {/* Bento Grid */}
-        <div className="grid grid-cols-4 w-full h-full gap-4">
-          <div className="col-span-4 h-full lg:h-52 rounded-3xl">
-            <InfoCard
-              title={"Problem Solver"}
-              description={
-                "I bring a fresh perspective and a passion for innovative solutions to the table. My proficiency in JavaScript, React.js, Next.js, and Firebase enables me to craft dynamic and cutting-edge web applications. I thrive on dissecting challenges, finding elegant solutions, and transforming abstract concepts into tangible, user-centric experiences. When you choose me, you're choosing a developer with a knack for turning complex problems into user-friendly solutions."
-              }
-              icon={<LiaBrainSolid />}
-            />
-          </div>
-          <div className="lg:col-span-2 col-span-4 h-full lg:h-64 rounded-3xl">
-            <InfoCard
-              title={"Detail-Oriented"}
-              description={
-                "When it comes to creating visually appealing websites, precision matters. I pride myself on my meticulous attention to detail, ensuring that every pixel aligns seamlessly with the overall design.  I am committed to delivering not just functional but aesthetically pleasing websites."
-              }
-              icon={<TbListDetails />}
-            />
-          </div>
-          <div className="lg:col-span-2 col-span-4 h-full lg:h-64 rounded-3xl">
-            <InfoCard
-              title={" Team Player & Fast Learner"}
-              description={
-                "In the dynamic world of web development, collaboration is key. I thrive in team environments, fostering open communication and working seamlessly with designers and fellow developers. I am not just an individual contributor; I'm a team player who adapts swiftly to new technologies."
-              }
-              icon={<LuUsers2 />}
-            />
-          </div>
-        </div>
-      </div>
-      <div className="w-full min-h-fit">
-        <h2 className="lg:text-3xl text-lg w-full text-gray-300 font-bold mb-6">
-          Testimonials
-        </h2>
-        <Slider />
-      </div>
-    </div>
+    </section>
   )
 }
 

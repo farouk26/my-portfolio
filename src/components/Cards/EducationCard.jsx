@@ -1,24 +1,27 @@
-import { MdShareLocation } from "react-icons/md"
-import { PiStudentLight } from "react-icons/pi"
-
-function EducationCard({ title, subtitle, year, location }) {
+function EducationCard({
+  title,
+  year,
+  occupation,
+  organization,
+  description_1,
+  description_2,
+}) {
   return (
-    <div className="flex lg:flex-row flex-col gap-4 items-center w-full bg-gray-200 p-4 rounded-3xl transition lg:hover:scale-105 duration-400 lg:cursor-pointer">
-      {/* Job Section */}
-      <div className="flex gap-2 w-full">
-        <PiStudentLight className=" text-black text-3xl" />
-        <div className="flex flex-col w-full">
-          <h2 className=" text-md lg:text-lg font-bold text-black">{title}</h2>
-          <p className="text-sm text-red-600 mb-2">{subtitle}</p>
-          <div className="flex justify-between items-center">
-            <span className="badge badge-outline badge-sm text-black">
-              {year}
-            </span>
-            <p className="flex gap-2 items-center  text-black text-xs">
-              <MdShareLocation className="text-green-500" />
-              {location}
-            </p>
-          </div>
+    <div className="w-full min-h-fit p-4 bg-zinc-800 rounded-3xl">
+      <div className="flex flex-col p-4 gap-6">
+        <div className="flex flex-col gap-1 w-full">
+          <h1 className="md:text-3xl text-2xl text-white capitalize font-bold">
+            {title}
+          </h1>
+          <p className="text-md text-gray-200 font-semibold">{occupation}</p>
+          <p className="text-md text-gray-300 font-light">{organization}</p>
+        </div>
+        <ul className="w-full list-disc px-4 flex flex-col gap-2 font-light">
+          <li className="text-md text-white">{description_1}</li>
+          <li className="text-md text-white">{description_2}</li>
+        </ul>
+        <div className="px-4">
+          <p className="text-sm">{year}</p>
         </div>
       </div>
     </div>
