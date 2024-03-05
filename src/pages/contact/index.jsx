@@ -76,7 +76,7 @@ function ContactPage() {
               <SocialsCard
                 Icon={<FaGithub />}
                 Url={"https://github.com/farouk26"}
-                socialName={"GitHub"}
+                socialName={"Github"}
               />
             </motion.div>
             <motion.div
@@ -92,7 +92,7 @@ function ContactPage() {
               <SocialsCard
                 Icon={<CiLinkedin />}
                 Url={"https://www.linkedin.com/in/faroukisme/"}
-                socialName={"Linkedin"}
+                socialName={"LinkedIn"}
               />
             </motion.div>
             <motion.div

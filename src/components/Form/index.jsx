@@ -117,7 +117,7 @@ function ContactForm() {
         <div className="w-full min-h-fit flex flex-col gap-4 p-4 bg-dark-200 rounded-3xl items-center">
           <CiCircleCheck className="text-6xl" />
           <h1 className="font-bold text-gray-200 text-3xl">Thank You</h1>
-          <p className="text-lg text-gray-200">
+          <p className="text-md lg:text-lg text-center text-gray-200">
             Your message was sent successfully.
           </p>
           <button

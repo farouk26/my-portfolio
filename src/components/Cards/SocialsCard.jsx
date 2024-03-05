@@ -8,7 +8,7 @@ function SocialsCard({ Icon, socialName, Url }) {
           target="_blank"
           className="flex gap-4 items-center hover:scale-105 transition duration-500 cursor-pointer"
         >
-          <span className="text-2xl text-white">{Icon}</span>
+          <span className="text-3xl text-white">{Icon}</span>
           <p className="text-lg text-white w-full">{socialName}</p>
         </a>
       </div>
