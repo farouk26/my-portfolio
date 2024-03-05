@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 
 function SideBar() {
   return (
-    <div className="rounded-3xl px-3 h-[100%] bg-zinc-800 py-8">
+    <div className="rounded-3xl px-3 h-[100%] bg-dark-200 py-8">
       <div className="flex flex-col justify-between min-h-full items-center">
         <div className="w-full min-h-fit mb-8">
           <div className="flex w-full bg-white h-0 justify-center mb-16">

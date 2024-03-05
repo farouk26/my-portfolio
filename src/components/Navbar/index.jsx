@@ -5,7 +5,7 @@ import MobileMenu from "./MobileMenu"
 
 function Navbar() {
   return (
-    <div className="navbar bg-zinc-800 rounded-3xl px-4">
+    <div className="navbar bg-dark-200 rounded-3xl px-4">
       <div className="flex-1">
         <Link href="/" className="btn btn-square btn-ghost">
           <figure className="h-10 w-10">

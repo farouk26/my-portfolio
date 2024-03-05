@@ -58,7 +58,7 @@ function ContactForm() {
               type="text"
               name="user_name"
               placeholder="Full Name"
-              className="bg-zinc-800 rounded-xl text-sm text-white p-4 h-14 w-full lg:w-1/2"
+              className="bg-dark-200 rounded-xl text-sm text-white p-4 h-14 w-full lg:w-1/2"
               required
             />
             <motion.input
@@ -73,7 +73,7 @@ function ContactForm() {
               type="email"
               name="user_email"
               placeholder="Email"
-              className="bg-zinc-800 rounded-xl text-sm text-white p-4 h-14 w-full lg:w-1/2"
+              className="bg-dark-200 rounded-xl text-sm text-white p-4 h-14 w-full lg:w-1/2"
               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
             />
           </div>
@@ -86,7 +86,7 @@ function ContactForm() {
               delay: 0.6,
               type: "spring",
             }}
-            className="textarea rounded-2xl text-white h-40 text-md bg-zinc-800"
+            className="textarea rounded-2xl text-white h-40 text-md bg-dark-200"
             name="message"
             placeholder="Message"
             required
@@ -114,7 +114,7 @@ function ContactForm() {
           </motion.button>
         </form>
       ) : (
-        <div className="w-full min-h-fit flex flex-col gap-4 p-4 bg-zinc-800 rounded-3xl items-center">
+        <div className="w-full min-h-fit flex flex-col gap-4 p-4 bg-dark-200 rounded-3xl items-center">
           <CiCircleCheck className="text-6xl" />
           <h1 className="font-bold text-gray-200 text-3xl">Thank You</h1>
           <p className="text-lg text-gray-200">

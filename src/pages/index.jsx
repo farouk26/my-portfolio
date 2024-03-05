@@ -14,7 +14,7 @@ function Home() {
     <section className="min-h-screen">
       <div className="flex flex-col min-h-fit w-full gap-4">
         <motion.div
-          className="min-h-fit bg-zinc-800 shadow-sm rounded-3xl flex items-start justify-center lg:justify-start lg:items-center lg:flex-row flex-col gap-8 p-8"
+          className="min-h-fit bg-dark-200 shadow-sm rounded-3xl flex items-start justify-center lg:justify-start lg:items-center lg:flex-row flex-col gap-8 p-8"
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: [0, 0.8, 1], x: 0 }}
           transition={{
@@ -65,7 +65,7 @@ function Home() {
           </figure>
         </motion.div>
         {/* Second Section */}
-        <div className="flex lg:flex-row flex-col w-full min-h-fit gap-8">
+        <div className="flex lg:flex-row flex-col w-full min-h-fit gap-5">
           {/* About */}
           <motion.div
             className="flex flex-col lg:w-[60%] w-full min-h-fit"
@@ -153,12 +153,12 @@ function Home() {
               type: "spring",
             }}
           >
-            <div className="pl-2 py-3 flex justify-between">
+            <div className="pl-2 py-3 flex justify-between items-center">
               <h1 className="text-2xl uppercase font-bold text-white">
                 Skills
               </h1>
               <Link
-                className="btn btn-sm rounded-2xl bg-green-700 border border-opacity-0 hover:border-opacity-0 text-gray-100 hover:bg-blue-600 w-28 lg:w-24"
+                className="btn btn-sm rounded-2xl  bg-green-700 border border-opacity-0 hover:border-opacity-0 text-gray-100 hover:bg-blue-600 w-28 lg:w-24"
                 href={"/stack"}
               >
                 View All
@@ -245,7 +245,7 @@ function Home() {
               View All
             </Link>
           </div>
-          <div className="flex flex-col lg:flex-row w-full min-h-fit gap-6">
+          <div className="flex flex-col lg:flex-row w-full min-h-fit gap-5">
             <Link
               href={"/projects/unify"}
               rel="noopener noreferrer"

@@ -1,7 +1,7 @@
 function SocialsCard({ Icon, socialName, Url }) {
   return (
     <div className="w-full min-h-fit">
-      <div className="w-full shadow-sm bg-zinc-800 rounded-2xl p-4">
+      <div className="w-full shadow-sm bg-dark-200 rounded-2xl p-4">
         <a
           href={Url}
           rel="noopener noreferrer"

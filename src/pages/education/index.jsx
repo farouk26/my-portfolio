@@ -7,7 +7,7 @@ function EducationPage() {
       <div className="flex flex-col w-full min-h-fit gap-6 mb-6">
         {/* Header */}
         <motion.div
-          className="lg:h-80 min-h-fit w-full rounded-3xl shadow-sm p-8 bg-zinc-800"
+          className="lg:h-80 min-h-fit w-full rounded-3xl shadow-sm p-8 bg-dark-200"
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: [0, 0.8, 1], x: 0 }}
           transition={{
@@ -17,11 +17,11 @@ function EducationPage() {
             type: "spring",
           }}
         >
-          <div className="flex flex-col h-full gap-3 w-full lg:w-[65%] justify-end">
+          <div className="flex flex-col h-full gap-3 w-full lg:w-[70%] justify-end">
             <h1 className="text-4xl uppercase font-bold text-white">
               Education
             </h1>
-            <p className="text-md text-white font-light">
+            <p className="text-md text-gray-300 font-light">
               This comprehensive portfolio highlights not only my academic
               achievements and certifications but also emphasizes the specific
               soft skills cultivated throughout my educational journey,
@@ -29,7 +29,7 @@ function EducationPage() {
             </p>
           </div>
         </motion.div>
-        <div className="flex lg:flex-row flex-col w-full min-h-fit gap-6">
+        <div className="flex lg:flex-row flex-col w-full min-h-fit gap-5">
           <div className="flex flex-col gap-6 lg:w-[60%] w-full">
             <motion.div
               initial={{ opacity: 0, x: 50 }}
@@ -102,7 +102,7 @@ function EducationPage() {
           </div>
           <div className="flex flex-col gap-6 min-h-fit lg:w-[40%] w-full">
             <motion.div
-              className="min-h-fit w-full bg-zinc-800 p-6 rounded-3xl"
+              className="min-h-fit w-full bg-dark-200 p-6 rounded-3xl"
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: [0, 0.8, 1], x: 0 }}
               transition={{
@@ -116,7 +116,7 @@ function EducationPage() {
                 <h1 className="md:text-3xl text-2xl font-bold uppercase text-white">
                   Soft Skills
                 </h1>
-                <ul className="list-disc w-full p-5 text-lg font-light text-gray-200 flex flex-col gap-3">
+                <ul className="list-disc w-full p-5 text-md font-light text-gray-200 flex flex-col gap-3">
                   <li>Research</li>
                   <li>Web Design</li>
                   <li>Project Management</li>
@@ -131,7 +131,7 @@ function EducationPage() {
               </div>
             </motion.div>
             <motion.div
-              className="w-full h-full p-6 bg-zinc-800 rounded-3xl"
+              className="w-full h-full p-6 bg-dark-200 rounded-3xl"
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: [0, 0.8, 1], x: 0 }}
               transition={{
@@ -145,8 +145,8 @@ function EducationPage() {
                 <h1 className="md:text-3xl text-2xl font-bold uppercase text-white">
                   Certifications
                 </h1>
-                <p className="text-lg text-gray-200 font-light">
-                  + Front-End Web Development Certificate/Re:Coded
+                <p className="text-md text-gray-200 font-light">
+                  - Front-End Web Development Certificate/Re:Coded
                 </p>
               </div>
             </motion.div>

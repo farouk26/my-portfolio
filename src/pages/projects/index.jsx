@@ -8,7 +8,7 @@ function ProjectsPage() {
       <div className="flex flex-col w-full min-h-fit gap-2">
         {/* Header */}
         <motion.div
-          className="bg-zinc-800 h-80 w-full rounded-3xl p-8 shadow-sm"
+          className="bg-dark-200 h-80 w-full rounded-3xl p-8 shadow-sm"
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: [0, 0.8, 1], x: 0 }}
           transition={{
@@ -22,7 +22,7 @@ function ProjectsPage() {
             <h1 className="text-4xl uppercase font-bold text-white">
               Projects
             </h1>
-            <p className="text-md text-white font-light">
+            <p className="text-md text-gray-200 font-light">
               This section serves as a portfolio showcase, featuring a
               compilation of my latest work.
             </p>

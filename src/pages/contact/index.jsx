@@ -11,7 +11,7 @@ function ContactPage() {
       <div className="flex flex-col gap-6 min-h-fit w-full">
         {/* Header */}
         <motion.div
-          className="h-80 bg-zinc-800 rounded-3xl w-full p-6"
+          className="h-80 bg-dark-200 rounded-3xl w-full p-6"
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: [0, 0.8, 1], x: 0 }}
           transition={{

@@ -20,18 +20,18 @@ const bebasneue = Bebas_Neue({
 function Layout({ children }) {
   return (
     <main
-      className={`${poppins.className} font-poppins w-full bg-neutral-900 p-4 lg:p-6`}
+      className={`${poppins.className} font-poppins w-full bg-dark-100 p-4 lg:p-6`}
     >
-      <div className="relative flex lg:flex-row flex-col gap-8">
+      <div className="relative flex lg:flex-row flex-col lg:gap-8 gap-5">
         <div className="lg:hidden block sticky top-0 z-50">
           <Navbar />
         </div>
-        <div className="w-1/5 relative lg:block hidden">
-          <div className="fixed w-1/5 h-full py-6 top-0 rounded-3xl">
+        <div className="w-[19%] relative lg:block hidden">
+          <div className="fixed w-[19%] h-full py-6 top-0 rounded-3xl">
             <SideBar />
           </div>
         </div>
-        <div className="lg:flex-1 w-full overflow-y-auto bg-neutral-900 rounded-3xl">
+        <div className="lg:flex-1 w-full overflow-y-auto bg-dark-100 rounded-3xl">
           {children}
           <Footer />
         </div>

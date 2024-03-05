@@ -3,7 +3,7 @@ import Image from "next/image"
 function TestimonialCard({ imageUrl, title, subtitle, description }) {
   return (
     <div className="h-full">
-      <div className="bg-zinc-800 flex flex-col gap-1 p-4 rounded-3xl mb-10 md:h-72 lg:h-60 h-[520px]">
+      <div className="bg-dark-200 flex flex-col gap-1 p-4 rounded-3xl mb-10 md:h-72 lg:h-60 h-[520px]">
         <div className="flex items-center gap-4 min-h-fit">
           <figure className="h-16 w-16">
             <Image
@@ -21,7 +21,7 @@ function TestimonialCard({ imageUrl, title, subtitle, description }) {
           </div>
         </div>
         <div className="h-full w-full p-3">
-          <p className="text-white text-md font-light">{description}</p>
+          <p className="text-gray-300 text-md font-light">{description}</p>
         </div>
       </div>
     </div>

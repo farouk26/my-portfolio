@@ -33,7 +33,7 @@ function MobileMenu() {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items className="absolute px-8 right-0 z-10 lg:mr-4 w-full md:max-w-full md:w-screen divide-y divide-white mt-3 origin-top-0 rounded-lg bg-zinc-800 text-white focus:outline-none py-2">
+        <Menu.Items className="absolute px-8 right-0 z-10 lg:mr-4 w-full md:max-w-full md:w-screen divide-y divide-white mt-4 origin-top-0 bg-dark-200 text-white focus:outline-none py-2 rounded-3xl">
           <div className="py-6 mb-2 flex flex-col gap-6">
             <Menu.Item>
               <Link

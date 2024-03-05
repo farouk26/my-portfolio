@@ -28,7 +28,7 @@ function ProjectDetailsCard({
   return (
     <div className="flex flex-col gap-6 mb-5">
       <motion.div
-        className="h-80 bg-zinc-800 rounded-3xl p-6 w-full"
+        className="h-80 bg-dark-200 rounded-3xl p-6 w-full"
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: [0, 0.8, 1], x: 0 }}
         transition={{
@@ -40,7 +40,7 @@ function ProjectDetailsCard({
       >
         <div className="flex lg:flex-row flex-col gap-2 h-full w-full justify-between p-2 lg:p-4">
           <div className="lg:w-1/2 w-full h-full lg:flex lg:items-end">
-            <h1 className="text-3xl text-white font-bold">{title}</h1>
+            <h1 className="text-3xl text-gray-100 font-bold">{title}</h1>
           </div>
           <div className="flex flex-col gap-6 justify-end text-start lg:text-end w-full lg:w-1/2">
             <p className="text-md text-white">{websiteType}</p>
@@ -71,7 +71,7 @@ function ProjectDetailsCard({
       </motion.div>
       {/* Summary Section */}
       <motion.div
-        className="min-h-fit lg:h-64 bg-zinc-800 rounded-3xl p-4 lg:p-6"
+        className="min-h-fit lg:h-64 bg-dark-200 rounded-3xl p-4 lg:p-6"
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: [0, 0.8, 1], x: 0 }}
         transition={{
@@ -89,7 +89,7 @@ function ProjectDetailsCard({
       <div className="min-h-fit w-full flex lg:flex-row flex-col gap-6">
         <div className="flex flex-col gap-6 lg:w-[50%] w-full">
           <motion.div
-            className="lg:h-80 min-h-fit bg-zinc-800 rounded-3xl p-4 lg:p-6"
+            className="lg:h-80 min-h-fit bg-dark-200 rounded-3xl p-4 lg:p-6"
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: [0, 0.8, 1], x: 0 }}
             transition={{
@@ -105,7 +105,7 @@ function ProjectDetailsCard({
             </div>
           </motion.div>
           <motion.div
-            className="w-full min-h-fit p-4 lg:p-6 bg-zinc-800 rounded-3xl"
+            className="w-full min-h-fit p-4 lg:p-6 bg-dark-200 rounded-3xl"
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: [0, 0.8, 1], x: 0 }}
             transition={{
@@ -211,7 +211,7 @@ function ProjectDetailsCard({
         </div>
       </div>
       <motion.div
-        className="w-full min-h-fit p-4 lg:p-6 bg-zinc-800 rounded-3xl shadow-sm"
+        className="w-full min-h-fit p-4 lg:p-6 bg-dark-200 rounded-3xl shadow-sm"
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: [0, 0.8, 1], x: 0 }}
         transition={{

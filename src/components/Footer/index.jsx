@@ -2,10 +2,11 @@ import React from "react"
 
 function Footer() {
   return (
-    <footer className="footer footer-center w-full p-4 bg-zinc-800 rounded-t-3xl text-white h-20">
+    <footer className="footer footer-center w-full p-4 bg-dark-200 rounded-t-3xl text-white h-20">
       <aside>
         <p className="font-light">
-          Copyright © 2023 - All right reserved by Farouk Zemmouri
+          Copyright © 2024 - All right reserved by{" "}
+          <span className="text-green-500 font-semibold">Farouk Zemmouri</span>
         </p>
       </aside>
     </footer>
