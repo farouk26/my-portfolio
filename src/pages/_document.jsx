@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html
       lang="en"
-      className="bg-neutral-900"
+      className="bg-dark-100"
       style={{ scrollBehavior: "smooth" }}
     >
       <Head />
