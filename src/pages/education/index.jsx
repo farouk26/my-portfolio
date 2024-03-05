@@ -1,5 +1,6 @@
 import EducationCard from "@/components/Cards/EducationCard"
 import { motion } from "framer-motion"
+import Image from "next/image"
 
 function EducationPage() {
   return (
@@ -141,13 +142,30 @@ function EducationPage() {
                 type: "spring",
               }}
             >
-              <div className="w-full min-h-fit flex flex-col gap-4 p-4">
-                <h1 className="md:text-3xl text-2xl font-bold uppercase text-white">
-                  Certifications
-                </h1>
-                <p className="text-md text-gray-200 font-light">
-                  - Front-End Web Development Certificate/Re:Coded
-                </p>
+              <h1 className="md:text-3xl text-2xl font-bold uppercase text-white p-4 mb-2">
+                Certifications
+              </h1>
+              <div className="w-full h-[80%] flex flex-col gap-4 p-4 lg:gap-6 justify-center">
+                <li className="text-md text-gray-200 font-light">
+                  Front-End Web Development Certificate
+                </li>
+                <a
+                  href="https://www.credential.net/fcaf13d7-eb4c-4b68-bbf5-48deb48dd14e#gs.5zc6jz"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:scale-105 transition duration-500 cursor-pointer"
+                >
+                  <figure className="relative min-h-fit w-full">
+                    <Image
+                      src="/images/certificate.png"
+                      height={500}
+                      width={500}
+                      priority
+                      alt="certificate"
+                      className="w-full h-full object-cover rounded-3xl"
+                    />
+                  </figure>
+                </a>
               </div>
             </motion.div>
           </div>
