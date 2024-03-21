@@ -54,7 +54,7 @@ Welcome to my portfolio, a curated showcase of my skills, projects, and educatio
 - **React Icons:** Icons library for React applications.
 - **DaisyUI:** UI component library for Tailwind CSS.
 
-## Project Goals
+## Project Goals.
 
 The primary goal of this portfolio is to present my skills, projects, and educational background in a visually appealing and user-friendly manner. I aim to provide visitors with a holistic view of my capabilities, accomplishments, and academic journey, ensuring a seamless and enjoyable browsing experience.
 
