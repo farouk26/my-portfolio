@@ -1,6 +1,6 @@
 # My Portfolio
 
-Welcome to my portfolio, a curated showcase of my skills, projects, and educational background. This portfolio is crafted using Next.js, Tailwind CSS, Framer Motion, and other cutting-edge technologies to deliver a dynamic and visually captivating representation of my work and academic journey.
+Welcome to my personal portfolio, where i showcase of my skills, projects, and educational background. This portfolio is crafted using Next.js, Tailwind CSS, Framer Motion, and other cutting-edge technologies to deliver a dynamic and visually captivating representation of my work and academic journey.
 
 ## Key Features
 
