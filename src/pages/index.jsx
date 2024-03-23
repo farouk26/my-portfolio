@@ -30,17 +30,11 @@ function Home() {
               Hello! i&apos;m farouk.
             </h1>
             <p className="text-md font-light text-gray-300">
-              Born & Raised in the culturally rich city of Medea, Algeria, I am
-              a 26-year-old professional deeply engaged in the realm of web
-              development. My initial background lies in pythopathology, from
-              which I seamlessly transitioned into the world of front-end
-              development. Specializing in the creation of user-centric web
-              experiences, I bring forth a combination of aesthetic finesse and
-              flawless functionality. I believe in teamwork and constant
-              learning. Outside of work, I&apos;m a big fan of video games,
-              enjoy hanging out with friends, hitting the gym, I also like
-              keeping up with new technologies, always eager to learn and stay
-              updated.
+              A front-end web developer with a unique background in
+              phytopathology, specializing in creating user-centric,
+              aesthetically pleasing web interfaces. Committed to teamwork and
+              lifelong learning, I also maintain an active interest in gaming,
+              fitness, and tech trends.
             </p>
             <Link
               className="btn btn-sm lg:w-36 w-full my-2 border border-opacity-0 rounded-3xl self-start hover:border-opacity-0 bg-green-700 text-gray-100 hover:bg-blue-600"

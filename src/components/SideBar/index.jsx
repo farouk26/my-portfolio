@@ -1,10 +1,17 @@
-import React from "react"
+import React, { useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { GoDotFill } from "react-icons/go"
 import { motion } from "framer-motion"
 
 function SideBar() {
+  const [activeLink, setActiveLink] = useState("") // State to track active link
+
+  // Function to handle link click and update active link state
+  const handleLinkClick = (link) => {
+    setActiveLink(link)
+  }
+
   return (
     <div className="rounded-3xl px-3 h-[100%] bg-dark-200 py-8">
       <div className="flex flex-col justify-between min-h-full items-center">
@@ -50,32 +57,47 @@ function SideBar() {
         </div>
         <div className="flex flex-col gap-2">
           <Link
-            className="text-3xl uppercase text-white font-bold hover:scale-110 transition duration-500"
             href={"/"}
+            onClick={() => handleLinkClick("Home")}
+            className={`text-3xl uppercase font-bold hover:scale-110 transition duration-500 ${
+              activeLink === "Home" ? "text-green-400" : "text-white"
+            }`}
           >
             Home
           </Link>
           <Link
-            className="text-3xl uppercase text-white font-bold hover:scale-110 transition duration-500"
             href={"/projects"}
+            onClick={() => handleLinkClick("Projects")}
+            className={`text-3xl uppercase font-bold hover:scale-110 transition duration-500 ${
+              activeLink === "Projects" ? "text-green-400" : "text-white"
+            }`}
           >
             Projects
           </Link>
           <Link
-            className="text-3xl uppercase text-white font-bold hover:scale-110 transition duration-500"
             href={"/education"}
+            onClick={() => handleLinkClick("Education")}
+            className={`text-3xl uppercase font-bold hover:scale-110 transition duration-500 ${
+              activeLink === "Education" ? "text-green-400" : "text-white"
+            }`}
           >
             Education
           </Link>
           <Link
-            className="text-3xl uppercase text-white font-bold hover:scale-110 transition duration-500"
             href={"/stack"}
+            onClick={() => handleLinkClick("Skills")}
+            className={`text-3xl uppercase font-bold hover:scale-110 transition duration-500 ${
+              activeLink === "Skills" ? "text-green-400" : "text-white"
+            }`}
           >
             Skills
           </Link>
           <Link
-            className="text-3xl uppercase text-white font-bold hover:scale-110 transition duration-500"
             href={"/contact"}
+            onClick={() => handleLinkClick("Contact")}
+            className={`text-3xl uppercase font-bold hover:scale-110 transition duration-500 ${
+              activeLink === "Contact" ? "text-green-400" : "text-white"
+            }`}
           >
             Contact
           </Link>
@@ -93,7 +115,7 @@ function SideBar() {
           </figure>
           <div className="flex flex-col text-center">
             <p className="text-md text-white">Farouk Zemmouri</p>
-            <p className="text-xs">Front-End Web Developer</p>
+            <p className="text-xs font-light">Front-End Web Developer</p>
           </div>
         </div>
       </div>

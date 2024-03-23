@@ -25,9 +25,9 @@ function ContactPage() {
             <h1 className="text-3xl text-white uppercase font-bold">Contact</h1>
             <p className="text-md tracking-normal">
               Looking for a{" "}
-              <span className="text-green-500 font-bold">Collaboration ?</span>,
+              <span className="text-green-400 font-bold">Collaboration ?</span>,
               Want to{" "}
-              <span className="font-bold text-green-500">Hire Me ?</span>, Send
+              <span className="font-bold text-green-400">Hire Me ?</span>, Send
               me a message!
             </p>
           </div>
