@@ -35,7 +35,7 @@ Welcome to my personal portfolio, where i showcase of my skills, projects, and e
 
 - A designated space for users to connect with me.
 - Features a user-friendly contact form for easy communication.
-- Includes social media links for additional contact options.
+- Includes socials links for additional contact options such as phone number , github and linkedIn.
 
 ### Navigation
 
