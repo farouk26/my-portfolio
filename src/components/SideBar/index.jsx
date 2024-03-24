@@ -14,7 +14,7 @@ function SideBar() {
 
   return (
     <div className="rounded-3xl px-3 h-[100%] bg-dark-200 py-8">
-      <div className="flex flex-col justify-between min-h-full items-center">
+      <div className="flex flex-col justify-around min-h-full items-center">
         <div className="w-full min-h-fit mb-8">
           <div className="flex w-full bg-white h-0 justify-center mb-16">
             <span className="w-48 py-3 badge rounded-xl bg-gray-300 text-green-700 text-sm border-opacity-5 mb-8 flex items-center gap-1">

@@ -39,7 +39,7 @@ function Home() {
             <Link
               className="btn btn-sm lg:w-36 w-full my-2 border border-opacity-0 rounded-3xl self-start hover:border-opacity-0 bg-green-700 text-gray-100 hover:bg-blue-600"
               href={
-                "https://drive.google.com/file/d/1JL269lIdCZKRhPJOm3tmQsu3f1SND2iv/view?usp=sharing"
+                "https://drive.google.com/file/d/1EMyg2Jqnvg31apnveSjePKrdZRJVs3MH/view?usp=sharing"
               }
               rel="noopener noreferrer"
               target="_blank"
