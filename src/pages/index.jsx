@@ -213,6 +213,21 @@ function Home() {
                   image={"/images/tailwind.png"}
                 />
               </motion.div>
+              <motion.div
+                initial={{ opacity: 0, x: 70 }}
+                animate={{ opacity: [0, 0.7, 1], x: 0 }}
+                transition={{
+                  duration: 0.3,
+                  ease: "easeInOut",
+                  delay: 0.6,
+                  type: "spring",
+                }}
+              >
+                <Stacks
+                  technology={"BOOTSTRAP"}
+                  image={"/images/bootstrap.png"}
+                />
+              </motion.div>
             </div>
           </motion.div>
         </div>
