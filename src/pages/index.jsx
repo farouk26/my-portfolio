@@ -148,8 +148,8 @@ function Home() {
             }}
           >
             <div className="pl-2 py-3 flex justify-between items-center">
-              <h1 className="text-2xl uppercase font-bold text-white">
-                Skills
+              <h1 className="text-2xl w-full uppercase font-bold text-white">
+                Stack
               </h1>
               <Link
                 className="btn btn-sm rounded-2xl  bg-green-700 border border-opacity-0 hover:border-opacity-0 text-gray-100 hover:bg-blue-600 w-28 lg:w-24"
@@ -158,7 +158,7 @@ function Home() {
                 View All
               </Link>
             </div>
-            <div className="flex flex-col gap-5 w-full">
+            <div className="flex flex-col gap-5 h-full w-full">
               <motion.div
                 initial={{ opacity: 0, x: 70 }}
                 animate={{ opacity: [0, 0.7, 1], x: 0 }}
@@ -211,21 +211,6 @@ function Home() {
                 <Stacks
                   technology={"TAILWIND"}
                   image={"/images/tailwind.png"}
-                />
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 0, x: 70 }}
-                animate={{ opacity: [0, 0.7, 1], x: 0 }}
-                transition={{
-                  duration: 0.3,
-                  ease: "easeInOut",
-                  delay: 0.6,
-                  type: "spring",
-                }}
-              >
-                <Stacks
-                  technology={"BOOTSTRAP"}
-                  image={"/images/bootstrap.png"}
                 />
               </motion.div>
             </div>

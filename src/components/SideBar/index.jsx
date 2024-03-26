@@ -85,12 +85,12 @@ function SideBar() {
           </Link>
           <Link
             href={"/stack"}
-            onClick={() => handleLinkClick("Skills")}
+            onClick={() => handleLinkClick("Stack")}
             className={`text-3xl uppercase font-bold hover:scale-110 transition duration-500 ${
-              activeLink === "Skills" ? "text-green-400" : "text-white"
+              activeLink === "Stack" ? "text-green-400" : "text-white"
             }`}
           >
-            Skills
+            Stack
           </Link>
           <Link
             href={"/contact"}
