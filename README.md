@@ -64,7 +64,7 @@ Explore the live demo of my portfolio [here](https://faroukzemmouri.vercel.app/)
 
 # To Clone and Set Up Locally
 
-Follow these steps to set up the project on your local machine:
+Follow these steps to set up the project on your local machine :
 
 1. **Fork & Clone the Repository:**
 
