@@ -1,6 +1,6 @@
 # My Portfolio
 
-Welcome to my personal portfolio, where i showcase of my skills, projects, and educational background. This portfolio is crafted using Next.js, Tailwind CSS, Framer Motion, and other cutting-edge technologies to deliver a dynamic and visually captivating representation of my work and academic journey.
+Welcome to my personal portfolio, where i showcase of my skills, projects, and educational background. This portfolio is crafted using Next.js, Tailwind CSS, Framer Motion ,Email.js, and other cutting-edge technologies to deliver a dynamic and visually captivating representation of my work and academic journey.
 
 ## Key Features
 
@@ -64,7 +64,7 @@ Explore the live demo of my portfolio [here](https://faroukzemmouri.vercel.app/)
 
 # To Clone and Set Up Locally
 
-Follow these steps to set up the project on your local machine:
+Follow these steps to set up the project on your local machine :
 
 1. **Fork & Clone the Repository:**
 
