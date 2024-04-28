@@ -18,6 +18,17 @@ module.exports = {
           100: "#101418",
         },
       },
+      screens: {
+        xs: "320px", // Extra small devices (portrait phones)
+        sm: "640px", // Small devices (landscape phones)
+        md: "768px", // Medium devices (tablets)
+        lg: "1024px", // Large devices (desktops)
+        xl: "1280px", // Extra large devices (large desktops)
+        "2xl": "1536px", // 2X large devices (ultra large desktops)
+        "3xl": "1920px", // 3X large devices (full HD monitors)
+        "4xl": "2560px", // 4X large devices (QHD, WQHD monitors)
+        "5xl": "3840px", // 5X large devices (4K UHD monitors)
+      },
     },
   },
   plugins: [require("daisyui")],
