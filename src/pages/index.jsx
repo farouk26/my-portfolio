@@ -59,10 +59,10 @@ function Home() {
           </figure>
         </motion.div>
         {/* Second Section */}
-        <div className="flex lg:flex-row flex-col w-full min-h-fit gap-5">
+        <div className="flex xl:flex-row flex-col w-full min-h-fit gap-5">
           {/* About */}
           <motion.div
-            className="flex flex-col lg:w-[60%] w-full min-h-fit"
+            className="flex flex-col xl:w-[60%] w-full min-h-fit"
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: [0, 0.7, 1], x: 0 }}
             transition={{
@@ -90,7 +90,7 @@ function Home() {
                 <InfoCard
                   title={"Problem Solver"}
                   description={
-                    "I bring a fresh perspective and a passion for innovative solutions to the table.  My proficiency in JavaScript, React.js, Next.js, and Firebase enables me to craft dynamic and cutting-edge web applications."
+                    "Fresh perspective, passionate about innovative solutions."
                   }
                   icon={<LiaBrainSolid />}
                 />
@@ -109,7 +109,7 @@ function Home() {
                 <InfoCard
                   title={"Detail Oriented"}
                   description={
-                    "I pride myself on my meticulous attention to detail, ensuring that every pixel aligns seamlessly with the overall design. I am committed to delivering not just functional but aesthetically pleasing websites."
+                    "Detail-oriented, aligning pixels with precision."
                   }
                   icon={<TbListDetails />}
                 />
@@ -137,7 +137,7 @@ function Home() {
           </motion.div>
           {/* Stack */}
           <motion.div
-            className="flex flex-col lg:w-[40%] w-full"
+            className="flex flex-col xl:w-[40%] w-full"
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: [0, 0.7, 1], x: 0 }}
             transition={{
