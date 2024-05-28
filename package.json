@@ -32,7 +32,7 @@
     "@commitlint/config-conventional": "^18.6.3",
     "autoprefixer": "^10.4.19",
     "cz-conventional-changelog": "^3.3.0",
-    "daisyui": "^4.10.2",
+    "daisyui": "^4.11.1",
     "eslint": "^8",
     "eslint-config-next": "^14.2.2",
     "husky": "^9.0.11",
