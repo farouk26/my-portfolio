@@ -49,7 +49,7 @@ function Home() {
           </div>
           <figure className="h-48 w-48 lg:block hidden">
             <Image
-              src="/images/2.jpg"
+              src="/images/avatar_1.png"
               alt=""
               height={500}
               width={500}
