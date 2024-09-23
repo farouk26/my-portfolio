@@ -101,7 +101,7 @@ function EducationPage() {
               />
             </motion.div>
           </div>
-          <div className="flex flex-col gap-6 min-h-fit lg:w-[40%] w-full">
+          <div className="flex flex-col gap-6 min-h-full lg:w-[40%] w-full">
             <motion.div
               className="min-h-fit w-full bg-dark-200 p-6 rounded-3xl"
               initial={{ opacity: 0, x: 50 }}
