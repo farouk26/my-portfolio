@@ -1,9 +1,13 @@
 import ProjectDetailsCard from "@/components/Cards/ProjectDetailsCard"
+import Head from "next/head"
 import React from "react"
 
 function neonPage() {
   return (
     <div className="w-full min-h-screen">
+      <Head>
+        <title>Neon</title>
+      </Head>
       <ProjectDetailsCard
         title={"Neon City"}
         websiteType={"Madlibs Mini Game"}

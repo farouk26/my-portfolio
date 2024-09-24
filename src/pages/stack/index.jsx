@@ -1,9 +1,13 @@
 import StackCard from "@/components/Cards/StackCard"
 import { motion } from "framer-motion"
+import Head from "next/head"
 
 function StackPage() {
   return (
     <motion.div className="min-h-screen w-full">
+      <Head>
+        <title>Stack</title>
+      </Head>
       <motion.div className="flex flex-col gap-6 min-h-fit mb-6">
         {/* Header */}
         <motion.div

@@ -1,10 +1,14 @@
 import EducationCard from "@/components/Cards/EducationCard"
 import { motion } from "framer-motion"
+import Head from "next/head"
 import Image from "next/image"
 
 function EducationPage() {
   return (
     <section className="min-h-screen w-full">
+      <Head>
+        <title>Education</title>
+      </Head>
       <div className="flex flex-col w-full min-h-fit gap-6 mb-6">
         {/* Header */}
         <motion.div

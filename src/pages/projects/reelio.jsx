@@ -1,9 +1,13 @@
 import ProjectDetailsCard from "@/components/Cards/ProjectDetailsCard"
+import Head from "next/head"
 import React from "react"
 
 function reelioPage() {
   return (
     <div className="w-full min-h-screen">
+      <Head>
+        <title>Reelio</title>
+      </Head>
       <ProjectDetailsCard
         title={"Reelio"}
         websiteType={"Movie Platform"}

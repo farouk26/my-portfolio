@@ -8,17 +8,21 @@ import ProjectCard from "@/components/Cards/ProjectCard"
 import Image from "next/image"
 import Slider from "@/components/Swiper"
 import { motion } from "framer-motion"
+import Head from "next/head"
 
 function Home() {
   return (
     <section className="min-h-screen">
+      <Head>
+        <title>Farouk Zemmouri .</title>
+      </Head>
       <div className="flex flex-col min-h-fit w-full gap-4">
         <motion.div
           className="min-h-fit bg-dark-200 shadow-sm rounded-3xl flex items-start justify-center lg:justify-start lg:items-center lg:flex-row flex-col gap-8 p-8"
           initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: [0, 0.8, 1], x: 0 }}
+          animate={{ opacity: [0, 0.5, 1], x: 0 }}
           transition={{
-            duration: 0.5,
+            duration: 0.2,
             ease: "easeInOut",
             delay: 0.22,
             type: "spring",
@@ -37,7 +41,7 @@ function Home() {
               fitness, and tech trends.
             </p>
             <Link
-              className="btn btn-sm lg:w-36 w-full my-2 border border-opacity-0 rounded-3xl self-start hover:border-opacity-0 bg-green-700 text-gray-100 hover:bg-blue-600"
+              className="btn btn-sm lg:w-36 w-full my-2 border border-opacity-0 rounded-3xl self-start hover:border-opacity-0 bg-green-700 text-gray-100 hover:bg-midnight-green"
               href={
                 "https://drive.google.com/file/d/1EMyg2Jqnvg31apnveSjePKrdZRJVs3MH/view?usp=sharing"
               }
@@ -64,9 +68,9 @@ function Home() {
           <motion.div
             className="flex flex-col xl:w-[60%] w-full min-h-fit"
             initial={{ opacity: 0, x: 30 }}
-            animate={{ opacity: [0, 0.7, 1], x: 0 }}
+            animate={{ opacity: [0, 0.9, 1], x: 0 }}
             transition={{
-              duration: 0.6,
+              duration: 0.3,
               ease: "easeInOut",
               delay: 0.2,
               type: "spring",
@@ -81,7 +85,7 @@ function Home() {
                 initial={{ opacity: 0, x: 50 }}
                 animate={{ opacity: [0, 0.7, 1], x: 0 }}
                 transition={{
-                  duration: 0.6,
+                  duration: 0.3,
                   ease: "easeInOut",
                   delay: 0.2,
                   type: "spring",
@@ -100,7 +104,7 @@ function Home() {
                 initial={{ opacity: 0, x: 50 }}
                 animate={{ opacity: [0, 0.7, 1], x: 0 }}
                 transition={{
-                  duration: 0.6,
+                  duration: 0.3,
                   ease: "easeInOut",
                   delay: 0.3,
                   type: "spring",
@@ -119,7 +123,7 @@ function Home() {
                 initial={{ opacity: 0, x: 50 }}
                 animate={{ opacity: [0, 0.7, 1], x: 0 }}
                 transition={{
-                  duration: 0.6,
+                  duration: 0.3,
                   ease: "easeInOut",
                   delay: 0.4,
                   type: "spring",
@@ -152,7 +156,7 @@ function Home() {
                 Stack
               </h1>
               <Link
-                className="btn btn-sm rounded-2xl  bg-green-700 border border-opacity-0 hover:border-opacity-0 text-gray-100 hover:bg-blue-600 w-28 lg:w-24"
+                className="btn btn-sm rounded-2xl  bg-green-700 border border-opacity-0 hover:border-opacity-0 text-gray-100 hover:bg-midnight-green w-28 lg:w-24"
                 href={"/stack"}
               >
                 View All
@@ -163,7 +167,7 @@ function Home() {
                 initial={{ opacity: 0, x: 70 }}
                 animate={{ opacity: [0, 0.7, 1], x: 0 }}
                 transition={{
-                  duration: 0.3,
+                  duration: 0.2,
                   ease: "easeInOut",
                   delay: 0.3,
                   type: "spring",
@@ -175,7 +179,7 @@ function Home() {
                 initial={{ opacity: 0, x: 70 }}
                 animate={{ opacity: [0, 0.7, 1], x: 0 }}
                 transition={{
-                  duration: 0.3,
+                  duration: 0.2,
                   ease: "easeInOut",
                   delay: 0.4,
                   type: "spring",
@@ -187,7 +191,7 @@ function Home() {
                 initial={{ opacity: 0, x: 70 }}
                 animate={{ opacity: [0, 0.7, 1], x: 0 }}
                 transition={{
-                  duration: 0.3,
+                  duration: 0.2,
                   ease: "easeInOut",
                   delay: 0.5,
                   type: "spring",
@@ -233,7 +237,7 @@ function Home() {
               Recent Projects
             </h1>
             <Link
-              className="btn btn-sm rounded-2xl bg-green-700 border border-opacity-0 hover:border-opacity-0 text-gray-100 hover:bg-blue-600 w-28 lg:w-24"
+              className="btn btn-sm rounded-2xl bg-green-700 border border-opacity-0 hover:border-opacity-0 text-gray-100 hover:bg-midnight-green w-28 lg:w-24"
               href={"/projects"}
             >
               View All

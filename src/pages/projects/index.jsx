@@ -1,10 +1,14 @@
 import ProjectCard from "@/components/Cards/ProjectCard"
 import Link from "next/link"
 import { motion } from "framer-motion"
+import Head from "next/head"
 
 function ProjectsPage() {
   return (
     <section className="min-h-screen w-full">
+      <Head>
+        <title>Projects</title>
+      </Head>
       <div className="flex flex-col w-full min-h-fit gap-2">
         {/* Header */}
         <motion.div

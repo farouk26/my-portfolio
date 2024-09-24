@@ -4,10 +4,14 @@ import { CiLinkedin } from "react-icons/ci"
 import { FaGithub } from "react-icons/fa"
 import { IoCallOutline } from "react-icons/io5"
 import { motion } from "framer-motion"
+import Head from "next/head"
 
 function ContactPage() {
   return (
     <div className="min-h-screen w-full">
+      <Head>
+        <title>Contact</title>
+      </Head>
       <div className="flex flex-col gap-6 min-h-fit w-full">
         {/* Header */}
         <motion.div

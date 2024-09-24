@@ -17,7 +17,7 @@ function SideBar() {
       <div className="flex flex-col justify-around min-h-full items-center">
         <div className="w-full min-h-fit mb-8">
           <div className="flex w-full bg-white h-0 justify-center mb-16">
-            <span className="w-48 py-3 badge rounded-xl bg-gray-300 text-green-700 text-sm border-opacity-5 mb-8 flex items-center gap-1">
+            <span className="w-44 py-3 badge rounded-xl bg-gray-200 text-green-700 text-sm border-opacity-5 mb-8 flex items-center gap-1">
               <motion.div
                 className="rounded-full"
                 initial={{
@@ -44,16 +44,18 @@ function SideBar() {
               Available for Work
             </span>
           </div>
-          <figure>
-            <Image
-              src="/images/logo-1.svg"
-              alt="logo"
-              height={500}
-              width={500}
-              priority
-              className="w-full h-16 object-cover"
-            />
-          </figure>
+          <Link href={"/"} rel="noopener noreferrer">
+            <figure>
+              <Image
+                src="/images/logo-1.svg"
+                alt="logo"
+                height={500}
+                width={500}
+                priority
+                className="w-full h-16 object-cover"
+              />
+            </figure>
+          </Link>
         </div>
         <div className="flex flex-col gap-2">
           <Link

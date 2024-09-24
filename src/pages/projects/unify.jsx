@@ -1,8 +1,12 @@
 import ProjectDetailsCard from "@/components/Cards/ProjectDetailsCard"
+import Head from "next/head"
 
 function unifyPage() {
   return (
     <div className="w-full min-h-screen">
+      <Head>
+        <title>Unify.</title>
+      </Head>
       <ProjectDetailsCard
         title={"Unify."}
         websiteType={"Community Sharing Platform"}

@@ -44,13 +44,13 @@ export default function Slider() {
             description={
               "Farouk brought life to the party, solutions to the problem and art to the projects. I had known Farouk as a friend who's always there to help whether it be technical or diplomatic.  His energy was so influential that it brought positive impact on the whole team. An aspiring developer, an amazing team player and a person who will make great things in whatever situation he's put in."
             }
-            subtitle={"Front-End Developer"}
+            subtitle={"Project Manager"}
             imageUrl={"/images/darinetag.png"}
           />
         </SwiperSlide>
         <SwiperSlide>
           <TestimonialCard
-            title={"Merzouk Fatima Zohra"}
+            title={"Merzouk F. Zohra"}
             subtitle={"Front-End Developer"}
             imageUrl={"/images/fatima.jpg"}
             description={
@@ -60,7 +60,7 @@ export default function Slider() {
         </SwiperSlide>
         <SwiperSlide>
           <TestimonialCard
-            title={"Manel Hasna Haddoud"}
+            title={"Manel Haddoud"}
             subtitle={"Front-End Developer"}
             imageUrl={"/images/manel.jpg"}
             description={

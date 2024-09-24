@@ -1,8 +1,12 @@
 import { motion } from "framer-motion"
+import Head from "next/head"
 
 function alibabalitePage() {
   return (
     <div className="w-full min-h-screen flex items-center justify-center">
+      <Head>
+        <title>Alibaba Lite</title>
+      </Head>
       <motion.div
         className="h-1/2 w-full lg:w-1/2 p-8 bg-dark-200 rounded-3xl"
         initial={{ opacity: 0, x: 50 }}
