@@ -115,14 +115,14 @@ function ContactForm() {
         </form>
       ) : (
         <div className="w-full min-h-fit flex flex-col gap-4 p-4 bg-dark-200 rounded-3xl items-center">
-          <CiCircleCheck className="text-6xl" />
+          <CiCircleCheck className="text-6xl lg:text-7xl text-white" />
           <h1 className="font-bold text-gray-200 text-3xl">Thank You</h1>
           <p className="text-md lg:text-lg text-center text-gray-200">
             Your message was sent successfully.
           </p>
           <button
             onClick={handleReturn}
-            className="btn  bg-green-600 text-gray-300 hover:bg-blue-500 hover:text-gray-300 rounded-2xl"
+            className="btn  bg-green-800 text-white hover:bg-blue-500 hover:text-white rounded-2xl"
           >
             Return to Form
           </button>
