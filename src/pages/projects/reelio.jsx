@@ -1,14 +1,29 @@
 import ProjectDetailsCard from "@/components/Cards/ProjectDetailsCard"
 import Head from "next/head"
-import React from "react"
+import { motion } from "framer-motion"
 
 function reelioPage() {
   return (
-    <div className="w-full min-h-screen">
+    <div className="w-full min-h-screen flex items-center justify-center">
       <Head>
-        <title>Reelio</title>
+        <title>Reelio - Under Maintenance</title>
       </Head>
-      <ProjectDetailsCard
+      <motion.div
+        className="h-1/2 w-full lg:w-1/2 p-8 bg-dark-200 rounded-3xl"
+        initial={{ opacity: 0, x: 50 }}
+        animate={{ opacity: [0, 0.8, 1], x: 0 }}
+        transition={{
+          duration: 0.6,
+          ease: "easeInOut",
+          delay: 0.3,
+          type: "spring",
+        }}
+      >
+        <p className="text-lg text-white font-bold text-center">
+          Project Under Maintenance ..
+        </p>
+      </motion.div>
+      {/* <ProjectDetailsCard
         title={"Reelio"}
         websiteType={"Movie Platform"}
         devPeriod={"1 Week"}
@@ -44,7 +59,7 @@ function reelioPage() {
           "https://github.com/202306-NEA-DZ-FEW/movie-project-devsquad"
         }
         demoUrl={"https://movie-project-devsquad.vercel.app/"}
-      />
+      /> */}
     </div>
   )
 }

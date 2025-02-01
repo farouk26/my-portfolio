@@ -1,4 +1,3 @@
-import React, { useRef, useState } from "react"
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react"
 
@@ -61,7 +60,7 @@ export default function Slider() {
         <SwiperSlide>
           <TestimonialCard
             title={"Manel Haddoud"}
-            subtitle={"Front-End Developer"}
+            subtitle={"IT Engineer"}
             imageUrl={"/images/manel.jpg"}
             description={
               "I had the pleasure of working with Faruk on our movie project. His exceptional leadership skills were evident as he guided and motivated the team. Faruk was always keen to learn and his enthusiasm inspired us all to improve. What impressed me the most was Farouk's willingness to help others. He was always available to answer questions and provide support, making him a true team player. Our collaboration flowed effortlessly because of his efforts. I strongly recommend Farouk for any project."
