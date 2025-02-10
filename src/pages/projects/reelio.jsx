@@ -20,7 +20,7 @@ function reelioPage() {
         }}
       >
         <p className="text-lg text-white font-bold text-center">
-          Project Under Maintenance ..
+          Under Maintenance ..
         </p>
       </motion.div>
       {/* <ProjectDetailsCard

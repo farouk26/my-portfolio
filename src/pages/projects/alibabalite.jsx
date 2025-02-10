@@ -19,7 +19,7 @@ function alibabalitePage() {
         }}
       >
         <p className="text-lg text-white font-bold text-center">
-          Coming Soon ..
+          Under Maintenance ..
         </p>
       </motion.div>
     </div>
