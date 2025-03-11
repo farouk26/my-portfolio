@@ -23,14 +23,14 @@ function Layout({ children }) {
       className={`${poppins.className} font-poppins w-full bg-dark-100 p-4 lg:p-6`}
     >
       <div className="relative flex lg:flex-row flex-col 2xl:gap-11 lg:gap-6 gap-5">
-        <div className="lg:hidden block sticky top-0 z-50">
+        {/* <div className="lg:hidden block sticky top-0 z-50">
           <Navbar />
         </div>
         <div className="lg:w-[16.5rem] 2xl:w[18rem] relative lg:block hidden">
           <div className="lg:w-[16.5rem] fixed 2xl:w-[18rem] h-full py-6 top-0 rounded-3xl">
             <SideBar />
           </div>
-        </div>
+        </div> */}
         <div className="lg:flex-1 w-full overflow-y-auto bg-dark-100 rounded-3xl">
           {children}
           <Footer />

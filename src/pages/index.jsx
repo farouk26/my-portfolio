@@ -8,15 +8,32 @@ import ProjectCard from "@/components/Cards/ProjectCard"
 import Image from "next/image"
 import Slider from "@/components/Swiper"
 import { motion } from "framer-motion"
+import { BsFillExclamationCircleFill } from "react-icons/bs"
 import Head from "next/head"
 
 function Home() {
   return (
-    <section className="min-h-screen">
+    <section className="min-h-screen flex justify-center items-center">
       <Head>
-        <title>Farouk Zemmouri .</title>
+        <title>Under Maintenance !</title>
       </Head>
-      <div className="flex flex-col min-h-fit w-full gap-4">
+      <motion.div
+        className="h-1/2 w-full lg:w-1/2 p-8 bg-dark-200 rounded-3xl"
+        initial={{ opacity: 0, x: 50 }}
+        animate={{ opacity: [0, 0.8, 1], x: 0 }}
+        transition={{
+          duration: 0.6,
+          ease: "easeInOut",
+          delay: 0.3,
+          type: "spring",
+        }}
+      >
+        <p className="text-lg text-white text-center flex flex-col gap-4 justify-center items-center">
+          Website is Under Maintenance{" "}
+          <BsFillExclamationCircleFill className="text-3xl" />
+        </p>
+      </motion.div>
+      {/* <div className="flex flex-col min-h-fit w-full gap-4">
         <motion.div
           className="min-h-fit bg-dark-200 shadow-sm rounded-3xl flex items-start justify-center lg:justify-start lg:items-center lg:flex-row flex-col gap-8 p-8"
           initial={{ opacity: 0, x: 50 }}
@@ -28,7 +45,8 @@ function Home() {
             type: "spring",
           }}
         >
-          {/* Header */}
+          *Header 
+
           <div className="lg:w-2/3 flex flex-col gap-4 w-full">
             <h1 className="text-3xl uppercase font-bold text-white mb-2">
               Hello! i&apos;m farouk.
@@ -62,9 +80,13 @@ function Home() {
             />
           </figure>
         </motion.div>
-        {/* Second Section */}
+        
+        Second Section
+
         <div className="flex xl:flex-row flex-col w-full min-h-fit gap-5">
-          {/* About */}
+
+          *About
+
           <motion.div
             className="flex flex-col xl:w-[60%] w-full min-h-fit"
             initial={{ opacity: 0, x: 30 }}
@@ -139,7 +161,9 @@ function Home() {
               </motion.div>
             </div>
           </motion.div>
-          {/* Stack */}
+
+          *Stack 
+
           <motion.div
             className="flex flex-col xl:w-[40%] w-full"
             initial={{ opacity: 0, x: 50 }}
@@ -220,7 +244,9 @@ function Home() {
             </div>
           </motion.div>
         </div>
-        {/* Projects Section */}
+
+        *Projects Section
+
         <motion.div
           className="w-full min-h-fit mb-8"
           initial={{ opacity: 0, x: 50 }}
@@ -288,7 +314,9 @@ function Home() {
             </Link>
           </div>
         </motion.div>
-        {/* Testimonials */}
+        
+        *Testimonials
+
         <motion.div
           className="min-h-fit w-full"
           initial={{ opacity: 0, x: 50 }}
@@ -305,7 +333,7 @@ function Home() {
           </h1>
           <Slider />
         </motion.div>
-      </div>
+      </div> */}
     </section>
   )
 }
