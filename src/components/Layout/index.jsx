@@ -33,7 +33,7 @@ function Layout({ children }) {
         </div> */}
         <div className="lg:flex-1 w-full overflow-y-auto bg-dark-100 rounded-3xl">
           {children}
-          <Footer />
+          {/* <Footer /> */}
         </div>
       </div>
     </main>
