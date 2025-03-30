@@ -149,7 +149,7 @@ function EducationPage() {
               <h1 className="md:text-3xl text-2xl font-bold uppercase text-white p-4 mb-2">
                 Certifications
               </h1>
-              <div className="w-full min-h-fit p-4">
+              <div className="w-full min-h-fit flex flex-col gap-4 p-4">
                 <a
                   href="https://www.credential.net/fcaf13d7-eb4c-4b68-bbf5-48deb48dd14e#gs.5zc6jz"
                   target="_blank"
@@ -158,6 +158,16 @@ function EducationPage() {
                 >
                   <li className="text-md text-gray-200 font-light hover:text-blue-600">
                     Front-End Web Development Certificate
+                  </li>
+                </a>
+                <a
+                  href="https://www.linkedin.com/learning/certificates/1961c8c92e073733bcf7f2a177f0c62206478b736ea64d927d777b2dc695e994"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:scale-105 transition duration-500 cursor-pointer"
+                >
+                  <li className="text-md text-gray-200 font-light hover:text-blue-600">
+                    JavaScript Foundations Professional Certificate by Mozilla
                   </li>
                 </a>
               </div>

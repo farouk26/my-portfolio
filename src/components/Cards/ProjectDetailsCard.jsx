@@ -86,8 +86,8 @@ function ProjectDetailsCard({
           <p className="text-md font-light text-gray-300">{projectSummary}</p>
         </div>
       </motion.div>
-      <div className="min-h-fit w-full flex lg:flex-row flex-col gap-6">
-        <div className="flex flex-col gap-6 lg:w-[50%] w-full">
+      <div className="min-h-full w-full flex lg:flex-row flex-col gap-6">
+        <div className="flex flex-col gap-6 lg:w-[50%] w-full min-h-full">
           <motion.div
             className="lg:h-80 min-h-fit bg-dark-200 rounded-3xl p-4 lg:p-6"
             initial={{ opacity: 0, x: 50 }}
@@ -99,13 +99,13 @@ function ProjectDetailsCard({
               type: "spring",
             }}
           >
-            <div className="flex flex-col gap-6  justify-center w-full h-full p-4">
+            <div className="flex flex-col gap-6 justify-center w-full h-full p-4">
               <h1 className="text-2xl font-bold text-white">Objective</h1>
               <p className="text-md font-light text-gray-300">{objective}</p>
             </div>
           </motion.div>
           <motion.div
-            className="w-full min-h-fit p-4 lg:p-6 bg-dark-200 rounded-3xl"
+            className="w-full h-full p-4 lg:p-6 bg-dark-200 rounded-3xl"
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: [0, 0.8, 1], x: 0 }}
             transition={{
