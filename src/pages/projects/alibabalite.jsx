@@ -5,7 +5,7 @@ function alibabalitePage() {
   return (
     <div className="w-full min-h-screen flex items-center justify-center">
       <Head>
-        <title>Alibaba Lite</title>
+        <title>Alibaba Lite - Coming Soon</title>
       </Head>
       <motion.div
         className="h-1/2 w-full lg:w-1/2 p-8 bg-dark-200 rounded-3xl"
@@ -19,7 +19,7 @@ function alibabalitePage() {
         }}
       >
         <p className="text-lg text-white font-bold text-center">
-          Under Maintenance ..
+          Coming Soon ..
         </p>
       </motion.div>
     </div>

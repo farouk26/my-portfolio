@@ -19,7 +19,7 @@ function Home() {
   return (
     <section className="min-h-screen flex justify-center items-center">
       <Head>
-        <title>Under Maintenance !</title>
+        <title>Farouk Zemmouri.</title>
       </Head>
       <div className="flex flex-col min-h-fit w-full gap-4">
         <Header />
