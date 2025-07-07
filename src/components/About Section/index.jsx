@@ -106,7 +106,7 @@ function AboutSection() {
             View All
           </Link>
         </div>
-        <div className="flex flex-col gap-5 h-full w-full">
+        <div className="flex flex-col lg:justify-center gap-5 h-full w-full">
           <motion.div
             initial={{ opacity: 0, x: 70 }}
             animate={{ opacity: [0, 0.7, 1], x: 0 }}

@@ -19,13 +19,18 @@ function Home() {
   return (
     <section className="min-h-screen flex justify-center items-center">
       <Head>
-        <title>Farouk Zemmouri.</title>
+        <title>Under Maintenance &#x26A0;</title>
       </Head>
-      <div className="flex flex-col min-h-fit w-full gap-4">
-        <Header />
+      <div className="flex flex-col min-h-fit w-full justify-center items-center gap-4">
+        <div className="lg:w-1/3 w-full min-h-fit flex flex-col bg-dark-200 rounded-3xl lg:p-4 p-2">
+          <p className="text-white text-center p-4">
+            Website Under Maintenance.
+          </p>
+        </div>
+        {/* <Header />
         <AboutSection />
         <ProjectSection />
-        <Testimonial />
+        <Testimonial /> */}
       </div>
     </section>
   )
