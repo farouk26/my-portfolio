@@ -45,7 +45,7 @@ function MobileMenu() {
             </Menu.Item>
             <Menu.Item>
               <Link
-                href="/projects"
+                href="#"
                 className="block px-4 py-2 mb-2 text-center text-2xl uppercase font-bold"
               >
                 Projects

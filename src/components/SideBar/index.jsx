@@ -17,19 +17,19 @@ function SideBar() {
       <div className="flex flex-col justify-around min-h-full items-center">
         <div className="w-full min-h-fit mb-8">
           <div className="flex w-full bg-white h-0 justify-center mb-16">
-            <span className="w-44 py-3 badge rounded-xl bg-gray-200 text-green-700 text-sm border-opacity-5 mb-8 flex items-center gap-1">
+            <span className="w-44 py-3 badge rounded-xl bg-gray-200 text-red-800 text-sm border-opacity-5 mb-8 flex items-center gap-1">
               <motion.div
                 className="rounded-full"
                 initial={{
                   scale: 1,
-                  boxShadow: "0 0 0 0 #00a86b",
+                  boxShadow: "0 0 0 0 #8B0000", // Dark red color
                 }}
                 animate={{
                   scale: [1, 1.2, 1],
                   boxShadow: [
-                    "0 0 0 0 #00a86b",
-                    "0 0 0 10px rgba(51, 217, 178, 0)",
-                    "0 0 0 0 rgba(51, 217, 178, 0)",
+                    "0 0 0 0 #8B0000", // Dark red color
+                    "0 0 0 10px rgba(139, 0, 0, 0)", // Adjusted rgba for dark red
+                    "0 0 0 0 rgba(139, 0, 0, 0)",
                   ],
                 }}
                 transition={{
@@ -41,7 +41,7 @@ function SideBar() {
               >
                 <GoDotFill />
               </motion.div>
-              Available for Work
+              Career Break
             </span>
           </div>
           <Link href={"/"} rel="noopener noreferrer">
@@ -68,7 +68,7 @@ function SideBar() {
             Home
           </Link>
           <Link
-            href={"/projects"}
+            href={"#"}
             onClick={() => handleLinkClick("Projects")}
             className={`text-3xl uppercase font-bold hover:scale-110 transition duration-500 ${
               activeLink === "Projects" ? "text-green-400" : "text-white"

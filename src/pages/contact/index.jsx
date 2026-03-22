@@ -111,8 +111,7 @@ function ContactPage() {
             >
               <SocialsCard
                 Icon={<IoCallOutline />}
-                socialName={"+213782062515"}
-                Url={"tel:+213782062515"}
+                socialName={"To be announced"}
               />
             </motion.div>
           </motion.div>

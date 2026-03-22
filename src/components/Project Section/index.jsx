@@ -22,13 +22,21 @@ function ProjectSection() {
         </h1>
         <Link
           className="btn btn-sm rounded-2xl bg-green-700 border border-opacity-0 hover:border-opacity-0 text-gray-100 hover:bg-midnight-green w-28 lg:w-24"
-          href={"/projects"}
+          href={"#"}
         >
           View All
         </Link>
       </div>
       <div className="flex flex-col lg:flex-row w-full min-h-fit gap-5">
-        <Link
+        <div className="w-full min-h-fit flex justify-center items-center py-6">
+          <div className="w-full rounded-3xl bg-dark-200 min-h-fit p-4 flex justify-center items-center">
+            <p className="text-white text-2xl p-4 font-light">
+              New projects will drop{" "}
+              <span className="text-green-500 font-bold">Soon !</span>
+            </p>
+          </div>
+        </div>
+        {/* <Link
           href={"/projects/unify"}
           rel="noopener noreferrer"
           target="_blank"
@@ -65,7 +73,7 @@ function ProjectSection() {
             tech_2={"CSS"}
             tech_3={"Vanilla JS"}
           />
-        </Link>
+        </Link> */}
       </div>
     </motion.div>
   )
